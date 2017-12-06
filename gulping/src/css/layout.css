@@ -1,0 +1,156 @@
+/**
+stuff from layout.CSS
+*/
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-main-text);
+  text-align: left;
+  background-color: #fff;
+}
+
+header {
+	color: blue;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header / Navigation
+--------------------------------------------------------------*/
+header#masthead {
+  margin-bottom: 0;
+  background-color: #fff !important;
+  box-shadow: 0 0.5rem 0rem var(--color-red-darker);
+	min-height: 120px;
+  padding: .74rem 1rem;
+  border-bottom: 1px solid #9175bb;
+	position: relative;
+	z-index: 1;
+
+	a, li a {
+		color: var(--color-lightgrey);
+		font-weight: lighter;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+
+	}
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+ /**
+  contains the logo
+ */
+.navbar-brand a {
+  display: inline-block;
+	max-width: 140px;
+	max-height: 60px;
+	background: url(../img/logo_firststeps_116px.png) no-repeat scroll center center;
+	background-size: contain;
+	overflow: hidden;
+	line-height: 1000px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+	display: inline-block;
+
+	li {
+		display: inline-block;
+		padding-left: 30px;
+		a {
+
+		}
+	}
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.navbar-text {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+
+
+/**
+end of stuff from layout.CSS
+*/

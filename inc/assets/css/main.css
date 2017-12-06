@@ -1,0 +1,556 @@
+/**
+FirstSteps Project 2017 s
+**/
+
+:root {
+	/**
+		colors
+	**/
+
+
+
+	/**
+		sizes
+	**/
+
+	/**
+		fonts
+	**/ /* used for big questions in the boxes */
+}
+
+/**
+stuff from layout.CSS
+*/
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #5D5D5D;
+  text-align: left;
+  background-color: #fff;
+}
+
+header {
+	color: blue;
+}
+
+/*--------------------------------------------------------------
+# Header / Navigation
+--------------------------------------------------------------*/
+
+header#masthead {
+  margin-bottom: 0;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0.5rem 0rem #CE5757;
+          box-shadow: 0 0.5rem 0rem #CE5757;
+	min-height: 120px;
+  padding: 11.84px 16px;
+  padding: .74rem 1rem;
+  border-bottom: 1px solid #9175bb;
+	position: relative;
+	z-index: 1;
+}
+
+header#masthead a, header#masthead li a {
+		color: #5D5D5D;
+		font-weight: lighter;
+		font-size: 14.4px;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+
+	}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar > .container, .navbar > .container-fluid {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+/**
+  contains the logo
+ */
+
+.navbar-brand a {
+  display: inline-block;
+	max-width: 140px;
+	max-height: 60px;
+	background: url(../img/logo_firststeps_116px.png) no-repeat scroll center center;
+	background-size: contain;
+	overflow: hidden;
+	line-height: 1000px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+	display: inline-block;
+}
+
+.navbar-nav li {
+		display: inline-block;
+		padding-left: 30px;
+	}
+
+.navbar-nav li a {
+
+		}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.navbar-text {
+  display: inline-block;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-positive: 1;
+      -webkit-box-flex: 1;
+          flex-grow: 1;
+  -ms-flex-align: center;
+      -webkit-box-align: center;
+          align-items: center;
+}
+
+.navbar-toggler {
+  padding: 4px 12px;
+  padding: 0.25rem 0.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/**
+end of stuff from layout.CSS
+*/
+
+/*
+stuff from contentelements.css
+*/
+
+.button, button {
+	color: red;
+	border-radius: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+body img {
+    margin-bottom: 10px;
+}
+
+.wrap-all {
+	max-width: 960px;
+	margin: 0 auto;
+	background: lightgrey;
+}
+
+.fs-highmargin {
+	margin-top: 3em !important;
+	margin-bottom: 3em !important;
+}
+
+.fs-tilted-background {
+	background: linear-gradient(-4deg, #FFEEB7 130px, #FFFFFF 131px);
+	float: left;
+	width: 100%;
+}
+
+/**
+simple Grid - dont want to use the flexibility from bootstrap as it uses too much markup
+**/
+
+.fs-container {
+	width: 100%;
+}
+
+.fs-container .fs-row {
+		margin: 0 auto;
+		max-width: 720px;
+		width: auto;
+	}
+
+.fs-container .fs-hero-row {
+		margin: 0 auto;
+		text-align: center;
+		padding: 2em 0em;
+		width: auto;
+		max-width: 100%;
+		position: relative;
+		margin-bottom: 4em;
+
+		background: #E56A6A;
+	}
+
+.fs-container .fs-hero-row h2 {
+			color:#ffffff;
+		}
+
+.fs-chapter {
+
+}
+
+.fs-chapter-intro {
+	background: #E56A6A;
+	color: #ffffff;
+	padding-top: 32px;
+	padding-top: 2rem;
+	margin-bottom: 40px;
+	position: relative;
+
+
+
+}
+
+.fs-chapter-intro .fs-chapter-title {
+		font-size: 43px;
+		font-size: 2.6875rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 59px;
+		line-height: 3.6875rem;
+	}
+
+.fs-chapter-intro p {
+		font-size: 1.3125em;
+		line-height: 1.33333;
+	}
+
+.fs-chapter-intro hr {
+		color: #fff;
+		width: 100px;
+		border: 0.5px solid #fff;
+		margin: 1em 0;
+	}
+
+.fs-chapter-intro h1 {
+			font-size: 5.5625em;
+			font-weight: 900;
+			text-transform: uppercase;
+			/*line-height: 0.95;*/
+	}
+
+.fs-chapter-intro a { /** lets go BUTTON**/
+		color: #E56A6A;
+		background: #ffffff;
+		padding: 2px 5px;
+		font-size: 1.33333;
+		border-radius: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+.fs-hero-row:after, .fs-chapter-intro:after {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		height: 40px;
+		background: #E56A6A;
+		content: '';
+		left:0;
+		right: 0;
+		bottom: -40px;
+		position: absolute;
+}
+
+.fs-topleft {
+	position: absolute !important;
+	left: -30px;
+	top: -35px;
+}
+
+.fs-box {
+	padding: 0.5em 0.7em 1em;
+	border-radius: 20px;
+	position:relative;
+	display: inline-block;
+	max-width: 30%
+
+
+}
+
+.fs-box.fs-question {
+	font-family: 'Arvo', serif;
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 1.3;
+	font-weight: bold;
+	margin-bottom: 60px;
+	background: #E56A6A;
+	border: 10px solid #CE5757;
+}
+
+.fs-box.fs-question:after {
+	content:'.';
+	width: 70px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	right: 20px;
+	line-height: 300px;
+	overflow: hidden;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='30%2C0 30%2C40 50%2C0' fill='%23CE5757'/%3E%3Cellipse rx='10' ry='2' cx='30' cy='45' fill='%23CE5757'/%3E%3C/svg%3E");
+}
+
+.fs-box.fs-biblequote {
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 1.3;
+	font-weight: bold;
+	margin-bottom: 60px;
+	max-width: unset;
+	padding: 1.1em 2.5em 1.4em;
+	background: #6BA6AD;
+	border: 10px solid #468F98;
+}
+
+.fs-box.fs-biblequote:after {
+	content:'.';
+	width: 120px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 110%;
+	left: 35%;
+	line-height: 300px;
+	overflow: hidden;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse rx='50' ry='4' cx='50' cy='30' fill='%23468F98'/%3E%3Cpolygon points='10%2C0 50%2C15 90%2C0' fill='%23468F98'/%3E%3C/svg%3E");
+}
+
+.fs-infothing {
+	width: 52px;
+	height: 52px;
+	background:#E56A6A;
+	border: 6px solid #CE5757;
+	color: #fff;
+	border-radius: 100%;
+	line-height: 300px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	text-decoration: none
+
+
+}
+
+.fs-infothing:before {
+	font-family:FontAwesome;
+	content: '\f054';
+	color: #fff;
+	font-weight: normal;
+	display: block;
+	font-size: 31px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.fs-infothing.fs-close:before {
+	content: '\f00d';
+	-webkit-transform: rotate(-10deg);
+	        transform: rotate(-10deg);
+}
+
+.fs-infothing.fs-question {
+	background-color:#FFEEB7;
+	border-color:#E5AA3B;
+}
+
+.fs-infothing.fs-question:before {
+	content: '\f128';
+	color: #E5AA3B;
+	-webkit-transform: rotate(-10deg);
+	        transform: rotate(-10deg);
+}
+
+/**
+	this means:
+		pulsing like a hound dog and stopping when mouse is over it.
+**/
+
+.fs-attentionseeker {
+	-webkit-animation: fs-pulse 2s ease-in-out;
+	        animation: fs-pulse 2s ease-in-out;
+	-webkit-animation-iteration-count: 0;
+	        animation-iteration-count: 0;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both
+}
+
+.fs-attentionseeker.fs-animated {
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+.fs-attentionseeker:hover {
+	-webkit-animation-play-state: paused;
+	        animation-play-state: paused;/*stop animation*/
+}
+
+/**
+ der "spitz" unterhalb einer sprechblase.
+**/
+
+@-webkit-keyframes fs-pulse {
+    0% {
+     -webkit-transform: scale(1, 1);
+             transform: scale(1, 1);
+    }
+
+		50% {
+     -webkit-transform: scale(1.1, 1.1);
+             transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+}
+
+@keyframes fs-pulse {
+    0% {
+     -webkit-transform: scale(1, 1);
+             transform: scale(1, 1);
+    }
+
+		50% {
+     -webkit-transform: scale(1.1, 1.1);
+             transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+}
+
+/*
+end of stuff from contentelements.css
+*/
+
+/**
+stuff from typography.css
+**/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', serif;
+    line-height: 1;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+
+h2 {
+	font-size: 3.75em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0.2em 0 0.5em
+
+
+}
+
+h2:before {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 10px;
+	height: 10px;
+	background: #EfEfEf;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+}
+
+body a {
+    color: #8967bd;
+}
+
+body a:hover {
+    color: #8967bd;
+    text-decoration: none;
+}
+
+.navbar-brand a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+/**
+END of stuff from typography.css
+**/

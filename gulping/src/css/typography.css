@@ -1,0 +1,50 @@
+
+
+/**
+stuff from typography.css
+**/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', serif;
+    line-height: 1;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+
+h2 {
+	font-size: 3.75em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0.2em 0 0.5em;
+
+
+	&:before {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 10px;
+		height: 10px;
+		background: #EfEfEf;
+	}
+
+
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+}
+body a {
+    color: #8967bd;
+}
+body a:hover {
+    color: #8967bd;
+    text-decoration: none;
+}
+
+.navbar-brand a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+/**
+END of stuff from typography.css
+**/

@@ -1,0 +1,320 @@
+/*
+stuff from contentelements.css
+*/
+.button, button {
+	color: red;
+	border-radius: 20px;
+	display: flex;
+}
+
+body img {
+    margin-bottom: 10px;
+}
+
+
+
+.wrap-all {
+	max-width: 960px;
+	margin: 0 auto;
+	background: lightgrey;
+}
+
+
+
+.fs-highmargin {
+	margin-top: 3em !important;
+	margin-bottom: 3em !important;
+}
+.fs-tilted-background {
+	background: linear-gradient(-4deg, #FFEEB7 130px, #FFFFFF 131px);
+	float: left;
+	width: 100%;
+}
+
+/**
+simple Grid - dont want to use the flexibility from bootstrap as it uses too much markup
+**/
+.fs-container {
+	width: 100%;
+	.fs-row {
+		margin: 0 auto;
+		max-width: 720px;
+		width: auto;
+	}
+	.fs-hero-row {
+		margin: 0 auto;
+		text-align: center;
+		padding: 2em 0em;
+		width: auto;
+		max-width: 100%;
+		position: relative;
+		margin-bottom: 4em;
+
+		background: var(--color-red);
+
+		h2 {
+			color:#ffffff;
+		}
+	}
+}
+
+.fs-chapter {
+
+}
+.fs-chapter-intro {
+	background: var(--color-red);
+	color: #ffffff;
+	padding-top: 2rem;
+	margin-bottom: 40px;
+	position: relative;
+
+	.fs-chapter-title {
+		font-size: 2.6875rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 3.6875rem;
+	}
+	p {
+		font-size: 1.3125em;
+		line-height: 1.33333;
+	}
+
+	hr {
+		color: #fff;
+		width: 100px;
+		border: 0.5px solid #fff;
+		margin: 1em 0;
+	}
+
+	h1 {
+			font-size: 5.5625em;
+			font-weight: 900;
+			text-transform: uppercase;
+			/*line-height: 0.95;*/
+	}
+
+	a { /** lets go BUTTON**/
+		color: var(--color-red);
+		background: #ffffff;
+		padding: 2px 5px;
+		font-size: 1.33333;
+		border-radius: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+
+
+}
+
+.fs-hero-row:after, .fs-chapter-intro:after {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		height: 40px;
+		background: var(--color-red);
+		content: '';
+		left:0;
+		right: 0;
+		bottom: -40px;
+		position: absolute;
+}
+
+
+
+.fs-topleft {
+	position: absolute !important;
+	left: -30px;
+	top: -35px;
+}
+
+.fs-box {
+	padding: 0.5em 0.7em 1em;
+	border-radius: var(--size-box-radius);
+	position:relative;
+	display: inline-block;
+	max-width: 30%;
+
+	&.fs-question {
+		font-family: var(--font-alternative1);
+		color: #fff;
+		font-size: 1.25em;
+		line-height: 1.3;
+		font-weight: bold;
+		margin-bottom: 60px;
+
+		background: var(--color-red);
+		border: 10px solid var(--color-red-darker);
+
+		&:after {
+			content:'.';
+			width: 70px;
+			height: 100px;
+			display: block;
+			position: absolute;
+			top: 100%;
+			right: 20px;
+			line-height: 300px;
+			overflow: hidden;
+			background: svg(speechthingyleft param(--color var(--color-red-darker)));
+		}
+	}
+
+	&.fs-biblequote {
+		color: #fff;
+		font-size: 1.25em;
+		line-height: 1.3;
+		font-weight: bold;
+		margin-bottom: 60px;
+		max-width: unset;
+		padding: 1.1em 2.5em 1.4em;
+
+		background: var(--color-blue);
+		border: 10px solid var(--color-blue-darker);
+
+		&:after {
+			content:'.';
+			width: 120px;
+			height: 50px;
+			display: block;
+			position: absolute;
+			top: 110%;
+			left: 35%;
+			line-height: 300px;
+			overflow: hidden;
+			background: svg(biblequote param(--color var(--color-blue-darker)));
+		}
+	}
+
+
+}
+
+.fs-infothing {
+	width: var(--size-attentionseeker);
+	height: var(--size-attentionseeker);
+	background:var(--color-red);
+	border: 6px solid var(--color-red-darker);
+	color: #fff;
+	border-radius: 100%;
+	line-height: 300px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+
+	&:before {
+		font-family:FontAwesome;
+		content: '\f054';
+		color: #fff;
+		font-weight: normal;
+		display: block;
+		font-size: 31px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	&.fs-close {
+		&:before {
+			content: '\f00d';
+			transform: rotate(-10deg);
+		}
+	}
+
+	&.fs-question {
+		background-color:var(--color-yellow);
+		border-color:var(--color-yellow-darker);
+		&:before {
+			content: '\f128';
+			color: var(--color-yellow-darker);
+			transform: rotate(-10deg);
+		}
+	}
+
+
+}
+
+/**
+	this means:
+		pulsing like a hound dog and stopping when mouse is over it.
+**/
+.fs-attentionseeker {
+	animation: fs-pulse 2s ease-in-out;
+	animation-iteration-count: 0;
+	animation-fill-mode: both;
+
+	&.fs-animated {
+		animation-iteration-count: infinite;
+	}
+
+	&:hover {
+		animation-play-state: paused; /*stop animation */
+	}
+}
+
+/**
+ der "spitz" unterhalb einer sprechblase.
+**/
+@svg speechthingyright {
+	@polygon {
+		points: 20,0 20,40 0,0;
+		fill: var(--color);
+	}
+	@ellipse {
+		rx:  10;
+		ry: 2;
+		cx: 30;
+		cy: 45;
+		fill: var(--color);
+	}
+}
+
+@svg speechthingyleft {
+	@polygon {
+		points: 30,0 30,40 50,0;
+		fill: var(--color);
+	}
+	@ellipse {
+		rx:  10;
+		ry: 2;
+		cx: 30;
+		cy: 45;
+		fill: var(--color);
+	}
+}
+
+@svg biblequote {
+	@ellipse {
+		rx:  50;
+		ry: 4;
+		cx: 50;
+		cy: 30;
+		fill: var(--color);
+	}
+	@polygon {
+		points: 10,0 50,15 90,0;
+		fill: var(--color);
+	}
+}
+
+
+
+
+@keyframes fs-pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+		50% {
+     transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+/*
+end of stuff from contentelements.css
+*/
