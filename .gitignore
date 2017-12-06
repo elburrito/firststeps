@@ -1,0 +1,9 @@
+
+npm-debug.log
+logs
+node_modules
+
+pids
+.npm
+.DS_Store
+

@@ -1,5 +1,8 @@
 /**
 FirstSteps Project 2017 s
+
+uses postcss with some modules to compile it the right way. 
+check MAINDIRECTORY/package.json for the list of modules..  
 **/
 
 @import "variables.css";
