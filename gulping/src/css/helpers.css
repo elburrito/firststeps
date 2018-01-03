@@ -1,0 +1,106 @@
+/**
+helpers
+**/
+
+.center-text {
+    text-align: center;
+}
+
+.fs-container .fs-margin-1 {
+    margin-bottom: 2em;
+}
+.fs-container .fs-margin-2 {
+    margin-bottom: 4em;
+}
+.fs-container .fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
+    margin-bottom: 8em;
+}
+
+/**
+animations
+**/
+.fs-toggler,.fs-videocontainer,.carousel,.fs-button {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.fs-toggler:hover,.fs-videocontainer:hover,.carousel:hover,.fs-button:hover {
+    box-shadow: rgba(103, 171, 175, 0.45) 0px -1px 0px 12px;
+}
+
+/**
+togglers
+**/
+.fs-toggle-group {
+    .fs-showactive {
+        display: none;
+    }
+    .fs-hideactive {
+        display: inline-block;
+    }
+}
+
+.fs-toggle-group.active {
+    .fs-showactive {
+        display: inline-block;
+    }
+    .fs-hideactive {
+        display: none;
+    }
+}
+
+
+.fs-button {
+    color: var(--color-red);
+    background: #ffffff;
+    padding: 2px 10px;
+    font-size: 1.33333em;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+

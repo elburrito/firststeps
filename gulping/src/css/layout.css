@@ -1,5 +1,7 @@
 /**
 stuff from layout.CSS
+
+@note: we use the bootstrap 4 grid from https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
 body {
@@ -7,7 +9,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.5; 
   color: var(--color-main-text);
   text-align: left;
   background-color: #fff;
@@ -16,6 +18,8 @@ body {
 header {
 	color: blue;
 }
+
+
 
 
 
@@ -32,14 +36,16 @@ header#masthead {
 	position: relative;
 	z-index: 1;
 
-	a, li a {
-		color: var(--color-lightgrey);
-		font-weight: lighter;
-		font-size: 0.9rem;
-		text-transform: uppercase;
-
-	}
+	
 }
+
+header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
+    color: var(--color-lightgrey);
+    font-weight: lighter;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
 
 .navbar {
   position: relative;
@@ -149,7 +155,29 @@ header#masthead {
   background-size: 100% 100%;
 }
 
-
+#toplink {
+    background: #5D5D5D;
+    color: #fff;
+    position: relative;
+    padding: 2px 30px;
+    margin-top: 4em;
+    margin-bottom: 1em;
+        
+    &:before {
+        color: #5D5D5D;
+        font-family:FontAwesome;
+        content: '\f062';
+        /* color: #fff; */
+        font-weight: normal;
+        display: block;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+        top: -42px;
+        left: 41%;
+    }
+}
 
 /**
 end of stuff from layout.CSS

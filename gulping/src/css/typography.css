@@ -3,31 +3,67 @@
 /**
 stuff from typography.css
 **/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, header {
     font-family: 'Lato', serif;
     line-height: 1;
     letter-spacing: -1px;
     word-spacing: 2px;
+    font-weight: bold;
 }
 
 h2 {
-	font-size: 3.75em;
+	font-size: 3.75rem;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0.2em 0 0.5em;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    
 
 
 	&:before {
 		content: '';
 		display: block;
 		margin: 0 auto;
-		width: 10px;
-		height: 10px;
-		background: #EfEfEf;
+		width: 50px;
+		height: 50px;
+		background: url(var(--path-static-images)chp02_icon.png) no-repeat scroll center;
+        background-size: contain;
 	}
 
 
 }
+h3 {
+    font-size: 1.6875rem;
+    color: #575756;
+    margin-bottom: 1em;
+    letter-spacing: 0.08em;
+    font-weight: 900;
+}
+
+h4, header {
+    color: #575756;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 2em;
+}
+
+header {
+    &.fs-hero {
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        color: var(--color-red);
+        margin-bottom: 0.2em;
+    }
+}
+
+em {
+    font-family: 'Lato', serif;
+    font-size: 0.905em;
+    font-style:italic;
+    font-weight: lighter;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.7;
@@ -38,6 +74,11 @@ body a {
 body a:hover {
     color: #8967bd;
     text-decoration: none;
+}
+
+p.fs-bodytext, p.caption {
+    font-size: 1.25rem;
+    font-weight: 100;
 }
 
 .navbar-brand a {

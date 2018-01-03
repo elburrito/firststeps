@@ -1,0 +1,25 @@
+/**
+images.css
+**/
+
+/**
+topic 01 - wer ist gott
+*/
+  
+.fs-img-questionmark-big {
+    width: 194px;
+    height: 290px;
+    background: url(var(--path-static-images)questionlamp.png) no-repeat scroll center bottom;
+}  
+
+.fs-img-do-background {
+    background: url(var(--path-static-images)running_dude.png) no-repeat scroll left bottom;
+    background-size: initial;
+}
+
+div#carouselGodImages img {
+    max-height: 195px;
+}
+
+div#carouselGodImages {
+}

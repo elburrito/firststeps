@@ -7,10 +7,21 @@ stuff from contentelements.css
 	display: flex;
 }
 
+
+
 body img {
     margin-bottom: 10px;
 }
 
+
+hr {
+    margin: 0 0 0.5em;
+    padding: 0;
+    border: 0 none;
+    background: #87C1C6;
+    height: 6px;
+    border-radius: 6px;
+}
 
 
 .wrap-all {
@@ -20,6 +31,14 @@ body img {
 }
 
 
+/**
+add some margin to similar objects
+*/
+.fs-videobox {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 
 .fs-highmargin {
 	margin-top: 3em !important;
@@ -27,8 +46,30 @@ body img {
 }
 .fs-tilted-background {
 	background: linear-gradient(-4deg, #FFEEB7 130px, #FFFFFF 131px);
-	float: left;
 	width: 100%;
+}
+
+.fs-tilted-background-2 {
+	background: linear-gradient(4deg, #FFEEB7 130px, #FFFFFF 131px);
+	width: 100%;
+}
+
+.fs-tilted-background-3 {
+	background: linear-gradient(1deg, #FFEEB7 230px, #FFFFFF 231px);
+	width: 100%;
+}
+
+.fs-highlight {
+    color: var(--color-red);
+}
+
+.fs-biblequote-inline {
+    font-weight: lighter;
+    font-style: italic;
+    i {
+        font-size: 0.9em;
+        color: var(--color-blue-darker);
+    }
 }
 
 /**
@@ -36,6 +77,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 **/
 .fs-container {
 	width: 100%;
+    
 	.fs-row {
 		margin: 0 auto;
 		max-width: 720px;
@@ -48,7 +90,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 		width: auto;
 		max-width: 100%;
 		position: relative;
-		margin-bottom: 4em;
+		margin-bottom: 6em;
 
 		background: var(--color-red);
 
@@ -58,14 +100,13 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	}
 }
 
-.fs-chapter {
 
-}
+
 .fs-chapter-intro {
 	background: var(--color-red);
 	color: #ffffff;
 	padding-top: 2rem;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	position: relative;
 
 	.fs-chapter-title {
@@ -84,6 +125,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 		width: 100px;
 		border: 0.5px solid #fff;
 		margin: 1em 0;
+        height: auto;
 	}
 
 	h1 {
@@ -93,15 +135,8 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 			/*line-height: 0.95;*/
 	}
 
-	a { /** lets go BUTTON**/
-		color: var(--color-red);
-		background: #ffffff;
-		padding: 2px 5px;
-		font-size: 1.33333;
-		border-radius: 10px;
-		font-weight: bold;
-		text-transform: uppercase;
-		display: inline-block;
+	a { 
+        margin: 10px 0;
 	}
 
 
@@ -111,13 +146,13 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 .fs-hero-row:after, .fs-chapter-intro:after {
 		display: block;
 		margin: 0 auto;
-		width: 300px;
-		height: 40px;
-		background: var(--color-red);
+		width: 330px;
+		height: 45px;
+		background: url(var(--path-static-images)chapter_01_after.png) no-repeat scroll center top;
 		content: '';
 		left:0;
 		right: 0;
-		bottom: -40px;
+		bottom: -45px;
 		position: absolute;
 }
 
@@ -129,17 +164,43 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	top: -35px;
 }
 
+.fs-bottomright {
+	position: absolute !important;
+	right: -30px;
+	bottom: -35px;
+}
+
 .fs-box {
 	padding: 0.5em 0.7em 1em;
 	border-radius: var(--size-box-radius);
 	position:relative;
 	display: inline-block;
-	max-width: 30%;
+    min-width: 250px;
+    
+    color: #ffffff;
+    background: var(--color-red);
+    border: 10px solid var(--color-red-darker);
+    
+    .fs-text {
+        margin: 0.5em 0 1em;
+        font-weight: 100;
+        font-family: 'Lato', serif;
+        line-height: 1.65;
+        text-align: left;
+    }
+    
+    i {
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 0.7em;
+        color: var(--color-yellow); 
+        padding-right: 0.3em;
+    }
 
-	&.fs-question {
+	&.fs-question,&.fs-biblebold {
 		font-family: var(--font-alternative1);
 		color: #fff;
-		font-size: 1.25em;
+		font-size: 1.25rem;
 		line-height: 1.3;
 		font-weight: bold;
 		margin-bottom: 60px;
@@ -159,38 +220,186 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 			overflow: hidden;
 			background: svg(speechthingyleft param(--color var(--color-red-darker)));
 		}
+        &.fs-box-2:after {
+            left: 20px;
+            right: auto;
+            background: svg(speechthingyright param(--color var(--color-red-darker)));
+        }
 	}
+    &.fs-biblebold {
+        background-color: var(--color-blue);
+		border-color: var(--color-blue-darker); 
+        &:after {
+            background: svg(speechthingyleft param(--color var(--color-blue-darker)));
+        }
+    }
 
 	&.fs-biblequote {
 		color: #fff;
-		font-size: 1.25em;
+		font-size: 1.25rem;
 		line-height: 1.3;
 		font-weight: bold;
 		margin-bottom: 60px;
+        margin-top: 2em;
 		max-width: unset;
 		padding: 1.1em 2.5em 1.4em;
 
 		background: var(--color-blue);
 		border: 10px solid var(--color-blue-darker);
-
+        
+        
+        
 		&:after {
 			content:'.';
 			width: 120px;
 			height: 50px;
 			display: block;
 			position: absolute;
-			top: 110%;
+			bottom: -60px;
 			left: 35%;
 			line-height: 300px;
 			overflow: hidden;
 			background: svg(biblequote param(--color var(--color-blue-darker)));
 		}
+        
+        
+        
+        &.expanded {
+            &:before {
+                content:'.';
+                width: 120px;
+                height: 30px;
+                display: block;
+                position: absolute;
+                top: -25px;
+                left: 45%;
+                line-height: 300px;
+                overflow: hidden;
+                background: svg(biblequote-expanded-top param(--color var(--color-blue-darker)));
+            }
+            &:after {
+                background: svg(biblequote-expanded-bottom param(--color var(--color-blue-darker)));
+                width: 400px;
+                top: 107%;
+                left: 27%;
+            }
+        }
 	}
-
-
+    
+    &.carousel {
+        min-width: 400px;
+        padding: 1em 30px 1em;
+        margin-bottom: 3em;
+        
+        .d-block {
+            display: inline-block !important; /** makes everything easily centered **/
+        }
+        
+        .carousel-caption {
+            font-family: var(--font-alternative1);
+            font-size: 1.25rem;
+            line-height: 1.3;
+            font-weight: bold;
+            bottom: auto;
+        }
+        
+        &:after {
+            content:'.';
+            display: block;
+            position: absolute;
+            line-height: 300px;
+            overflow: hidden;
+            background: svg(biblequote-expanded-bottom param(--color var(--color-red-darker)));
+            background-size: contain;
+            width: 400px;
+            height: 50px;
+            top: 105%;
+            left: 20%;
+        }   
+    }background: #6BA6AD;
+        border-color: #468F98;
 }
 
-.fs-infothing {
+
+
+
+.fs-videobox {
+    color: #fff;
+    display: inline-block;
+    text-align:  center;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    
+    .fs-videocontainer {
+        position: relative;
+        border-radius: 15px;
+        overflow:  hidden;
+        border: 10px solid var(--color-blue-darker);
+        background: var(--color-blue);
+        padding: 0.5em;
+    }
+    
+    .fs-videooverlay {
+        /*till now*/
+        display: none;
+        
+        
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(70, 143, 152, .6);
+        
+        .fs-play {
+            margin-top: 4em;
+        }
+    }
+    
+    &:after {
+        content:'.';
+        display: block;
+        position: absolute;
+        line-height: 300px;
+        overflow: hidden;
+        background: svg(biblequote-expanded-bottom param(--color var(--color-blue-darker)));
+        background-size: contain;
+        width: 400px;
+        height: 50px;
+        top: 105%;
+        left: 20%;
+    }
+    
+    &.small {
+        max-width: 500px; /** will be handled by .col classes anyway.. make sure to take out the width of the embedded video
+        */
+        &:after {
+            background: svg(biblequote-expanded-bottom param(--color var(--color-blue-darker)));
+            background-size: contain;
+            width: 400px;
+            height: 50px;
+            top: 105%;
+            left: 2%;
+        } 
+    }
+}
+
+
+p.caption {
+    padding: 0.5em 1em 1.5em 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: -22px;
+    display: inline-block;
+}
+
+
+
+
+/**
+infoicons
+**/
+.fs-infothing { 
 	width: var(--size-attentionseeker);
 	height: var(--size-attentionseeker);
 	background:var(--color-red);
@@ -202,6 +411,18 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
+    
+    &.fs-infothing-huge {
+        width: 150px;
+        height: 150px;
+        border-width: 18px;
+        
+        &:before {
+            font-size: 80px;
+            line-height: 1.4em;
+            pading-left: 0.15em !important;
+        }
+    }
 
 	&:before {
 		font-family:FontAwesome;
@@ -213,6 +434,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 		line-height: 40px;
 		text-align: center;
 	}
+    
 
 	&.fs-close {
 		&:before {
@@ -230,6 +452,23 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 			transform: rotate(-10deg);
 		}
 	}
+    
+    &.fs-bible {
+		background-color:var(--color-yellow);
+		border-color:var(--color-yellow-darker);
+		&:before {
+			content: '\f02d';
+			color: var(--color-yellow-darker);
+			transform: rotate(-10deg);
+		}
+	}
+    
+    &.fs-play {
+        &:before {
+            content: '\f04b';
+            padding-left: 5px;
+        }
+    }
 
 
 }
@@ -240,7 +479,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 **/
 .fs-attentionseeker {
 	animation: fs-pulse 2s ease-in-out;
-	animation-iteration-count: 0;
+	animation-iteration-count: infinite;
 	animation-fill-mode: both;
 
 	&.fs-animated {
@@ -252,24 +491,254 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	}
 }
 
+
+
+
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next,
+  .active.carousel-item-right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.carousel-control-prev:focus, .carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-inner {
+    padding-bottom: 4em;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators li::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.carousel-indicators li::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  der "spitz" unterhalb einer sprechblase.
 **/
-@svg speechthingyright {
+
+
+@svg speechthingyleft {
 	@polygon {
-		points: 20,0 20,40 0,0;
+		points: 50,0 50,50 20,0;
 		fill: var(--color);
 	}
 	@ellipse {
-		rx:  10;
+		rx:  20;
 		ry: 2;
-		cx: 30;
-		cy: 45;
+		cx: 50;
+		cy: 55;
 		fill: var(--color);
 	}
 }
 
-@svg speechthingyleft {
+@svg speechthingyright {
 	@polygon {
 		points: 30,0 30,40 50,0;
 		fill: var(--color);
@@ -297,6 +766,23 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	}
 }
 
+@svg biblequote-expanded-bottom {
+	@ellipse {
+		rx:  150;
+		ry: 6;
+		cx: 150;
+		cy: 10;
+		fill: var(--color);
+	}
+	
+}
+
+@svg biblequote-expanded-top {
+	@polygon {
+		points: 10,15 50,0 90,15;
+		fill: var(--color);
+	}
+}
 
 
 

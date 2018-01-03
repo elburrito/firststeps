@@ -8,4 +8,8 @@ check MAINDIRECTORY/package.json for the list of modules..
 @import "variables.css";
 @import "layout.css";
 @import "contentelements.css";
-@import "typography.css"
+@import "typography.css";
+@import "helpers.css";
+@import "chapters.css"; 
+@import "images.css";  
+   
