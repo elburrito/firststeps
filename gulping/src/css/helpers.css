@@ -2,6 +2,46 @@
 helpers
 **/
 
+.fs-light-text {
+    font-size: 1.1875rem;
+    font-family: "Lato", serif;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 1.15;
+}
+
+p.fs-icon {
+    padding-left: 35px;
+    position: relative;
+    
+    &.fs-icon-pen:before {        
+        content: '\f040';
+    }
+    
+    &.fs-icon-bible:before {        
+        content: '\f02d';
+    }
+}
+
+.fs-icon:before {
+    font-family:FontAwesome;
+    content: '\f040';
+    color: #fff;
+    font-weight: normal;
+    display: block;
+    font-size: 15px !important;
+    text-align: center;
+    
+    
+}
+
+p.fs-icon:before {
+    width: 30px;
+    left: -3px;
+    position: absolute;
+    top: 4px;
+}
+
 .center-text {
     text-align: center;
 }
@@ -16,16 +56,20 @@ helpers
     margin-bottom: 8em;
 }
 
+.fs-question-inline {
+    color: var(--color-red);
+}
+
 /**
 animations
 **/
-.fs-toggler,.fs-videocontainer,.carousel,.fs-button {
+.fs-toggler,.fs-videocontainer,.carousel,.fs-button, .toggle {
     box-shadow: none;
     transition: box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.fs-toggler:hover,.fs-videocontainer:hover,.carousel:hover,.fs-button:hover {
+.fs-toggler:hover,.fs-videocontainer:hover,.carousel:hover,.fs-button:hover,.toggle:hover {
     box-shadow: rgba(103, 171, 175, 0.45) 0px -1px 0px 12px;
 }
 

@@ -1,6 +1,7 @@
 var postcss = require('gulp-postcss');
 var gulp = require('gulp');
 var atImport = require('postcss-import');
+var htmlrender = require('gulp-htmlrender');
 
 
 
@@ -27,15 +28,16 @@ gulp.task('js', function () {
 });
 
 gulp.task('html', function () {
-    return gulp.src('./src/*.html')
-        .pipe(gulp.dest('../inc/assets/html/'));
+    return gulp.src('./src/html/*.html', {read: false})
+        .pipe(htmlrender.render())
+        .pipe(gulp.dest('../static_pages/'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('./src/css/**/*.*', ['css']);
     gulp.watch('./src/js/**/*.*', ['js']);
-    gulp.watch('./src/*.html', ['html']);
+    gulp.watch('./src/html/**/*.html', ['html']);
 });
 
 gulp.task('default', ['css','js','html']);

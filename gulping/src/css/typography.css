@@ -33,20 +33,15 @@ h2 {
 
 
 }
-h3 {
+h3, h4, header {
     font-size: 1.6875rem;
     color: #575756;
-    margin-bottom: 1em;
+    margin-bottom: 0.65em;
     letter-spacing: 0.08em;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
-h4, header {
-    color: #575756;
-    font-size: 1.25rem;
-    font-weight: 900;
-    margin-bottom: 2em;
-}
 
 header {
     &.fs-hero {
@@ -76,7 +71,7 @@ body a:hover {
     text-decoration: none;
 }
 
-p.fs-bodytext, p.caption {
+p.fs-bodytext, p.caption,.fs-biblequote-inline, label {
     font-size: 1.25rem;
     font-weight: 100;
 }

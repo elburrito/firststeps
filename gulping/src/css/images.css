@@ -17,9 +17,37 @@ topic 01 - wer ist gott
     background-size: initial;
 }
 
+.fs-img-challenge-background {
+    background: url(var(--path-static-images)tp_02_47.png) no-repeat scroll 31% bottom;
+    background-size: initial;
+}
+
+#fs-result-icon {
+    background: url(../img/tp_02_62.png) no-repeat scroll left top;
+    padding-left: 290px;
+    height: 170px;
+    line-height: 152px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#selfcheck-result {
+    color: var(--color-blue);
+    &.conflict {
+        color: var(--color-red);
+    }
+}
+
+#tp02_selfcheck .checkbox {
+    margin-bottom: 1em;
+}
+
 div#carouselGodImages img {
     max-height: 195px;
 }
+
+
 
 div#carouselGodImages {
 }
