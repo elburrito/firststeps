@@ -710,8 +710,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
     
 	.fs-row {
 		margin: 0 auto;
-		max-width: 720px;
-		width: auto;
+		width: 720px;
 	}
 	.fs-hero-row {
 		margin: 0 auto;
@@ -773,7 +772,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 
 }
 
-.fs-hero-row:after, .fs-chapter-intro:after {
+.fs-hero-row:after, .fs-chapter-intro:after, .fs-page-index #masthead:after {
 		display: block;
 		margin: 0 auto;
 		width: 330px;

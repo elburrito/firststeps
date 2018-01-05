@@ -2,6 +2,79 @@
 images.css
 **/
 
+
+/**
+index page / overview
+**/
+
+.fs-page-index #masthead:after {
+    background-image: url(var(--path-static-images)white_after.png);
+}
+.fs-chapter-overview {
+    background-color: var(--color-red);
+    padding-top: 4em;
+    
+    p, p.bodytext   {
+        color: #fff;
+    }
+}
+
+ 
+
+.fs-tp-overview {
+    .fs-tp-thumb {
+        width: 150px;
+        height: 180px;
+        border-radius: 10px;
+        background: #CE5757;
+        border: 4px solid #CE5757;
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-block;
+        margin: 0px 12px 15px 0px;
+        
+        
+        img {
+            max-width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .fs-tp-caption {
+            font-size: 14px;
+            font-size: 0.875rem;
+            line-height: 1.2;
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            padding: 4px 2px;
+            border-radius: 5px;
+            width: 100%;
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            
+            .fs-nr {
+                color: var(--color-lightgrey);
+                display: table-cell;
+                padding: 0px 4px 0px 7px;
+                vertical-align: middle;
+            }
+            
+            .fs-tp-title {
+                color: var(--color-red);
+                display: table-cell;
+                margin-left: 50px;
+            }
+        }
+        
+        &:hover {
+            border-color: #fff;
+        }
+    }
+}
+
 /**
 topic 01 - wer ist gott
 */
@@ -48,6 +121,3 @@ div#carouselGodImages img {
 }
 
 
-
-div#carouselGodImages {
-}

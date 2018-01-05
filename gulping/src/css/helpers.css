@@ -2,6 +2,10 @@
 helpers
 **/
 
+.fs-invisible {
+    visibility: hidden;
+}
+
 .fs-light-text {
     font-size: 1.1875rem;
     font-family: "Lato", serif;

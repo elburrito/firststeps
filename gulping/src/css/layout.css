@@ -15,12 +15,6 @@ body {
   background-color: #fff;
 }
 
-header {
-	color: blue;
-}
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -160,10 +154,21 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
     color: #fff;
     position: relative;
     padding: 2px 30px;
-    margin-top: 4em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em; 
         
     &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -60px;   
+        left: -112px;
+        width: 330px;
+        height: 45px;
+		background: url(var(--path-static-images)bottom_before.png) no-repeat scroll center bottom;
+    }
+    
+    .ready {
         color: #5D5D5D;
         font-family:FontAwesome;
         content: '\f062';

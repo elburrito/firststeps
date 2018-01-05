@@ -3,7 +3,7 @@
 /**
 stuff from typography.css
 **/
-h1, h2, h3, h4, h5, h6, header {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', serif;
     line-height: 1;
     letter-spacing: -1px;
@@ -33,23 +33,25 @@ h2 {
 
 
 }
-h3, h4, header {
+h3, h4 {
     font-size: 1.6875rem;
     color: #575756;
     margin-bottom: 0.65em;
     letter-spacing: 0.08em;
     font-weight: 900;
     text-transform: uppercase;
-}
-
-
-header {
+    
     &.fs-hero {
         text-transform: uppercase;
         font-size: 2.25rem;
         color: var(--color-red);
         margin-bottom: 0.2em;
     }
+}
+
+
+header {
+    
 }
 
 em {
