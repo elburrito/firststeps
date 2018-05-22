@@ -1,7 +1,7 @@
 
 npm-debug.log
 logs
-node_modules
+config/node_modules
 
 pids
 .npm

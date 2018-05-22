@@ -1,0 +1,48 @@
+var postcss = require('gulp-postcss');
+var gulp = require('gulp');
+var atImport = require('postcss-import');
+var htmlrender = require('gulp-htmlrender');
+
+
+
+// ********
+// different tasks that can be triggered
+// ********
+gulp.task('css', function () {
+
+  const config = (file) => ({
+          plugins: [
+              require('postcss-import')({ root: '../src/css *' }),
+              require('precss'),
+              require('postcss-cssnext'),
+              require('postcss-write-svg')
+          ]
+      });
+
+    return gulp.src('../src/css/main.css') /** ** /*.* */
+        .pipe(postcss(config))
+        .pipe(gulp.dest('../dist/assets/css/'));
+});
+
+gulp.task('js', function () {
+    return gulp.src('../src/js/**/*.*')
+        .pipe(gulp.dest('../dist/assets/js/'));
+});
+
+gulp.task('html', function () {
+    return gulp.src('../src/html/*.html', {read: false})
+        .pipe(htmlrender.render())
+        .pipe(gulp.dest('../dist/'));
+});
+
+
+
+// Watch Files For Changes . if something happenes (a file is saved) gulp triggers an action 
+gulp.task('watch', function() {
+    gulp.watch('../src/css/**/*.*', ['css']);
+    gulp.watch('../src/js/**/*.*', ['js']);
+    gulp.watch('../src/html/**/*.html', ['html']);
+});
+
+//the default task that is triggered when gulp is executed
+gulp.task('default', ['css','js','html']);
