@@ -847,7 +847,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     width: 130px;
     height: 42px;
     border-width: 3px;
-    
+
     border-color: #CE5757;
     background-color: #E56A6A
 }
@@ -867,13 +867,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 
 .toggle-group .btn.btn-default {
-    
+
         border-color: #468F98;
         background-color: #6BA6AD;
 }
 
 .toggle-group .btn.btn-primary {
-    
+
         border-color: #CE5757;
         background-color: #E56A6A;
 }
@@ -968,6 +968,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 .fs-container .fs-row {
 		margin: 0 auto;
 		width: 720px;
+    padding: 0px 15px;
 	}
 
 .fs-container .fs-hero-row {
@@ -1027,7 +1028,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 			/*line-height: 0.95;*/
 	}
 
-.fs-chapter-intro a { 
+.fs-chapter-intro a {
         margin: 10px 0;
 	}
 
@@ -1062,7 +1063,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	position:relative;
 	display: inline-block;
     min-width: 250px;
-    
+
     color: #ffffff;
     background: #E56A6A;
     border: 10px solid #CE5757;
@@ -1080,7 +1081,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
         font-weight: lighter;
         font-style: italic;
         font-size: 0.7em;
-        color: #FFEEB7; 
+        color: #FFEEB7;
         padding-right: 0.3em;
     }
 
@@ -1229,8 +1230,8 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 .fs-videobox .fs-videooverlay {
         /*till now*/
         display: none;
-        
-        
+
+
         width: 100%;
         height: 100%;
         position: absolute;
@@ -1282,7 +1283,7 @@ p.caption {
 infoicons
 **/
 
-.fs-infothing { 
+.fs-infothing {
 	width: 52px;
 	height: 52px;
 	background:#E56A6A;
@@ -1582,11 +1583,11 @@ infoicons
 }
 
 .toggle {
-    
+
 }
 
 .toggle-group {
-    
+
 }
 
 /**

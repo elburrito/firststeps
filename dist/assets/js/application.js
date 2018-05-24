@@ -23,4 +23,13 @@ $(document).ready(function() {
 
         return;
     });
+
+    var waypointChapterCheckbox = new Waypoint({
+      element: $('.animated-onviewport'),
+      handler: function(direction) {
+        $(this.element).removeClass('.animated-onviewport').addClass('animated');
+        //console.log('Scrolled to checkbox!')
+      },
+      offset: 20
+    });
 });

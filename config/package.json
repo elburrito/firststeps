@@ -8,7 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "waypoints": "^4.0.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-htmlrender": "^0.3.0",
