@@ -25,11 +25,11 @@ $(document).ready(function() {
     });
 
     var waypointChapterCheckbox = new Waypoint({
-      element: $('.animated-onviewport'),
+      element: document.getElementById('Syav9Sm17'),
       handler: function(direction) {
-        $(this.element).removeClass('.animated-onviewport').addClass('animated');
-        //console.log('Scrolled to checkbox!')
-      },
-      offset: 20
+        //$(this.element).removeClass('.animated-onviewport').addClass('animated');
+        console.log('Scrolled to checkbox!');
+      }
+      //offset: 20
     });
 });
