@@ -1381,6 +1381,17 @@ infoicons
 	        animation-play-state: paused;/*stop animation*/
 }
 
+/** todo: make it work using animations instead of transitions to make the animation more fancy **/
+
+.pulse-once {
+  -webkit-box-shadow: 0 0 3px 8px rgba(243, 53, 53, 0.21961);
+          box-shadow: 0 0 3px 8px rgba(243, 53, 53, 0.21961);
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
 .carousel {
   position: relative;
 }
@@ -1613,6 +1624,42 @@ infoicons
 }
 
 @keyframes fs-pulse {
+    0% {
+     -webkit-transform: scale(1, 1);
+             transform: scale(1, 1);
+    }
+
+		50% {
+     -webkit-transform: scale(1.1, 1.1);
+             transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes fs-pulse-heavy {
+    0% {
+     -webkit-transform: scale(1, 1);
+             transform: scale(1, 1);
+    }
+
+		50% {
+     -webkit-transform: scale(1.1, 1.1);
+             transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+}
+
+@keyframes fs-pulse-heavy {
     0% {
      -webkit-transform: scale(1, 1);
              transform: scale(1, 1);

@@ -1121,8 +1121,11 @@ infoicons
 	}
 }
 
-
-
+/** todo: make it work using animations instead of transitions to make the animation more fancy **/
+.pulse-once {
+  box-shadow: 0 0 3px 8px #f3353538;
+  transition: box-shadow 0.4s ease-in-out;
+}
 
 
 .carousel {
@@ -1418,6 +1421,21 @@ infoicons
 
 
 @keyframes fs-pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+		50% {
+     transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+@keyframes fs-pulse-heavy {
     0% {
      transform: scale(1, 1);
     }
