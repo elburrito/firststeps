@@ -20,15 +20,21 @@ gulp.task('css', function () {
       });
 
     return gulp.src('../src/css/main.css') /** ** /*.* */
-        .pipe(postcss(config))
+        .pipe(postcss(config)) 
         .pipe(gulp.dest('../dist/assets/css/'));
 });
 
+/**
+do nothing - just copy them to the dist folder
+*/
 gulp.task('js', function () {
     return gulp.src('../src/js/**/*.*')
         .pipe(gulp.dest('../dist/assets/js/'));
 });
 
+/**
+replace partials then copy to dist
+*/
 gulp.task('html', function () {
     return gulp.src('../src/html/*.html', {read: false})
         .pipe(htmlrender.render())
@@ -37,7 +43,7 @@ gulp.task('html', function () {
 
 
 
-// Watch Files For Changes . if something happenes (a file is saved) gulp triggers an action 
+// Watch Files For Changes . if something happenes (a file is saved) gulp triggers an action
 gulp.task('watch', function() {
     gulp.watch('../src/css/**/*.*', ['css']);
     gulp.watch('../src/js/**/*.*', ['js']);
