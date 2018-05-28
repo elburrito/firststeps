@@ -1721,8 +1721,8 @@ h3, h4 {
     color: #575756;
     margin-bottom: 0.65em;
     letter-spacing: 0.08em;
-    font-weight: 900;
-    text-transform: uppercase
+    font-weight: 900
+    /* text-transform: uppercase; */
 }
 
 h3.fs-hero, h4.fs-hero {
@@ -1734,7 +1734,7 @@ h3.fs-hero, h4.fs-hero {
 }
 
 header {
-    
+
 }
 
 em {
