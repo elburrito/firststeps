@@ -6,7 +6,7 @@ check MAINDIRECTORY/package.json for the list of modules..
 **/
 
 :root {
-	/** 
+	/**
 		colors
 	**/
 
@@ -14,8 +14,8 @@ check MAINDIRECTORY/package.json for the list of modules..
     /**
         path
     **/
-    
-    
+
+
 	/**
 		sizes
 	**/
@@ -38,7 +38,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5; 
-  color: #5D5D5D;
+  color: #606060;
   text-align: left;
   background-color: #fff;
 }
@@ -63,7 +63,7 @@ header#masthead {
 }
 
 header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
-    color: #5D5D5D;
+    color: #E8E8E8;
     font-weight: lighter;
     font-size: 14.4px;
     font-size: 0.9rem;
@@ -1057,25 +1057,47 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	bottom: -35px;
 }
 
+/**
+boxes and frames
+**/
+
 .fs-box {
 	padding: 0.5em 0.7em 1em;
 	border-radius: 20px;
 	position:relative;
 	display: inline-block;
-    min-width: 250px;
+   min-width: 250px;
+   border: 10px solid transparent
+}
 
-    color: #ffffff;
-    background: #E56A6A;
-    border: 10px solid #CE5757;
+.fs-box.fs-box-default {
+	color: #ffffff;
+	background: #E56A6A;
+	border-color: #CE5757;
+}
+
+.fs-box.fs-box-neutral {
+	background: #E8E8E8;
+	border-color: #BFBFBF;
+}
+
+.fs-box.fs-box-dashed {
+	border-style: dashed;
+}
+
+.fs-box .fs-box-title {
+      font-family: 'Arvo', serif;
+		font-size: 20px;
+      font-weight: bold;
 }
 
 .fs-box .fs-text {
-        margin: 0.5em 0 1em;
-        font-weight: 100;
-        font-family: 'Lato', serif;
-        line-height: 1.65;
-        text-align: left;
-    }
+     margin: 0.5em 0 1em;
+     font-weight: 100;
+     font-family: 'Lato', serif;
+     line-height: 1.65;
+     text-align: left;
+}
 
 .fs-box i {
         font-weight: lighter;
@@ -1083,7 +1105,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
         font-size: 0.7em;
         color: #FFEEB7;
         padding-right: 0.3em;
-    }
+}
 
 .fs-box.fs-question, .fs-box.fs-biblebold {
 	font-family: 'Arvo', serif;
@@ -1205,9 +1227,16 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	left: 20%;
 }
 
-.fs-box {
-	background: #6BA6AD;
-	border-color: #468F98;
+.fs-box-2 {
+    border: 5px dashed #E56A6A;
+    border-radius: 20px;
+    margin: 2em;
+    padding: 2em 3em 1em;
+    position: relative;
+}
+
+iframe {
+   max-width: 100%;
 }
 
 .fs-videobox {
@@ -1677,6 +1706,54 @@ infoicons
     }
 }
 
+/************
+verschiedene listen (ul,ol)
+*/
+
+.fs-question-list {
+   list-style: none;
+   counter-reset: li;
+   padding-left: 0px;
+   margin-top: 1em;
+
+   /* ha zersch nid wöue farbagabe bruche.. aber eigentlich isches ja no gäbig es elment "gelb" ds nenne u när wirds gelb.. */
+}
+
+.fs-question-list li {
+   	margin-bottom: 1em;
+   	margin-left: 60px;
+      counter-increment: li;
+   }
+
+.fs-question-list li::before {
+      content: counter(li);
+      color: white;
+      display: inline-block;
+      margin-left: -55px;
+      margin-right: 15px;
+      margin-top: -10px;
+      background:#E56A6A;
+      border: 6px solid #CE5757;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 26px;
+      line-height: 29px;
+      vertical-align: top;
+
+      font-style: normal;
+      font-weight: bold;
+      font-family: 'Arvo', serif;
+	}
+
+.fs-question-list.fs-color-yellow li::before {
+	background-color: #FFEEB7;
+	border-color: #E5AA3B;
+	color: #E5AA3B;
+}
+
 /*
 end of stuff from contentelements.css
 */
@@ -1692,6 +1769,13 @@ h1, h2, h3, h4, h5, h6 {
     word-spacing: 2px;
     font-weight: bold;
 }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+      display: block;
+      font-size: 60%;
+      margin-top: 0.5em;
+      font-weight: normal;
+   }
 
 h2 {
 	font-size: 60px;
@@ -1976,9 +2060,10 @@ chapter 01 - austauschen
 	background-image: url(../img/chapter_02_after.png);
 }
 
-.fs-chapter-discover .fs-box {
+.fs-chapter-discover .fs-box.fs-box-default {
         background: #6BA6AD;
         border-color: #468F98;
+        color: #fff;
 }
 
 .fs-chapter-discover .fs-box.fs-question:after, .fs-chapter-discover .fs-box.fs-biblebold:after {
@@ -2000,6 +2085,7 @@ chapter 03 - Tun
 .fs-chapter-do .fs-box {
         background: #D35B28;
         border-color: #DC982D;
+        color: #fff;
     }
 
 .fs-chapter-do .fs-box.fs-question:after, .fs-chapter-do .fs-box.fs-biblebold:after {
@@ -2007,11 +2093,11 @@ chapter 03 - Tun
     }
 
 .fs-chapter-do .fs-tilted-background {
-	   background: linear-gradient(-4deg, #DC982D 130px, #FFFFFF 131px); 
+	   background: linear-gradient(-4deg, #DC982D 130px, #FFFFFF 131px);
     }
 
 .fs-chapter-do .fs-tilted-background-2 {
-	   background: linear-gradient(4deg, #DC982D 130px, #FFFFFF 131px); 
+	   background: linear-gradient(4deg, #DC982D 130px, #FFFFFF 131px);
     }
 
 .fs-chapter-pray .fs-hero-row {
@@ -2080,7 +2166,7 @@ index page / overview
         }
 
 .fs-tp-overview .fs-tp-thumb .fs-tp-caption .fs-nr {
-                color: #5D5D5D;
+                color: #E8E8E8;
                 display: table-cell;
                 padding: 0px 4px 0px 7px;
                 vertical-align: middle;

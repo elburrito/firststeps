@@ -19,9 +19,14 @@ gulp.task('css', function () {
           ]
       });
 
-    return gulp.src('../src/css/main.css') /** ** /*.* */
-        .pipe(postcss(config)) 
-        .pipe(gulp.dest('../dist/assets/css/'));
+      var rs = gulp.src('../src/css/main.css') /** ** /*.* */
+          .pipe(postcss(config))
+          .pipe(gulp.dest('../dist/assets/css/'));
+
+      rs = gulp.src('../src/css/kapitel/03.css') /** ** /*.* */
+           .pipe(postcss(config))
+           .pipe(gulp.dest('../dist/assets/kapitel/03/css/'));
+      return rs;
 });
 
 /**

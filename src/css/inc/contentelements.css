@@ -800,24 +800,45 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	bottom: -35px;
 }
 
+
+/**
+boxes and frames
+**/
+
 .fs-box {
 	padding: 0.5em 0.7em 1em;
 	border-radius: var(--size-box-radius);
 	position:relative;
 	display: inline-block;
-    min-width: 250px;
+   min-width: 250px;
+   border: 10px solid transparent;
 
-    color: #ffffff;
-    background: var(--color-red);
-    border: 10px solid var(--color-red-darker);
+   &.fs-box-default {
+       color: #ffffff;
+       background: var(--color-red);
+       border-color: var(--color-red-darker);
+   }
+   &.fs-box-neutral {
+      background: var(--color-lightgrey);
+      border-color: var(--color-grey);
+   }
+   &.fs-box-dashed {
+      border-style: dashed;
+   }
 
-    .fs-text {
-        margin: 0.5em 0 1em;
-        font-weight: 100;
-        font-family: 'Lato', serif;
-        line-height: 1.65;
-        text-align: left;
-    }
+   .fs-box-title {
+      font-family: var(--font-alternative1);
+		font-size: 20px;
+      font-weight: bold;
+   }
+
+   .fs-text {
+     margin: 0.5em 0 1em;
+     font-weight: 100;
+     font-family: 'Lato', serif;
+     line-height: 1.65;
+     text-align: left;
+   }
 
     i {
         font-weight: lighter;
@@ -946,12 +967,22 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
             top: 105%;
             left: 20%;
         }
-    }background: #6BA6AD;
-        border-color: #468F98;
+    }
+}
+.fs-box-2 {
+    border: 5px dashed #E56A6A;
+    border-radius: 20px;
+    margin: 2em;
+    padding: 2em 3em 1em;
+    position: relative;
 }
 
 
 
+
+iframe {
+   max-width: 100%;
+}
 
 .fs-videobox {
     color: #fff;
@@ -1449,6 +1480,56 @@ infoicons
     transform: scale(1, 1);
     }
 }
+
+
+/************
+verschiedene listen (ul,ol)
+*/
+.fs-question-list {
+   list-style: none;
+   counter-reset: li;
+   padding-left: 0px;
+   margin-top: 1em;
+
+   li {
+   	margin-bottom: 1em;
+   	margin-left: 60px;
+      counter-increment: li;
+   }
+
+   li::before {
+      content: counter(li);
+      color: white;
+      display: inline-block;
+      margin-left: -55px;
+      margin-right: 15px;
+      margin-top: -10px;
+      background:var(--color-red);
+      border: 6px solid var(--color-red-darker);
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 26px;
+      line-height: 29px;
+      vertical-align: top;
+
+      font-style: normal;
+      font-weight: bold;
+      font-family: var(--font-alternative1);
+	}
+
+   /* ha zersch nid wöue farbagabe bruche.. aber eigentlich isches ja no gäbig es elment "gelb" ds nenne u när wirds gelb.. */
+   &.fs-color-yellow li::before {
+      background-color: var(--color-yellow);
+      border-color: var(--color-yellow-darker);
+      color: var(--color-yellow-darker);
+   }
+}
+
+
+
 
 /*
 end of stuff from contentelements.css
