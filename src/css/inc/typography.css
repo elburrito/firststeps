@@ -80,9 +80,15 @@ body a:hover {
     text-decoration: none;
 }
 
+/*
 p.fs-bodytext, p.caption,.fs-biblequote-inline, label {
     font-size: 1.25rem;
     font-weight: 100;
+}
+*/
+.entry-content {
+   font-size: 1.25rem;
+   font-weight: 100;
 }
 
 .navbar-brand a {
