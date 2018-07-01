@@ -249,6 +249,18 @@ stuff from contentelements.css
 }
 */
 
+.after-arrow:after {
+    content: "\f063";
+    font-family: FontAwesome;
+    display:  block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #E56A6A;
+    margin: 2em 0em;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -1058,6 +1070,70 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 }
 
 /**
+quotes / text mark
+*/
+
+.fs-quote {
+   padding-left: 2em;
+   position: relative;
+   margin-bottom: 2.5em;
+   margin-top: 1em
+}
+
+.fs-quote:before {
+	border-left: 10px solid #E8E8E8;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.fs-quote .fs-quote-content {
+      font-style: italic;
+}
+
+.fs-quote .fs-quote-begin, .fs-quote .fs-quote-end {
+      position: relative;
+      width: 25px;
+      display: inline-block;
+}
+
+.fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
+      font-family: FontAwesome;
+      display: inline-block;
+      font-size: 1em;
+      position: absolute;
+      top: -27px;
+      left: 0;
+}
+
+.fs-quote .fs-quote-begin:before {
+      content: "\f10d";
+}
+
+.fs-quote .fs-quote-end:before {
+      content: "\f10e";
+      right: 0;
+}
+
+.fs-quote .fs-quote-writer {
+      font-family: 'Arvo', serif;
+      font-size: 0.9em;
+      display: block;
+      text-align: right;
+      font-weight: bold;
+      margin: 0.5em 0 1em;
+      position: absolute;
+      right: 0px;
+      font-size: 0.7em;
+      border-right: 4px solid #E8E8E8;
+      padding-right: 0.5em;
+      /*bottom: 0px; proof on different browsers*/
+}
+
+/**
 boxes and frames
 **/
 
@@ -1842,10 +1918,17 @@ body a:hover {
     text-decoration: none;
 }
 
-p.fs-bodytext, p.caption, .fs-biblequote-inline, label {
-    font-size: 20px;
+/*
+p.fs-bodytext, p.caption,.fs-biblequote-inline, label {
     font-size: 1.25rem;
     font-weight: 100;
+}
+*/
+
+.entry-content {
+   font-size: 20px;
+   font-size: 1.25rem;
+   font-weight: 100;
 }
 
 .navbar-brand a {
