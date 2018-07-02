@@ -757,7 +757,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 		line-height: 3.6875rem;
 	}
 	p {
-		font-size: 1.3125em;
+		font-size: 1.3125rem;
 		line-height: 1.33333;
 	}
 
@@ -770,7 +770,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	}
 
 	h1 {
-			font-size: 5.5625em;
+			font-size: 5.5625rem;
 			font-weight: 900;
 			text-transform: uppercase;
 			/*line-height: 0.95;*/
