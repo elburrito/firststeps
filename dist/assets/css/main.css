@@ -987,6 +987,24 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 			color:#ffffff;
 		}
 
+.fs-chapter {
+   padding: 32px 0;
+   padding: 2rem 0;
+}
+
+.fs-chapter h2 {
+      text-align: center;
+   }
+
+.fs-chapter .cta {
+      margin: 40px auto 0;
+   }
+
+.fs-chapter .fs-content {
+      width: 100%;
+      display: block;
+   }
+
 .fs-chapter-intro {
 	background: #E56A6A;
 	color: #ffffff;
