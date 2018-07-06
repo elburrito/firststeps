@@ -14,7 +14,7 @@ chapter 01 - austauschen
     h2:before {
         background-image: url(var(--path-static-images)chp01_icon_color.png);
     }
-    
+
     .fs-box {
         background: var(--color-red);
         border-color: var(--color-red-darker);
@@ -35,14 +35,15 @@ chapter 01 - austauschen
     }
     .fs-hero-row {
         background-color: var(--color-blue-darker);
-        
+
         &:after {
-            background-image: url(var(--path-static-images)chapter_02_after.png); 
+            background-image: url(var(--path-static-images)chapter_02_after.png);
         }
     }
-    .fs-box {
+    .fs-box.fs-box-default {
         background: var(--color-blue);
         border-color: var(--color-blue-darker);
+        color: #fff;
     }
     .fs-box.fs-question:after, .fs-box.fs-biblebold:after {
         background: svg(speechthingyleft param(--color var(--color-blue-darker)));
@@ -58,23 +59,24 @@ chapter 03 - Tun
 .fs-chapter-do {
     .fs-hero-row {
         background-color: var(--color-orange);
-        
+
         &:after {
-            background-image: url(var(--path-static-images)chapter_03_after.png); 
+            background-image: url(var(--path-static-images)chapter_03_after.png);
         }
     }
     .fs-box {
         background: var(--color-orange);
         border-color: var(--color-brown);
+        color: #fff;
     }
     .fs-box.fs-question:after, .fs-box.fs-biblebold:after {
         background: svg(speechthingyleft param(--color var(--color-orange-darker)));
     }
     .fs-tilted-background {
-	   background: linear-gradient(-4deg, var(--color-brown) 130px, #FFFFFF 131px); 
+	   background: linear-gradient(-4deg, var(--color-brown) 130px, #FFFFFF 131px);
     }
     .fs-tilted-background-2 {
-	   background: linear-gradient(4deg, var(--color-brown) 130px, #FFFFFF 131px); 
+	   background: linear-gradient(4deg, var(--color-brown) 130px, #FFFFFF 131px);
     }
 }
 
@@ -82,10 +84,9 @@ chapter 03 - Tun
 .fs-chapter-pray {
     .fs-hero-row {
         background-color: var(--color-brown);
-        
+
         &:after {
-            background-image: url(var(--path-static-images)chapter_04_after.png); 
+            background-image: url(var(--path-static-images)chapter_04_after.png);
         }
     }
 }
-

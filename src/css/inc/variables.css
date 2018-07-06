@@ -1,6 +1,6 @@
 
 :root {
-	/** 
+	/**
 		colors
 	**/
 	--color-red: #E56A6A;
@@ -11,17 +11,17 @@
 
 	--color-blue:#6BA6AD;
 	--color-blue-darker: #468F98;
-    
+
     --color-orange:#D35B28;
 	--color-orange-darker: #D35B28;
-    
+
     --color-brown:#DC982D;
 	--color-brown-darker: #DC982Dz;
 
-	--color-lightgrey:#5D5D5D;
+	--color-lightgrey:#E8E8E8;
+	--color-grey:#BFBFBF;
 
-
-	--color-main-text: var(--color-lightgrey);
+	--color-main-text: #606060;
 	--color-head-background:var(--color-red);
 
 
@@ -29,8 +29,8 @@
         path
     **/
     --path-static-images: ../img/;
-    
-    
+
+
 	/**
 		sizes
 	**/
