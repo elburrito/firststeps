@@ -26,6 +26,10 @@ gulp.task('css', function () {
       rs = gulp.src('../src/css/kapitel/03.css') /** ** /*.* */
            .pipe(postcss(config))
            .pipe(gulp.dest('../dist/assets/kapitel/03/css/'));
+
+       rs = gulp.src('../src/css/kapitel/04.css') /** ** /*.* */
+            .pipe(postcss(config))
+            .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
       return rs;
 });
 
