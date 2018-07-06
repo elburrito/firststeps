@@ -4,12 +4,16 @@ stuff from layout.CSS
 @note: we use the bootstrap 4 grid from https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5; 
+  line-height: 1.5;
   color: var(--color-main-text);
   text-align: left;
   background-color: #fff;
@@ -30,7 +34,7 @@ header#masthead {
 	position: relative;
 	z-index: 1;
 
-	
+
 }
 
 header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
@@ -155,19 +159,19 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
     position: relative;
     padding: 2px 30px;
     margin-top: 1em;
-    margin-bottom: 1em; 
-        
+    margin-bottom: 1em;
+
     &:before {
         content: '';
         display: block;
         position: absolute;
-        top: -60px;   
+        top: -60px;
         left: -112px;
         width: 330px;
         height: 45px;
 		background: url(var(--path-static-images)bottom_before.png) no-repeat scroll center bottom;
     }
-    
+
     .ready {
         color: #5D5D5D;
         font-family:FontAwesome;
