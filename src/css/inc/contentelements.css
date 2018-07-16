@@ -702,34 +702,26 @@ add some margin to similar objects
     }
 }
 
-/**
-simple Grid - dont want to use the flexibility from bootstrap as it uses too much markup
-**/
-.fs-container {
-	width: 100%;
 
-	.fs-row {
-		margin: 0 auto;
-		width: 720px;
-    padding: 0px 15px;
-	}
-	.fs-hero-row {
-		margin: 0 auto;
-		text-align: center;
-		padding: 2em 0em;
-		width: auto;
-		max-width: 100%;
-		position: relative;
-		margin-bottom: 6em;
-
-		background: var(--color-red);
-
-		h2 {
-			color:#ffffff;
-		}
-	}
+.container {
+   position: relative;
 }
 
+.fs-hero-row {
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em 0em;
+	width: auto;
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 6em;
+
+	background: var(--color-red);
+
+	h2 {
+		color:#ffffff;
+	}
+}
 
 .fs-chapter {
    padding: 2rem 0;

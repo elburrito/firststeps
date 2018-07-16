@@ -957,35 +957,25 @@ add some margin to similar objects
         font-weight: 900;
     }
 
-/**
-simple Grid - dont want to use the flexibility from bootstrap as it uses too much markup
-**/
-
-.fs-container {
-	width: 100%;
+.container {
+   position: relative;
 }
 
-.fs-container .fs-row {
-		margin: 0 auto;
-		width: 720px;
-    padding: 0px 15px;
+.fs-hero-row {
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em 0em;
+	width: auto;
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 6em;
+
+	background: #E56A6A;
+}
+
+.fs-hero-row h2 {
+		color:#ffffff;
 	}
-
-.fs-container .fs-hero-row {
-		margin: 0 auto;
-		text-align: center;
-		padding: 2em 0em;
-		width: auto;
-		max-width: 100%;
-		position: relative;
-		margin-bottom: 6em;
-
-		background: #E56A6A;
-	}
-
-.fs-container .fs-hero-row h2 {
-			color:#ffffff;
-		}
 
 .fs-chapter {
    padding: 32px 0;
@@ -1829,8 +1819,8 @@ p.fs-icon.fs-icon-bible:before {
     display: block;
     font-size: 15px !important;
     text-align: center;
-    
-    
+
+
 }
 
 p.fs-icon:before {
@@ -1844,15 +1834,15 @@ p.fs-icon:before {
     text-align: center;
 }
 
-.fs-container .fs-margin-1 {
+.fs-margin-1 {
     margin-bottom: 2em;
 }
 
-.fs-container .fs-margin-2 {
+.fs-margin-2 {
     margin-bottom: 4em;
 }
 
-.fs-container .fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
+.fs-margin-3 {
     margin-bottom: 8em;
 }
 
