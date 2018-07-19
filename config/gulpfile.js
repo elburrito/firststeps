@@ -27,9 +27,23 @@ gulp.task('css', function () {
            .pipe(postcss(config))
            .pipe(gulp.dest('../dist/assets/kapitel/03/css/'));
 
-       rs = gulp.src('../src/css/kapitel/04.css') /** ** /*.* */
-            .pipe(postcss(config))
-            .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
+           rs = gulp.src('../src/css/kapitel/04.css') /** ** /*.* */
+               .pipe(postcss(config))
+               .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
+/*
+
+               rs = gulp.src('../src/css/kapitel/05.css')
+                   .pipe(postcss(config))
+                   .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
+
+
+
+                   rs = gulp.src('../src/css/kapitel/06.css')
+                       .pipe(postcss(config))
+                       .pipe(gulp.dest('../dist/assets/kapitel/06/css/'));
+
+*/
+
       return rs;
 });
 
