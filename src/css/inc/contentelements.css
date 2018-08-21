@@ -649,6 +649,7 @@ input[type="button"].btn-block {
 
 body img {
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 

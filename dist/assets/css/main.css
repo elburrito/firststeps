@@ -913,6 +913,7 @@ label.checkbox-inline {
 
 body img {
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 hr {
