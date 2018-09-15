@@ -962,17 +962,17 @@ add some margin to similar objects
 }
 
 .fs-tilted-background {
-	background: linear-gradient(-4deg, #FFEEB7 130px, #FFFFFF 131px);
+	background: linear-gradient(-4deg, #FFEEB7 130px, transparent 131px);
 	width: 100%;
 }
 
 .fs-tilted-background-2 {
-	background: linear-gradient(4deg, #FFEEB7 130px, #FFFFFF 131px);
+	background: linear-gradient(4deg, #FFEEB7 130px, transparent 131px);
 	width: 100%;
 }
 
 .fs-tilted-background-3 {
-	background: linear-gradient(1deg, #FFEEB7 230px, #FFFFFF 231px);
+	background: linear-gradient(1deg, #FFEEB7 230px, transparent 231px);
 	width: 100%;
 }
 
@@ -2165,15 +2165,15 @@ chapter 03 - Tun
     }
 
 .fs-chapter-do .fs-box.fs-question:after, .fs-chapter-do .fs-box.fs-biblebold:after {
-        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23D35B28'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23D35B28'/%3E%3C/svg%3E");
+        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='var%28--color%29'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='var%28--color%29'/%3E%3C/svg%3E");
     }
 
 .fs-chapter-do .fs-tilted-background {
-	   background: linear-gradient(-4deg, #DC982D 130px, #FFFFFF 131px);
+	   background: linear-gradient(-4deg, #DC982D 130px, transparent 131px);
     }
 
 .fs-chapter-do .fs-tilted-background-2 {
-	   background: linear-gradient(4deg, #DC982D 130px, #FFFFFF 131px);
+	   background: linear-gradient(4deg, #DC982D 130px, transparent 131px);
     }
 
 .fs-chapter-pray {

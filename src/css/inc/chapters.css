@@ -71,13 +71,13 @@ chapter 03 - Tun
         color: #fff;
     }
     .fs-box.fs-question:after, .fs-box.fs-biblebold:after {
-        background: svg(speechthingyleft param(--color var(--color-orange-darker)));
+        background: svg(speechthingyleft param(--color- var(--color-orange-darker)));
     }
     .fs-tilted-background {
-	   background: linear-gradient(-4deg, var(--color-brown) 130px, #FFFFFF 131px);
+	   background: linear-gradient(-4deg, var(--color-brown) 130px, transparent 131px);
     }
     .fs-tilted-background-2 {
-	   background: linear-gradient(4deg, var(--color-brown) 130px, #FFFFFF 131px);
+	   background: linear-gradient(4deg, var(--color-brown) 130px, transparent 131px);
     }
 }
 

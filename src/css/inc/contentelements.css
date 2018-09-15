@@ -679,23 +679,22 @@ add some margin to similar objects
     margin-bottom: 2em;
 }
 
-
 .fs-highmargin {
 	margin-top: 3em !important;
 	margin-bottom: 3em !important;
 }
 .fs-tilted-background {
-	background: linear-gradient(-4deg, #FFEEB7 130px, #FFFFFF 131px);
+	background: linear-gradient(-4deg, #FFEEB7 130px, transparent 131px);
 	width: 100%;
 }
 
 .fs-tilted-background-2 {
-	background: linear-gradient(4deg, #FFEEB7 130px, #FFFFFF 131px);
+	background: linear-gradient(4deg, #FFEEB7 130px, transparent 131px);
 	width: 100%;
 }
 
 .fs-tilted-background-3 {
-	background: linear-gradient(1deg, #FFEEB7 230px, #FFFFFF 231px);
+	background: linear-gradient(1deg, #FFEEB7 230px, transparent 231px);
 	width: 100%;
 }
 
