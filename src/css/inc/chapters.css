@@ -24,7 +24,7 @@ chapter 01 - austauschen
 
 
 .fs-chapter-discover {
-    &:before {
+    /*&:before {
         content: '';
         display: block;
         width: 100%;
@@ -40,7 +40,7 @@ chapter 01 - austauschen
         &:after {
             background-image: url(var(--path-static-images)chapter_02_after.png);
         }
-    }
+    }*/
     .fs-box.fs-box-default {
         background: var(--color-blue);
         border-color: var(--color-blue-darker);
@@ -58,13 +58,13 @@ chapter 03 - Tun
 */
 
 .fs-chapter-do {
-    .fs-hero-row {
+    /*.fs-hero-row {
         background-color: var(--color-orange);
 
         &:after {
             background-image: url(var(--path-static-images)chapter_03_after.png);
         }
-    }
+    }*/
     .fs-box {
         background: var(--color-orange);
         border-color: var(--color-brown);
@@ -83,11 +83,11 @@ chapter 03 - Tun
 
 
 .fs-chapter-pray {
-    .fs-hero-row {
+    /*.fs-hero-row {
         background-color: var(--color-brown);
 
         &:after {
             background-image: url(var(--path-static-images)chapter_04_after.png);
         }
-    }
+    }*/
 }

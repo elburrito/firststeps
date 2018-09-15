@@ -42,8 +42,8 @@
 stuff from typography.css
 **/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'latoregular', serif;
-    line-height: 1;
+    font-family: 'latobold', serif;
+    line-height: 1.25;
     letter-spacing: -1px;
     word-spacing: 2px;
     font-weight: bold;
@@ -52,8 +52,13 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       font-size: 60%;
       margin-top: 0.5em;
+      font-family: 'latolight', serif;
       font-weight: normal;
    }
+}
+
+h1 {
+
 }
 
 h2 {
@@ -64,6 +69,19 @@ h2 {
     font-weight: 900;
     letter-spacing: 0.14em;
 
+   small {
+      display: block;
+       font-size: 1.25rem;
+       margin-top: 0.5em;
+       font-family: 'latoregular', serif;
+       font-weight: normal;
+       text-transform: initial;
+       color: #797979;
+       font-weight: normal;
+       margin-top: -0.1rem;
+       max-width: 500px;
+       margin: 0 auto;
+   }
 
 
 	&:before {
@@ -79,8 +97,9 @@ h2 {
 
 }
 h3, h4 {
-    font-size: 1.6875rem;
+    font-size: 2rem;
     color: #575756;
+    margin-top: 3em;
     margin-bottom: 0.65em;
     letter-spacing: 0.08em;
     font-weight: 900;
@@ -118,15 +137,10 @@ body a:hover {
     text-decoration: none;
 }
 
-/*
-p.fs-bodytext, p.caption,.fs-biblequote-inline, label {
+
+p, blockquote, p.caption,.fs-biblequote-inline, label {
     font-size: 1.25rem;
     font-weight: 100;
-}
-*/
-.entry-content {
-   font-size: 1.25rem;
-   font-weight: 100;
 }
 
 .navbar-brand a {
