@@ -17,6 +17,9 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.row {
+   padding-bottom: 20px;
+}
 .container-small {
    width: 768px;
    margin: 0 auto;
