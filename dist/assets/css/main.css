@@ -231,8 +231,9 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 
 #toplink .ready {
         color: #5D5D5D;
-        font-family:FontAwesome;
+        font-family: "Font Awesome 5 Free";
         content: '\f062';
+        font-weight: 900;
         /* color: #fff; */
         font-weight: normal;
         display: block;
@@ -272,8 +273,9 @@ stuff from contentelements.css
 
 .after-arrow:after {
     content: "\f063";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     display:  block;
+    font-weight: 900;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -1125,7 +1127,7 @@ quotes / text mark
 }
 
 .fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
-      font-family: FontAwesome;
+      font-family: "Font Awesome 5 Free";
       display: inline-block;
       font-size: 1em;
       position: absolute;
@@ -1192,7 +1194,6 @@ boxes and frames
 .fs-box .fs-text {
      margin: 0.5em 0 1em;
      font-weight: 100;
-     font-family: 'Lato', serif;
      line-height: 1.65;
      text-align: left;
 }
@@ -1437,10 +1438,10 @@ infoicons
 }
 
 .fs-infothing:before {
-	font-family:FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	content: '\f054';
 	color: #fff;
-	font-weight: normal;
+	font-weight: 900;
 	display: block;
 	font-size: 31px;
 	line-height: 40px;
@@ -1459,7 +1460,7 @@ infoicons
 }
 
 .fs-infothing.fs-question:before {
-	content: '\f128';
+	content: "\f128";
 	color: #E5AA3B;
 	-webkit-transform: rotate(-10deg);
 	        transform: rotate(-10deg);
@@ -1757,8 +1758,8 @@ h3.fs-hero, h4.fs-hero {
 	margin-bottom: 0.2em;
 }
 
-header {
-
+strong {
+   font-family: 'latobold', sans-serif;
 }
 
 em {
@@ -1815,7 +1816,6 @@ helpers
 .fs-light-text {
     font-size: 19px;
     font-size: 1.1875rem;
-    font-family: "Lato", serif;
     font-style: italic;
     font-weight: 100;
     line-height: 1.15;
@@ -1835,10 +1835,10 @@ p.fs-icon.fs-icon-bible:before {
 }
 
 .fs-icon:before {
-    font-family:FontAwesome;
+    font-family: "Font Awesome 5 Free";
     content: '\f040';
+    font-weight: 900;
     color: #fff;
-    font-weight: normal;
     display: block;
     font-size: 15px !important;
     text-align: center;

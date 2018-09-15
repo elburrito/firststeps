@@ -13,8 +13,9 @@ stuff from contentelements.css
 
 .after-arrow:after {
     content: "\f063";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     display:  block;
+    font-weight: 900;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -840,7 +841,7 @@ quotes / text mark
       display: inline-block;
    }
    .fs-quote-begin:before,.fs-quote-end:before {
-      font-family: FontAwesome;
+      font-family: "Font Awesome 5 Free";
       display: inline-block;
       font-size: 1em;
       position: absolute;
@@ -901,7 +902,6 @@ boxes and frames
    .fs-text {
      margin: 0.5em 0 1em;
      font-weight: 100;
-     font-family: 'Lato', serif;
      line-height: 1.65;
      text-align: left;
    }
@@ -1150,10 +1150,10 @@ infoicons
     }
 
 	&:before {
-		font-family:FontAwesome;
+		font-family: "Font Awesome 5 Free";
 		content: '\f054';
 		color: #fff;
-		font-weight: normal;
+		font-weight: 900;
 		display: block;
 		font-size: 31px;
 		line-height: 40px;
@@ -1172,7 +1172,7 @@ infoicons
 		background-color:var(--color-yellow);
 		border-color:var(--color-yellow-darker);
 		&:before {
-			content: '\f128';
+			content: "\f128";
 			color: var(--color-yellow-darker);
 			transform: rotate(-10deg);
 		}

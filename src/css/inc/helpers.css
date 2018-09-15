@@ -8,7 +8,6 @@ helpers
 
 .fs-light-text {
     font-size: 1.1875rem;
-    font-family: "Lato", serif;
     font-style: italic;
     font-weight: 100;
     line-height: 1.15;
@@ -28,10 +27,10 @@ p.fs-icon {
 }
 
 .fs-icon:before {
-    font-family:FontAwesome;
+    font-family: "Font Awesome 5 Free";
     content: '\f040';
+    font-weight: 900;
     color: #fff;
-    font-weight: normal;
     display: block;
     font-size: 15px !important;
     text-align: center;
