@@ -13,13 +13,13 @@ index page / overview
 .fs-chapter-overview {
     background-color: var(--color-red);
     padding-top: 4em;
-    
+
     p, p.bodytext   {
         color: #fff;
     }
 }
 
- 
+
 
 .fs-tp-overview {
     .fs-tp-thumb {
@@ -33,14 +33,14 @@ index page / overview
         text-align: center;
         display: inline-block;
         margin: 0px 12px 15px 0px;
-        
-        
+
+
         img {
             max-width: 80%;
             display: block;
             margin: 0 auto;
         }
-        
+
         .fs-tp-caption {
             font-size: 14px;
             font-size: 0.875rem;
@@ -54,21 +54,21 @@ index page / overview
             display: block;
             text-align: left;
             font-weight: bold;
-            
+
             .fs-nr {
                 color: var(--color-lightgrey);
                 display: table-cell;
                 padding: 0px 4px 0px 7px;
                 vertical-align: middle;
             }
-            
+
             .fs-tp-title {
                 color: var(--color-red);
                 display: table-cell;
                 margin-left: 50px;
             }
         }
-        
+
         &:hover {
             border-color: #fff;
         }
@@ -78,12 +78,12 @@ index page / overview
 /**
 topic 01 - wer ist gott
 */
-  
+
 .fs-img-questionmark-big {
     width: 194px;
     height: 290px;
     background: url(var(--path-static-images)questionlamp.png) no-repeat scroll center bottom;
-}  
+}
 
 .fs-img-do-background {
     background: url(var(--path-static-images)running_dude.png) no-repeat scroll left bottom;
@@ -92,11 +92,11 @@ topic 01 - wer ist gott
 
 .fs-img-challenge-background {
     background: url(var(--path-static-images)tp_02_47.png) no-repeat scroll 31% bottom;
-    background-size: initial;
+    background-size: contain;
 }
 
 #fs-result-icon {
-    background: url(../img/tp_02_62.png) no-repeat scroll left top;
+    background: url(../kapitel/02/img/SVG/rechner.svg) no-repeat scroll left top;
     padding-left: 290px;
     height: 170px;
     line-height: 152px;
@@ -119,5 +119,3 @@ topic 01 - wer ist gott
 div#carouselGodImages img {
     max-height: 195px;
 }
-
-

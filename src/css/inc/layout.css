@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
   color: var(--color-main-text);
   text-align: left;
-  background-color: #fff;
+  background-color: #fffcee;
 }
 .container-small {
    width: 768px;
@@ -196,9 +196,9 @@ end of stuff from layout.CSS
 */
 
 @media screen and (max-width: 768px) {
-   
+
    .container-small {
       width: auto;
    }
-   
+
 }
