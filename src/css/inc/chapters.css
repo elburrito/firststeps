@@ -35,6 +35,7 @@ chapter 01 - austauschen
     }
     .fs-hero-row {
         background-color: var(--color-blue-darker);
+        position: relative;
 
         &:after {
             background-image: url(var(--path-static-images)chapter_02_after.png);

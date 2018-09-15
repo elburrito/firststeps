@@ -2105,6 +2105,7 @@ chapter 01 - austauschen
 
 .fs-chapter-discover .fs-hero-row {
         background-color: #468F98;
+        position: relative;
 }
 
 .fs-chapter-discover .fs-hero-row:after {
