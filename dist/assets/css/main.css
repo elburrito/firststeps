@@ -1129,6 +1129,7 @@ quotes / text mark
 .fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
       font-family: "Font Awesome 5 Free";
       display: inline-block;
+      font-weight: 900;
       font-size: 1em;
       position: absolute;
       top: -27px;
