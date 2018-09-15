@@ -17,6 +17,11 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.container-small {
+   width: 768px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
 
 
 /*--------------------------------------------------------------
@@ -189,3 +194,11 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 /**
 end of stuff from layout.CSS
 */
+
+@media screen and (max-width: 768px) {
+   
+   .container-small {
+      width: auto;
+   }
+   
+}

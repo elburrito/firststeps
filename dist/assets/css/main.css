@@ -46,6 +46,12 @@ body {
   background-color: #fff;
 }
 
+.container-small {
+   width: 768px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
 /*--------------------------------------------------------------
 # Header / Navigation
 --------------------------------------------------------------*/
@@ -237,6 +243,14 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 /**
 end of stuff from layout.CSS
 */
+
+@media screen and (max-width: 768px) {
+   
+   .container-small {
+      width: auto;
+   }
+   
+}
 
 /*
 stuff from contentelements.css
@@ -1144,11 +1158,9 @@ boxes and frames
 **/
 
 .fs-box {
-	padding: 0.5em 0.7em 1em;
+	padding: 1em;
 	border-radius: 20px;
 	position:relative;
-	display: inline-block;
-   min-width: 250px;
    border: 10px solid transparent
 }
 
@@ -1312,8 +1324,7 @@ boxes and frames
 .fs-box-2 {
     border: 5px dashed #E56A6A;
     border-radius: 20px;
-    margin: 2em;
-    padding: 2em 3em 1em;
+    padding: 1em;
     position: relative;
 }
 
