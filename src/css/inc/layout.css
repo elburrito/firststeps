@@ -17,6 +17,9 @@ body {
   text-align: left;
   background-color: #fffcee;
 }
+.row {
+   padding-bottom: 20px;
+}
 .container-small {
    width: 768px;
    margin: 0 auto;
@@ -177,8 +180,9 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 
     .ready {
         color: #5D5D5D;
-        font-family:FontAwesome;
+        font-family: "Font Awesome 5 Free";
         content: '\f062';
+        font-weight: 900;
         /* color: #fff; */
         font-weight: normal;
         display: block;

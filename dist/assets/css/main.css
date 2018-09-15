@@ -46,6 +46,10 @@ body {
   background-color: #fffcee;
 }
 
+.row {
+   padding-bottom: 20px;
+}
+
 .container-small {
    width: 768px;
    margin: 0 auto;
@@ -227,8 +231,9 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 
 #toplink .ready {
         color: #5D5D5D;
-        font-family:FontAwesome;
+        font-family: "Font Awesome 5 Free";
         content: '\f062';
+        font-weight: 900;
         /* color: #fff; */
         font-weight: normal;
         display: block;
@@ -268,8 +273,9 @@ stuff from contentelements.css
 
 .after-arrow:after {
     content: "\f063";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     display:  block;
+    font-weight: 900;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -1121,7 +1127,7 @@ quotes / text mark
 }
 
 .fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
-      font-family: FontAwesome;
+      font-family: "Font Awesome 5 Free";
       display: inline-block;
       font-size: 1em;
       position: absolute;
@@ -1188,7 +1194,6 @@ boxes and frames
 .fs-box .fs-text {
      margin: 0.5em 0 1em;
      font-weight: 100;
-     font-family: 'Lato', serif;
      line-height: 1.65;
      text-align: left;
 }
@@ -1304,7 +1309,6 @@ boxes and frames
             font-size: 1.25rem;
             line-height: 1.3;
             font-weight: bold;
-            bottom: auto;
 }
 
 .fs-box.carousel:after {
@@ -1442,10 +1446,10 @@ infoicons
 }
 
 .fs-infothing:before {
-	font-family:FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	content: '\f054';
 	color: #fff;
-	font-weight: normal;
+	font-weight: 900;
 	display: block;
 	font-size: 31px;
 	line-height: 40px;
@@ -1464,7 +1468,7 @@ infoicons
 }
 
 .fs-infothing.fs-question:before {
-	content: '\f128';
+	content: "\f128";
 	color: #E5AA3B;
 	-webkit-transform: rotate(-10deg);
 	        transform: rotate(-10deg);
@@ -1520,203 +1524,6 @@ infoicons
   transition: -webkit-box-shadow 0.4s ease-in-out;
   transition: box-shadow 0.4s ease-in-out;
   transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-item {
-  position: relative;
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  transition: -webkit-transform 0.6s ease;
-  -webkit-transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-.carousel-item.active, .carousel-item-next, .carousel-item-prev {
-  display: block;
-}
-
-.carousel-item-next, .carousel-item-prev {
-  position: absolute;
-  top: 0;
-}
-
-.carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
-  .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.carousel-item-next, .active.carousel-item-right {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
-  .carousel-item-next, .active.carousel-item-right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.carousel-item-prev, .active.carousel-item-left {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
-  .carousel-item-prev, .active.carousel-item-left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.carousel-control-prev, .carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 15%;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
-}
-
-.carousel-control-prev:focus, .carousel-control-prev:hover, .carousel-control-next:focus, .carousel-control-next:hover {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: .9;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-.carousel-inner {
-    padding-bottom: 4em;
-}
-
-.carousel-item {
-    text-align: center;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-}
-
-.carousel-indicators li {
-  position: relative;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  background-color: rgba(255, 255, 255, .5);
-}
-
-.carousel-indicators li::before {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 10px;
-  content: "";
-}
-
-.carousel-indicators li::after {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 10px;
-  content: "";
-}
-
-.carousel-indicators .active {
-  background-color: #fff;
-}
-
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  text-align: center;
 }
 
 .align-baseline {
@@ -2055,8 +1862,8 @@ h3.fs-hero, h4.fs-hero {
 	margin-bottom: 0.2em;
 }
 
-header {
-
+strong {
+   font-family: 'latobold', sans-serif;
 }
 
 em {
@@ -2067,7 +1874,7 @@ em {
 }
 
 body {
-    font-family: 'latoregular', sans-serif;
+    font-family: 'latolight', sans-serif;
     line-height: 1.7;
 }
 
@@ -2113,7 +1920,6 @@ helpers
 .fs-light-text {
     font-size: 19px;
     font-size: 1.1875rem;
-    font-family: "Lato", serif;
     font-style: italic;
     font-weight: 100;
     line-height: 1.15;
@@ -2133,10 +1939,10 @@ p.fs-icon.fs-icon-bible:before {
 }
 
 .fs-icon:before {
-    font-family:FontAwesome;
+    font-family: "Font Awesome 5 Free";
     content: '\f040';
+    font-weight: 900;
     color: #fff;
-    font-weight: normal;
     display: block;
     font-size: 15px !important;
     text-align: center;
@@ -2472,6 +2278,6 @@ topic 01 - wer ist gott
 }
 
 div#carouselGodImages img {
-    max-height: 195px;
+    max-height: 250px;
 }  
    
