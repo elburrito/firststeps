@@ -1,74 +1,128 @@
-<%include src="partials/header_xl.html"%>
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>First Steps</title>
+      
+      <meta name="theme-color" content="#7EB49C">
+      <meta name="generator" content="Simu u Stufi">
+      
+      <!--
+      <link rel="shortcut icon" href="/cstyle/4880520/icons/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="57x57" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="60x60" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="" />
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="" />
 
-  <div class="fs-chapter fs-chapter-overview fs-container">
-    <div class="fs-row center-text">
-      <p class="fs-bodytext">Wähle eine Lektion aus!</p>
-    </div>
-    <div class="fs-row">
-      <div class="fs-tp-overview">
+      <link rel="icon" type="image/png" href="" sizes="196x196" />
+      <link rel="icon" type="image/png" href="" sizes="96x96" />
+      <link rel="icon" type="image/png" href="" sizes="32x32" />
+      <link rel="icon" type="image/png" href="" sizes="16x16" />
 
-        <a class="fs-tp-thumb" href="Kapitel1.html">
-                <img src="./assets/img/elements_11.png" alt="Wer ist Gott"/>
-                <span class="fs-tp-caption">
-                    <span class="fs-nr">01</span>
-                    <span class="fs-tp-title">Wer ist Gott</span>
-                </span>
-            </a>
-        <a class="fs-tp-thumb" href="Kapitel2.html">
-                <img src="./assets/img/chp01_thinker.png" alt="Wer ist der Mensch"/>
-                <span class="fs-tp-caption">
-                    <span class="fs-nr">02</span>
-                    <span class="fs-tp-title">Wer ist der Mensch</span>
-                </span>
-            </a>
-        <a class="fs-tp-thumb" href="Kapitel3.html">
-          <span class="fs-tp-caption">
-            <span class="fs-nr">03</span>
-            <span class="fs-tp-title">Was tat Jesus</span>
-          </span>
-        </a>
-        <a class="fs-tp-thumb" href="Kapitel4.html">
-             <img src="./assets/kapitel/04/img/PNG/kapitelbild.png" alt="Neustart"/>
-             <span class="fs-tp-caption">
-                 <span class="fs-nr">04</span>
-                 <span class="fs-tp-title">Neustart - Wie mein Leben neu wird</span>
-             </span>
-         </a>
-         <a class="fs-tp-thumb" href="Kapitel5.html">
-            <img src="./assets/kapitel/05/img/PNG/kapitelbild.png" alt="Beziehung"/>
-            <span class="fs-tp-caption">
-               <span class="fs-nr">05</span>
-               <span class="fs-tp-title">Beziehung - Wie ich Gott nahekomme</span>
-            </span>
-         </a>
-         <a class="fs-tp-thumb" href="Kapitel6.html">
-            <!-- <img src="./assets/kapitel/06/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
-            <span class="fs-tp-caption">
-               <span class="fs-nr">06</span>
-               <span class="fs-tp-title">Dynamik- Was der Heilige Geist bewirkt</span>
-            </span>
-         </a>
-         <a class="fs-tp-thumb" href="Kapitel7.html">
-            <!-- <img src="./assets/kapitel/07/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
-            <span class="fs-tp-caption">
-               <span class="fs-nr">07</span>
-               <span class="fs-tp-title">Identität- wie Gott mich sieht</span>
-            </span>
-         </a>
-         <a class="fs-tp-thumb" href="Kapitel8.html">
-            <!-- <img src="./assets/kapitel/08/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
-            <span class="fs-tp-caption">
-               <span class="fs-nr">08</span>
-               <span class="fs-tp-title">Veränderung</span>
-            </span>
-         </a>
+      <meta name="application-name" content="First Steps"/>
+      <meta name="msapplication-TileColor" content="#FFFFFF"/>
+      <meta name="msapplication-TileImage" content=""/>
+      <meta name="msapplication-square70x70logo" content=""/>
+      <meta name="msapplication-square150x150logo" content=""/>
+      <meta name="msapplication-wide310x150logo" content=""/>
+      <meta name="msapplication-square310x310logo" content=""/>
+      -->
+
+      <!-- Stylesheets -->
+      
+		<link href="assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all">
+       
+      <!-- Scripts -->
+      
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bootstrap-toggle.min.js"></script>
+      <script src="assets/js/application.js"></script>
+
+	</head>
+
+   <body class="page-template-default page page-id-4 fs-page-index">
+      <div id="page" class="site">
+
+         <!-- HEADER -->   
+         <%include src="partials/header_xl.html"%>
+
+         <!-- CONTENT -->     
+         <div class="fs-chapter fs-chapter-overview fs-container">
+            <div class="fs-row center-text">
+               <p class="fs-bodytext">Wähle eine Lektion aus!</p>
+            </div>
+            <div class="fs-row">
+               <div class="fs-tp-overview">
+                  <a class="fs-tp-thumb" href="Kapitel1.html">
+                     <img src="./assets/img/elements_11.png" alt="Wer ist Gott"/>
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">01</span>
+                        <span class="fs-tp-title">Wer ist Gott</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel2.html">
+                     <img src="./assets/img/chp01_thinker.png" alt="Wer ist der Mensch"/>
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">02</span>
+                        <span class="fs-tp-title">Wer ist der Mensch</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel3.html">
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">03</span>
+                        <span class="fs-tp-title">Was tat Jesus</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel4.html">
+                     <img src="./assets/kapitel/04/img/PNG/kapitelbild.png" alt="Neustart"/>
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">04</span>
+                        <span class="fs-tp-title">Neustart - Wie mein Leben neu wird</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel5.html">
+                     <img src="./assets/kapitel/05/img/PNG/kapitelbild.png" alt="Beziehung"/>
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">05</span>
+                        <span class="fs-tp-title">Beziehung - Wie ich Gott nahekomme</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel6.html">
+                     <!-- <img src="./assets/kapitel/06/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">06</span>
+                        <span class="fs-tp-title">Dynamik- Was der Heilige Geist bewirkt</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel7.html">
+                     <!-- <img src="./assets/kapitel/07/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">07</span>
+                        <span class="fs-tp-title">Identität- wie Gott mich sieht</span>
+                     </span>
+                  </a>
+                  <a class="fs-tp-thumb" href="Kapitel8.html">
+                     <!-- <img src="./assets/kapitel/08/img/PNG/kapitelbild.png" alt="Beziehung"/>-->
+                     <span class="fs-tp-caption">
+                        <span class="fs-nr">08</span>
+                        <span class="fs-tp-title">Veränderung</span>
+                     </span>
+                  </a>
+               </div>
+             </div>
+         </div>
+
+         <!-- FOOTER -->
+         <%include src="partials/footer.html"%>   
+      </div>      
+   </body>
+</html>
 
 
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <%include src="partials/footer.html"%>
