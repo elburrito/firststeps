@@ -1,10 +1,48 @@
 
+@font-face {
+   font-family: 'latoregular';
+   src: url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'latolight';
+   src: url('../fonts/lato/lato-light-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-light-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'latobold';
+   src: url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('../fonts/roboto/robotoslab-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/robotoslab-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('../fonts/arvo/arvo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/arvo/arvo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /**
 stuff from typography.css
 **/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', serif;
+    font-family: 'latoregular', serif;
     line-height: 1;
     letter-spacing: -1px;
     word-spacing: 2px;
@@ -62,14 +100,14 @@ header {
 }
 
 em {
-    font-family: 'Lato', serif;
+    font-family: 'latoregular', serif;
     font-size: 0.905em;
     font-style:italic;
     font-weight: lighter;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'latoregular', sans-serif;
     line-height: 1.7;
 }
 body a {
@@ -92,7 +130,7 @@ p.fs-bodytext, p.caption,.fs-biblequote-inline, label {
 }
 
 .navbar-brand a {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'roboto_slabbold', serif;
     font-weight: bold;
 }
 
