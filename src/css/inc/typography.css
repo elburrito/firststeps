@@ -138,7 +138,8 @@ body a:hover {
 }
 
 
-p, blockquote, p.caption,.fs-biblequote-inline, label {
+/*p, blockquote, p.caption,.fs-biblequote-inline, label */
+body {
     font-size: 1.25rem;
     font-weight: 100;
 }
