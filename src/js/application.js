@@ -7,6 +7,11 @@ $(document).ready(function () {
 		return false;
 	});
 
+
+	$('.fs-videobox .fs-play').click(function() {
+		$(this).closest('.fs-videobox').removeClass('fs-videobox-minimized').addClass('playing');
+	});
+
 	/**
 	CHAPTER 02 - specific stuff
 	*/

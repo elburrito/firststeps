@@ -1106,28 +1106,34 @@ quotes / text mark
    padding-left: 2em;
    position: relative;
    margin-bottom: 2.5em;
-   margin-top: 1em
+   margin-top: 1em;
+
+   background: url(http://www.furrygraphics.com/Pictures/JPG/Free-stuff-background-old-paper-B.jpg) repeat left top;
+   background-color: #fff4bd;
+   border-radius: 30px;
+   background-blend-mode: overlay;
+   -webkit-box-shadow: inset 0px 1px 0px 4px rgba(220, 153, 47, 0.12941);
+           box-shadow: inset 0px 1px 0px 4px rgba(220, 153, 47, 0.12941);
+   padding: 2em 3em 3em 3em;
+   /* max-height: 232px; */
+   font-size: 18px;
+   font-size: 1.125rem;
 }
 
-.fs-quote:before {
-	border-left: 10px solid #E8E8E8;
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	border-radius: 5px;
-}
+.fs-quote .fs-topleft {
+      left: -20px;
+      top: -20px;
+   }
 
 .fs-quote .fs-quote-content {
       font-style: italic;
-}
+   }
 
 .fs-quote .fs-quote-begin, .fs-quote .fs-quote-end {
       position: relative;
       width: 25px;
       display: inline-block;
-}
+   }
 
 .fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
       font-family: "Font Awesome 5 Free";
@@ -1138,32 +1144,44 @@ quotes / text mark
       position: absolute;
       top: -27px;
       left: 0;
-}
+   }
 
 .fs-quote .fs-quote-begin:before {
       content: "\f10d";
-}
+   }
 
 .fs-quote .fs-quote-end:before {
       content: "\f10e";
       right: 0;
-}
+   }
 
-.fs-quote .fs-quote-writer {
-      font-family: 'arvobold', serif;
+.fs-quote > i, .fs-quote .fs-quote-writer  {
+      font-family: 'latolight', serif;
       font-size: 14.4px;
       font-size: 0.9rem;
       display: block;
-      text-align: right;
       font-weight: bold;
-      margin: 0.5em 0 1em;
-      position: absolute;
-      right: 0px;
-      font-size: 11.2px;
-      font-size: 0.7rem;
-      border-right: 4px solid #E8E8E8;
+      margin: 0.5em 0 -1em;
       padding-right: 0.5em;
-      /*bottom: 0px; proof on different browsers*/
+      color: #D35B28;
+   }
+
+.fs-quote:after {
+	content:'.';
+	width: 70px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+	line-height: 300px;
+	overflow: hidden;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='30%2C0 30%2C30 50%2C0' fill='%23FFEEB7'/%3E%3C/svg%3E");
+}
+
+.col-sm-6.fs-quote { /*  make it smaller */
+   padding: 1.5em 2em 2em;
+   border-radius: 15px;
 }
 
 /**
@@ -1296,7 +1314,7 @@ boxes and frames
 }
 
 .fs-box.fs-biblequote.expanded:after {
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse rx='150' ry='6' cx='150' cy='10' fill='%23468F98'/%3E%3C/svg%3E");
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23468F98'/%3E%3C/svg%3E");
 	width: 400px;
 	top: 107%;
 	left: 27%;
@@ -1326,7 +1344,7 @@ boxes and frames
 	position: absolute;
 	line-height: 300px;
 	overflow: hidden;
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse rx='150' ry='6' cx='150' cy='10' fill='%23CE5757'/%3E%3C/svg%3E");
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23CE5757'/%3E%3C/svg%3E");
 	background-size: contain;
 	width: 400px;
 	height: 50px;
@@ -1346,6 +1364,7 @@ iframe {
 }
 
 .fs-videobox {
+
    color: #fff;
    display: inline-block;
    text-align:  center;
@@ -1353,22 +1372,44 @@ iframe {
    border-radius: 15px 15px 0px 0px;
 }
 
+.fs-videobox .fs-play {
+      width: 150px;
+       height: 150px;
+       border-width: 18px;
+       position: absolute;
+       z-index: 1;
+       margin: 0 auto;
+       margin-left: -65px;
+       top: -12px;
+   }
+
 .fs-videobox .fs-videobox-caption {
       padding: 0.5em 1em 1.5em 1.5em;
       margin-left: 1.5em;
       margin-right: 1.5em;
       margin-bottom: -22px;
       display: inline-block;
+      -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+      transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
    }
 
 .fs-videobox .fs-videobox-container {
         position: relative;
         border-radius: 15px;
         overflow:  hidden;
-        border: 10px solid #468F98;
-        background: #6BA6AD;
+        border: 10px solid #E5AA3B;
+        background: #DC982D;
         padding: 0.5em;
+        -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+        transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
     }
+
+.fs-videobox.playing .fs-videobox-overlay, .fs-videobox.playing .fs-play {
+	display: none;
+}
 
 .fs-videobox .fs-videobox-overlay {
         /*till now
@@ -1381,24 +1422,28 @@ iframe {
         left: 0;
         top: 0;
         background: rgba(70, 143, 152, .6);
-    }
+        -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+        transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+}
 
 .fs-videobox .fs-videobox-overlay .fs-play {
-            margin-top: 4em;
+            margin-top: 3em;
+            -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
+            transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
         }
 
 .fs-videobox:after {
 	content:'.';
 	display: block;
-	position: absolute;
 	line-height: 300px;
 	overflow: hidden;
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse rx='150' ry='6' cx='150' cy='10' fill='%23468F98'/%3E%3C/svg%3E");
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23DC982D'/%3E%3C/svg%3E") no-repeat scroll center bottom;
 	background-size: contain;
 	width: 400px;
 	height: 50px;
+	position: absolute;
 	top: 105%;
-	left: 20%;
+	left: 30%;
 }
 
 .fs-videobox.small {
@@ -1406,12 +1451,28 @@ iframe {
 }
 
 .fs-videobox.small:after {
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse rx='150' ry='6' cx='150' cy='10' fill='%23468F98'/%3E%3C/svg%3E");
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23468F98'/%3E%3C/svg%3E");
 	background-size: contain;
 	width: 400px;
 	height: 50px;
 	top: 105%;
 	left: 2%;
+}
+
+.fs-videobox.fs-videobox-minimized {
+	padding: 40px 0px 100px;
+	width: 100%;
+}
+
+.fs-videobox.fs-videobox-minimized .fs-videobox-caption {
+         display: none;
+}
+
+.fs-videobox.fs-videobox-minimized .fs-videobox-container {
+         border-radius: 300px;
+         width: 0px;
+         height: 0px;
+         border-width: 0px;
 }
 
 p.caption {
@@ -1920,7 +1981,9 @@ body a:hover {
     text-decoration: none;
 }
 
-p, blockquote, p.caption, .fs-biblequote-inline, label {
+/*p, blockquote, p.caption,.fs-biblequote-inline, label */
+
+body {
     font-size: 20px;
     font-size: 1.25rem;
     font-weight: 100;
