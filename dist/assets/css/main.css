@@ -46,14 +46,27 @@ body {
   background-color: #fff8dc;
 }
 
-.row {
-   padding-bottom: 20px;
-}
-
 .container-small {
    width: 768px;
    margin: 0 auto;
-   padding: 0 15px;
+   padding: 60px 15px;
+}
+
+.container-fluid {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+i {
+   padding-right: 5px;
+   font-size: 16px;
+   font-size: 1rem;
+   color: #6BA6AD;
+}
+
+img {
+   width: 100%;
+   height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -61,26 +74,28 @@ body {
 --------------------------------------------------------------*/
 
 header#masthead {
-  margin-bottom: 0;
-  background-color: #fff !important;
-  -webkit-box-shadow: 0 0.5rem 0rem #CE5757;
-          box-shadow: 0 0.5rem 0rem #CE5757;
-	min-height: 120px;
-  padding: 11.84px 16px;
-  padding: .74rem 1rem;
-  border-bottom: 1px solid #9175bb;
+   margin-bottom: 0;
+   background-color: #fff !important;
+   min-height: 100px;
+   padding: 20px 15px;
+   border-bottom: 1px solid #9175bb;
+   position: fixed;
+   z-index: 1000;
+   width: 100%
+}
+
+header#masthead.navbar-static-top {
 	position: relative;
-	z-index: 1;
-
-
 }
 
 header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
-    color: #E8E8E8;
+    color: #606060;
     font-weight: lighter;
-    font-size: 14.4px;
-    font-size: 0.9rem;
     text-transform: uppercase;
+}
+
+.menu-header-menu-container {
+   padding-top: 10px;
 }
 
 .navbar {
@@ -100,6 +115,16 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
   padding: 0.5rem 1rem;
 }
 
+.navbar .navbar-brand {
+      width: 170px;
+      padding: 0;
+      margin: 0;
+   }
+
+.navbar .navbar-brand img {
+         margin: 0;
+      }
+
 .navbar > .container, .navbar > .container-fluid {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -118,16 +143,6 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
   contains the logo
  */
 
-.navbar-brand a {
-  display: inline-block;
-	max-width: 140px;
-	max-height: 60px;
-	background: url(../img/logo_firststeps_116px.png) no-repeat scroll center center;
-	background-size: contain;
-	overflow: hidden;
-	line-height: 1000px;
-}
-
 .navbar-brand:focus, .navbar-brand:hover {
   text-decoration: none;
 }
@@ -144,6 +159,9 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
   margin-bottom: 0;
   list-style: none;
 	display: inline-block;
+   text-align: center;
+   width: 100%;
+    padding: 20px 0;
 }
 
 .navbar-nav li {
@@ -209,6 +227,35 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
   background-size: 100% 100%;
 }
 
+main {
+   padding-top: 100px;
+}
+
+.divider {
+   background: white;
+   padding: 40px 0 100px;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.divider h2 {
+      margin: 0;
+   }
+
+.divider:after {
+	bottom: -60px;
+	background-image: linear-gradient(140deg, #d8d5ca 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-141deg, #ffffff 25%, rgba(0, 0, 0, 0) 25%);
+	background-position: 50%;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	height: 60px;
+	background-size: 50px 100%;
+	position: absolute;
+	content: '';
+}
+
 #toplink {
     background: #5D5D5D;
     color: #fff;
@@ -244,6 +291,14 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
         top: -42px;
         left: 41%;
 }
+
+footer {
+   background: white;
+}
+
+footer .container-small {
+      padding-bottom: 20px;
+   }
 
 /**
 end of stuff from layout.CSS
@@ -1031,6 +1086,8 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 	padding-top: 2rem;
 	margin-bottom: 0px;
 	position: relative;
+   border-top: 8px solid #CE5757;
+   border-top: .5rem solid #CE5757;
 
 
 
@@ -1084,6 +1141,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 		right: 0;
 		bottom: -45px;
 		position: absolute;
+      z-index: 1;
 }
 
 .fs-topleft {
@@ -1927,22 +1985,10 @@ h2 small {
        margin: 0 auto;
    }
 
-h2:before {
-	content: '';
-	display: block;
-	margin: 0 auto;
-	width: 50px;
-	height: 50px;
-	background: url(../img/chp02_icon.png) no-repeat scroll center;
-	background-size: contain;
-}
-
 h3, h4 {
     font-size: 32px;
     font-size: 2rem;
     color: #575756;
-    margin-top: 3em;
-    margin-bottom: 0.65em;
     letter-spacing: 0.08em;
     font-weight: 900
     /* text-transform: uppercase; */
@@ -2163,18 +2209,29 @@ togglers
 chapters.css
 **/
 
+.fs-wrapper {
+   padding-top: 40px;
+}
+
 /**
 chapter 01 - austauschen
 */
 
 .fs-chapter-exchange h2 {
-        color: #E56A6A;
-        margin-top: 1em;
+       color: #E56A6A;
+       margin-top: 1em
     }
 
 .fs-chapter-exchange h2:before {
-        background-image: url(../img/chp01_icon_color.png);
-    }
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/chp01_icon_color.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 .fs-chapter-exchange .fs-box {
         background: #E56A6A;
@@ -2199,15 +2256,28 @@ chapter 01 - austauschen
         }
     }*/
 
-.fs-chapter-discover .fs-box.fs-box-default {
-        background: #6BA6AD;
-        border-color: #468F98;
-        color: #fff;
-    }
+.fs-chapter-discover h2 {
+      color: #E56A6A;
+      margin-top: 1em
+   }
 
-.fs-chapter-discover .fs-box.fs-question:after, .fs-chapter-discover .fs-box.fs-biblebold:after {
-        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23468F98'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23468F98'/%3E%3C/svg%3E");
-    }
+.fs-chapter-discover h2:before {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+	background: url(../img/chp02_icon.svg) no-repeat scroll center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fs-chapter-discover .fs-box.fs-box-default {
+      background: #6BA6AD;
+      border-color: #468F98;
+      color: #fff;
+   }
 
 /**
 chapter 03 - Tun
@@ -2221,6 +2291,10 @@ chapter 03 - Tun
         }
     }*/
 
+.fs-chapter-do h2 {
+        color: #E56A6A;
+    }
+
 .fs-chapter-do .fs-box {
         background: #D35B28;
         border-color: #DC982D;
@@ -2228,7 +2302,7 @@ chapter 03 - Tun
     }
 
 .fs-chapter-do .fs-box.fs-question:after, .fs-chapter-do .fs-box.fs-biblebold:after {
-        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='var%28--color%29'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='var%28--color%29'/%3E%3C/svg%3E");
+       background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23D35B28'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23D35B28'/%3E%3C/svg%3E");
     }
 
 .fs-chapter-do .fs-tilted-background {
