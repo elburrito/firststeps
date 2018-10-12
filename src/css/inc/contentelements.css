@@ -676,7 +676,7 @@ add some margin to similar objects
 */
 .fs-videobox {
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .fs-highmargin {
@@ -819,31 +819,71 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 /**
 quotes / text mark
 */
-.fs-quote {
-   padding-left: 2em;
-   position: relative;
-   margin-bottom: 2.5em;
-   margin-top: 1em;
-
-   background: url(http://www.furrygraphics.com/Pictures/JPG/Free-stuff-background-old-paper-B.jpg) repeat left top;
-   background-color: #fff4bd;
-   border-radius: 30px;
-   background-blend-mode: overlay;
-   box-shadow: inset 0px 1px 0px 4px #dc992f21;
-   padding: 2em 3em 3em 3em;
-   /* max-height: 232px; */
+blockquote {
+   color: #d38c5b;
+   font-family: 'arvo';
+   font-style: italic;
    font-size: 1.125rem;
+   position: relative;
 
+   padding-left: 85px;
+   overflow: hidden;
+   transition: all 2s ease-in-out;
+   max-height: 100%;
+   padding-bottom: 1.5rem;
+   /* due to hidden overflow, this seems to be needed */
+   &.fs-quote-narrow {
+      padding-left: 0px;
+   }
+
+
+   .fs-toggler {
+       position: absolute;
+       bottom: 11px;
+       left: 45%;
+       z-index: 2;
+       height: 40px;
+       width: 40px;
+       border-radius: 100%;
+       overflow: hidden;
+       display: none;
+       &:before {
+         color: #d38c5b;
+         font-size: 24px;
+         font-family: "Font Awesome 5 Free";
+         content: '\f078';
+         font-weight: 900;
+         display: block;
+         font-size: 31px;
+         line-height: 40px;
+         text-align: center;
+         font-style: normal;
+       }
+   }
+
+   &.collapsed {
+      max-height: 120px; /* 3 rows approx */
+      display: block;
+      .fs-toggler {
+         display: block;
+      }
+
+      &:before {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       display: block;
+       height: 6rem;
+       width: 100%;
+       background: linear-gradient(to bottom, rgba(255,248,220,0) 0%,rgba(255,248,220,1) 45%,rgba(255,248,220,1) 100%);
+      }
+   }
 
    .fs-topleft {
-      left: -20px;
-      top: -20px;
+      left: 5px;
+      top: 5px;
    }
 
-
-   .fs-quote-content {
-      font-style: italic;
-   }
    .fs-quote-begin,.fs-quote-end {
       position: relative;
       width: 25px;
@@ -865,7 +905,7 @@ quotes / text mark
       content: "\f10e";
       right: 0;
    }
-   > i, .fs-quote-writer  {
+   :not(p) > i, .fs-quote-writer  {
       font-family: 'latolight', serif;
       font-size: 0.9rem;
       display: block;
@@ -874,21 +914,9 @@ quotes / text mark
       padding-right: 0.5em;
       color: var(--color-orange);
    }
-   &:after {
-      content:'.';
-      width: 70px;
-      height: 100px;
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 20px;
-      line-height: 300px;
-      overflow: hidden;
-      background: svg(speechthingyquote param(--color var(--color-yellow)));
-   }
 }
 
-.col-sm-6.fs-quote { /*  make it smaller */
+blockquote.col-sm-6 { /*  make it smaller */
    padding: 1.5em 2em 2em;
    border-radius: 15px;
 }
@@ -904,7 +932,7 @@ boxes and frames
 
    &.fs-box-default {
        color: #ffffff;
-       background: var(--color-red);
+       background: var(--color-red-alternate);
        border-color: var(--color-red-darker);
    }
    &.fs-box-neutral {
@@ -944,7 +972,7 @@ boxes and frames
 		font-weight: bold;
 		margin-bottom: 60px;
 
-		background: var(--color-red);
+		background: var(--color-red-alternate);
 		border: 10px solid var(--color-red-darker);
 
 		&:after {
@@ -1098,12 +1126,25 @@ iframe {
       transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
    }
 
+   .fs-videobox-hint {
+       color: var(--color-red-alternate);
+       position: absolute;
+       left: 6%;
+       top: 30px;
+       max-width: 200px;
+       font-family: 'arvobold';
+       text-align: right;
+       z-index: 3;
+       transform: rotate(-4deg);
+       display: none;
+}
+
     .fs-videobox-container {
         position: relative;
         border-radius: 15px;
         overflow:  hidden;
-        border: 10px solid var(--color-yellow-darker);
-        background: var(--color-brown);
+        border: 10px solid var(--color-red-darker);
+        background: var(--color-red-alternate);
         padding: 0.5em;
         transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
         margin: 0 auto;
@@ -1139,7 +1180,7 @@ iframe {
         display: block;
         line-height: 300px;
         overflow: hidden;
-        background: svg(biblequote-expanded-bottom param(--color var(--color-brown))) no-repeat scroll center bottom;
+        background: svg(biblequote-expanded-bottom param(--color var(--color-red-alternate))) no-repeat scroll center bottom;
         background-size: contain;
         width: 400px;
         height: 50px;
@@ -1164,6 +1205,10 @@ iframe {
     &.fs-videobox-minimized {
       padding: 40px 0px 100px;
       width: 100%;
+
+      .fs-videobox-hint {
+         display: block;
+      }
 
       .fs-videobox-caption {
          display: none;
@@ -1195,7 +1240,7 @@ infoicons
 .fs-infothing {
 	width: var(--size-attentionseeker);
 	height: var(--size-attentionseeker);
-	background:var(--color-red);
+	background:var(--color-red-alternate);
 	border: 6px solid var(--color-red-darker);
 	color: #fff;
 	border-radius: 100%;
@@ -1253,6 +1298,8 @@ infoicons
 			content: '\f02d';
 			color: var(--color-yellow-darker);
 			transform: rotate(-10deg);
+         font-size: 24px;
+         margin-left: -5px;
 		}
 	}
 

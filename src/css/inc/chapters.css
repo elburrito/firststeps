@@ -9,68 +9,58 @@ chapters.css
 /**
 chapter 01 - austauschen
 */
+.fs-chapter-exchange,
+.fs-chapter-do,
+.fs-chapter-discover {
+   padding-bottom: 6rem;
+}
 
 .fs-chapter-exchange {
+   background: var(--chapter-exchange-bg);
+
+
     h2 {
-       color: var(--color-red);
-       margin-top: 1em;
+       color: #ffffff;
        &:before {
          content: '';
          display: block;
          margin: 0 auto;
          width: 60px;
          height: 60px;
-         background-image: url(var(--path-static-images)chp01_icon_color.png);
+         background-image: url(../kapitel/allgemein/img/SVG/icon_sektion_01.svg);
          background-size: cover;
          background-repeat: no-repeat;
       }
     }
 
-    .fs-box {
-        background: var(--color-red);
-        border-color: var(--color-red-darker);
-    }
 }
 
 
 
-.fs-chapter-discover {
-    /*&:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2em;
-        background: var(--color-blue-darker);
-        transform: rotate(-2deg);
-        margin-bottom: -1.3em;
-    }
-    .fs-hero-row {
-        background-color: var(--color-blue-darker);
-        position: relative;
+.fs-chapter-discover,.fs-chapter-neutral {
 
-        &:after {
-            background-image: url(var(--path-static-images)chapter_02_after.png);
-        }
-    }*/
+   background: var(--chapter-discover-bg);
+   margin-bottom: 5rem;
+   
+   &:before {
+       background-image: svg(kapitel_spacer param(--color var(--chapter-discover-bg))) !important;
+   }
+
    h2 {
       color: var(--color-red);
-      margin-top: 1em;
       &:before {
          content: '';
          display: block;
          margin: 0 auto;
          width: 50px;
          height: 50px;
-         margin-bottom: 10px;
+         margin-bottom: 0;
+         position: relative;
+         z-index: 1;
          background: url(var(--path-static-images)chp02_icon.svg) no-repeat scroll center;
          background-size: cover;
          background-repeat: no-repeat;
       }
-   }
-   .fs-box.fs-box-default {
-      background: var(--color-blue);
-      border-color: var(--color-blue-darker);
-      color: #fff;
    }
 }
 
@@ -81,15 +71,12 @@ chapter 03 - Tun
 */
 
 .fs-chapter-do {
-    /*.fs-hero-row {
-        background-color: var(--color-orange);
-
-        &:after {
-            background-image: url(var(--path-static-images)chapter_03_after.png);
-        }
-    }*/
+   background: var(--chapter-do-bg);
+   &:before {
+      background-image: svg(kapitel_spacer param(--color var(--chapter-do-bg)))!important;
+   }
     h2 {
-        color: var(--color-red);
+        color: var(--color-red-darker);
     }
     .fs-box {
         background: var(--color-orange);
@@ -105,15 +92,14 @@ chapter 03 - Tun
     .fs-tilted-background-2 {
 	   background: linear-gradient(4deg, var(--color-brown) 130px, transparent 131px);
     }
+
 }
 
 
 .fs-chapter-pray {
-    /*.fs-hero-row {
-        background-color: var(--color-brown);
-
-        &:after {
-            background-image: url(var(--path-static-images)chapter_04_after.png);
-        }
-    }*/
+   background: var(--chapter-pray-bg);
+   margin-bottom: 4rem;
+     &:before {
+        background-image: svg(kapitel_spacer param(--color var(--chapter-pray-bg)))!important;
+     }
 }

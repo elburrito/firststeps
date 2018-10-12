@@ -16,12 +16,12 @@ helpers
 p.fs-icon {
     padding-left: 35px;
     position: relative;
-    
-    &.fs-icon-pen:before {        
+
+    &.fs-icon-pen:before {
         content: '\f040';
     }
-    
-    &.fs-icon-bible:before {        
+
+    &.fs-icon-bible:before {
         content: '\f02d';
     }
 }
@@ -34,8 +34,8 @@ p.fs-icon {
     display: block;
     font-size: 15px !important;
     text-align: center;
-    
-    
+
+
 }
 
 p.fs-icon:before {
@@ -49,13 +49,13 @@ p.fs-icon:before {
     text-align: center;
 }
 
-.fs-container .fs-margin-1 {
+.fs-margin-1 {
     margin-bottom: 2em;
 }
-.fs-container .fs-margin-2 {
+.fs-margin-2 {
     margin-bottom: 4em;
 }
-.fs-container .fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
+.fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
     margin-bottom: 8em;
 }
 
@@ -150,4 +150,3 @@ togglers
   -webkit-clip-path: none;
   clip-path: none;
 }
-

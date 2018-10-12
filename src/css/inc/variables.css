@@ -4,6 +4,7 @@
 		colors
 	**/
 	--color-red: #E56A6A;
+	--color-red-alternate: #f47f5b;
 	--color-red-darker:#CE5757;
 
 	--color-yellow: #FFEEB7;
@@ -25,6 +26,10 @@
 	--color-main-text: #606060;
 	--color-head-background:var(--color-red);
 
+	--chapter-exchange-bg: #52bec4;
+	--chapter-discover-bg: #fff8dc;
+	--chapter-do-bg: #f4ca98;
+	--chapter-pray-bg: #69bec4;
 
     /**
         path

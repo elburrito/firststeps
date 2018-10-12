@@ -10,7 +10,6 @@ check MAINDIRECTORY/package.json for the list of modules..
 		colors
 	**/
 
-
     /**
         path
     **/
@@ -49,7 +48,7 @@ body {
 .container-small {
    width: 768px;
    margin: 0 auto;
-   padding: 60px 15px;
+   padding: 0 15px;
 }
 
 .container-fluid {
@@ -65,8 +64,9 @@ i {
 }
 
 img {
-   width: 100%;
+   /*width: 100%;
    height: auto;
+   */
 }
 
 /*--------------------------------------------------------------
@@ -76,8 +76,8 @@ img {
 header#masthead {
    margin-bottom: 0;
    background-color: #fff !important;
-   min-height: 100px;
-   padding: 20px 15px;
+   min-height: 85px;
+   padding: 0px 15px;
    border-bottom: 1px solid #9175bb;
    position: fixed;
    z-index: 1000;
@@ -95,7 +95,7 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 }
 
 .menu-header-menu-container {
-   padding-top: 10px;
+   padding-top: 0px;
 }
 
 .navbar {
@@ -161,7 +161,7 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 	display: inline-block;
    text-align: center;
    width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .navbar-nav li {
@@ -233,7 +233,7 @@ main {
 
 .divider {
    background: white;
-   padding: 40px 0 100px;
+   padding: 20px 0 100px;
    margin-bottom: 40px;
    position: relative;
 }
@@ -255,6 +255,67 @@ main {
 	position: absolute;
 	content: '';
 }
+
+.fs-chapter {
+   position: relative
+}
+
+.fs-chapter:not(.fs-chapter-exchange):before {
+	content: '';
+	display: block;
+	height: 160px;
+	height: 10rem;
+	position: absolute;
+	background: no-repeat scroll center bottom;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%23CE5757'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%23CE5757'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%23CE5757'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%23CE5757'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%23CE5757'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%23CE5757'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%23CE5757'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%23CE5757'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%23CE5757'/%3E%3C/svg%3E");
+	width: 100%;
+	top: -152px;
+	top: -9.5rem;
+	background-size: cover;
+	color: #CE5757;
+}
+
+.fs-chapter h2 small {
+      display: block;
+       font-size: 36px;
+       font-size: 2.25rem;
+       margin-top: 0.5em;
+       font-family: 'latoregular', serif;
+       font-weight: normal;
+       text-transform: none;
+       text-transform: initial;
+       font-weight: normal;
+       max-width: 600px;
+       margin: -8px auto 16px;
+       margin: -0.5rem auto 1rem;
+}
+
+.fs-chapter h2:after {
+      display: block;
+      max-width: 103px;
+      border-bottom: 18px solid;
+      content: '';
+      margin: 8px auto 0;
+      margin: 0.5rem auto 0;
+      /* border-bottom-left-radius: 50%; */
+      /* border-bottom-right-radius: 50%; */
+      border-bottom-style: dotted;
+}
+
+.fs-subsection {
+   background: #f47f5b;
+   padding: 48px 0;
+   padding: 3rem 0;
+   color: #fff;
+}
+
+.fs-subsection i {
+      color: #FFF;
+   }
+
+/*
+kapitel spacers
+*/
 
 #toplink {
     background: #5D5D5D;
@@ -1008,7 +1069,7 @@ add some margin to similar objects
 
 .fs-videobox {
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .fs-highmargin {
@@ -1160,40 +1221,86 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 quotes / text mark
 */
 
-.fs-quote {
-   padding-left: 2em;
-   position: relative;
-   margin-bottom: 2.5em;
-   margin-top: 1em;
-
-   background: url(http://www.furrygraphics.com/Pictures/JPG/Free-stuff-background-old-paper-B.jpg) repeat left top;
-   background-color: #fff4bd;
-   border-radius: 30px;
-   background-blend-mode: overlay;
-   -webkit-box-shadow: inset 0px 1px 0px 4px rgba(220, 153, 47, 0.12941);
-           box-shadow: inset 0px 1px 0px 4px rgba(220, 153, 47, 0.12941);
-   padding: 2em 3em 3em 3em;
-   /* max-height: 232px; */
+blockquote {
+   color: #d38c5b;
+   font-family: 'arvo';
+   font-style: italic;
    font-size: 18px;
    font-size: 1.125rem;
+   position: relative;
+
+   padding-left: 85px;
+   overflow: hidden;
+   -webkit-transition: all 2s ease-in-out;
+   transition: all 2s ease-in-out;
+   max-height: 100%;
+   padding-bottom: 24px;
+   padding-bottom: 1.5rem
+   /* due to hidden overflow, this seems to be needed */
 }
 
-.fs-quote .fs-topleft {
-      left: -20px;
-      top: -20px;
-   }
+blockquote.fs-quote-narrow {
+	padding-left: 0px;
+}
 
-.fs-quote .fs-quote-content {
-      font-style: italic;
-   }
+blockquote .fs-toggler {
+       position: absolute;
+       bottom: 11px;
+       left: 45%;
+       z-index: 2;
+       height: 40px;
+       width: 40px;
+       border-radius: 100%;
+       overflow: hidden;
+       display: none;
+}
 
-.fs-quote .fs-quote-begin, .fs-quote .fs-quote-end {
+blockquote .fs-toggler:before {
+	color: #d38c5b;
+	font-size: 24px;
+	font-family: "Font Awesome 5 Free";
+	content: '\f078';
+	font-weight: 900;
+	display: block;
+	font-size: 31px;
+	line-height: 40px;
+	text-align: center;
+	font-style: normal;
+}
+
+blockquote.collapsed {
+	max-height: 120px;/*3 rows approx*/
+	display: block;
+}
+
+blockquote.collapsed .fs-toggler {
+         display: block;
+}
+
+blockquote.collapsed:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	display: block;
+	height: 96px;
+	height: 6rem;
+	width: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 248, 220, 0)),color-stop(45%, rgba(255, 248, 220, 1)),to(rgba(255, 248, 220, 1)));
+	background: linear-gradient(to bottom, rgba(255, 248, 220, 0) 0%,rgba(255, 248, 220, 1) 45%,rgba(255, 248, 220, 1) 100%);
+}
+
+blockquote .fs-topleft {
+      left: 5px;
+      top: 5px;
+}
+
+blockquote .fs-quote-begin, blockquote .fs-quote-end {
       position: relative;
       width: 25px;
       display: inline-block;
-   }
+}
 
-.fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
+blockquote .fs-quote-begin:before, blockquote .fs-quote-end:before {
       font-family: "Font Awesome 5 Free";
       display: inline-block;
       font-weight: 900;
@@ -1202,18 +1309,18 @@ quotes / text mark
       position: absolute;
       top: -27px;
       left: 0;
-   }
+}
 
-.fs-quote .fs-quote-begin:before {
+blockquote .fs-quote-begin:before {
       content: "\f10d";
-   }
+}
 
-.fs-quote .fs-quote-end:before {
+blockquote .fs-quote-end:before {
       content: "\f10e";
       right: 0;
-   }
+}
 
-.fs-quote > i, .fs-quote .fs-quote-writer  {
+blockquote :not(p) > i, blockquote .fs-quote-writer  {
       font-family: 'latolight', serif;
       font-size: 14.4px;
       font-size: 0.9rem;
@@ -1222,22 +1329,9 @@ quotes / text mark
       margin: 0.5em 0 -1em;
       padding-right: 0.5em;
       color: #D35B28;
-   }
-
-.fs-quote:after {
-	content:'.';
-	width: 70px;
-	height: 100px;
-	display: block;
-	position: absolute;
-	top: 100%;
-	left: 20px;
-	line-height: 300px;
-	overflow: hidden;
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='30%2C0 30%2C30 50%2C0' fill='%23FFEEB7'/%3E%3C/svg%3E");
 }
 
-.col-sm-6.fs-quote { /*  make it smaller */
+blockquote.col-sm-6 { /*  make it smaller */
    padding: 1.5em 2em 2em;
    border-radius: 15px;
 }
@@ -1255,7 +1349,7 @@ boxes and frames
 
 .fs-box.fs-box-default {
 	color: #ffffff;
-	background: #E56A6A;
+	background: #f47f5b;
 	border-color: #CE5757;
 }
 
@@ -1299,7 +1393,7 @@ boxes and frames
 	line-height: 1.3;
 	font-weight: bold;
 	margin-bottom: 60px;
-	background: #E56A6A;
+	background: #f47f5b;
 	border: 10px solid #CE5757;
 }
 
@@ -1451,12 +1545,26 @@ iframe {
       transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
    }
 
+.fs-videobox .fs-videobox-hint {
+       color: #f47f5b;
+       position: absolute;
+       left: 6%;
+       top: 30px;
+       max-width: 200px;
+       font-family: 'arvobold';
+       text-align: right;
+       z-index: 3;
+       -webkit-transform: rotate(-4deg);
+               transform: rotate(-4deg);
+       display: none;
+}
+
 .fs-videobox .fs-videobox-container {
         position: relative;
         border-radius: 15px;
         overflow:  hidden;
-        border: 10px solid #E5AA3B;
-        background: #DC982D;
+        border: 10px solid #CE5757;
+        background: #f47f5b;
         padding: 0.5em;
         -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
         transition: all 0.5s cubic-bezier(1, -0.01, 0.13, 1.38);
@@ -1495,7 +1603,7 @@ iframe {
 	display: block;
 	line-height: 300px;
 	overflow: hidden;
-	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23DC982D'/%3E%3C/svg%3E") no-repeat scroll center bottom;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 15'%3E%3Cellipse rx='100' ry='6' cx='150' cy='10' fill='%23f47f5b'/%3E%3C/svg%3E") no-repeat scroll center bottom;
 	background-size: contain;
 	width: 400px;
 	height: 50px;
@@ -1520,6 +1628,10 @@ iframe {
 .fs-videobox.fs-videobox-minimized {
 	padding: 40px 0px 100px;
 	width: 100%;
+}
+
+.fs-videobox.fs-videobox-minimized .fs-videobox-hint {
+         display: block;
 }
 
 .fs-videobox.fs-videobox-minimized .fs-videobox-caption {
@@ -1548,7 +1660,7 @@ infoicons
 .fs-infothing {
 	width: 52px;
 	height: 52px;
-	background:#E56A6A;
+	background:#f47f5b;
 	border: 6px solid #CE5757;
 	color: #fff;
 	border-radius: 100%;
@@ -1613,6 +1725,8 @@ infoicons
 	color: #E5AA3B;
 	-webkit-transform: rotate(-10deg);
 	        transform: rotate(-10deg);
+	font-size: 24px;
+	margin-left: -5px;
 }
 
 .fs-infothing.fs-play:before {
@@ -1929,7 +2043,6 @@ end of stuff from contentelements.css
          url('../fonts/arvo/arvo-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /**
@@ -1937,7 +2050,7 @@ stuff from typography.css
 **/
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'latobold', serif;
+    font-family: 'arvobold', serif;
     line-height: 1.25;
     letter-spacing: -1px;
     word-spacing: 2px;
@@ -1957,38 +2070,20 @@ h1 {
 }
 
 h2 {
-	font-size: 60px;
-	font-size: 3.75rem;
-	text-transform: uppercase;
+	font-size: 104px;
+	font-size: 6.5rem;
 	text-align: center;
 	margin: 0.2em 0 0.5em;
-    font-weight: 900;
-    letter-spacing: 0.14em;
-
+   font-family: 'arvobold';
+    letter-spacing: 0.03em;
+    color: white;
 
 }
-
-h2 small {
-      display: block;
-       font-size: 20px;
-       font-size: 1.25rem;
-       margin-top: 0.5em;
-       font-family: 'latoregular', serif;
-       font-weight: normal;
-       text-transform: none;
-       text-transform: initial;
-       color: #797979;
-       font-weight: normal;
-       margin-top: -1.6px;
-       margin-top: -0.1rem;
-       max-width: 500px;
-       margin: 0 auto;
-   }
 
 h3, h4 {
     font-size: 32px;
     font-size: 2rem;
-    color: #575756;
+    color: #f47f5b;
     letter-spacing: 0.08em;
     font-weight: 900
     /* text-transform: uppercase; */
@@ -1998,7 +2093,6 @@ h3.fs-hero, h4.fs-hero {
 	text-transform: uppercase;
 	font-size: 36px;
 	font-size: 2.25rem;
-	color: #E56A6A;
 	margin-bottom: 0.2em;
 }
 
@@ -2081,8 +2175,8 @@ p.fs-icon.fs-icon-bible:before {
     display: block;
     font-size: 15px !important;
     text-align: center;
-    
-    
+
+
 }
 
 p.fs-icon:before {
@@ -2096,15 +2190,15 @@ p.fs-icon:before {
     text-align: center;
 }
 
-.fs-container .fs-margin-1 {
+.fs-margin-1 {
     margin-bottom: 2em;
 }
 
-.fs-container .fs-margin-2 {
+.fs-margin-2 {
     margin-bottom: 4em;
 }
 
-.fs-container .fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
+.fs-margin-3 {/** if things belong together, make them standout with a high margin after**/
     margin-bottom: 8em;
 }
 
@@ -2217,9 +2311,18 @@ chapters.css
 chapter 01 - austauschen
 */
 
+.fs-chapter-exchange, .fs-chapter-do, .fs-chapter-discover {
+   padding-bottom: 96px;
+   padding-bottom: 6rem;
+}
+
+.fs-chapter-exchange {
+   background: #52bec4;
+
+}
+
 .fs-chapter-exchange h2 {
-       color: #E56A6A;
-       margin-top: 1em
+       color: #ffffff
     }
 
 .fs-chapter-exchange h2:before {
@@ -2228,99 +2331,83 @@ chapter 01 - austauschen
 	margin: 0 auto;
 	width: 60px;
 	height: 60px;
-	background-image: url(../img/chp01_icon_color.png);
+	background-image: url(../kapitel/allgemein/img/SVG/icon_sektion_01.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.fs-chapter-exchange .fs-box {
-        background: #E56A6A;
-        border-color: #CE5757;
-    }
+.fs-chapter-discover, .fs-chapter-neutral {
 
-/*&:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2em;
-        background: var(--color-blue-darker);
-        transform: rotate(-2deg);
-        margin-bottom: -1.3em;
-    }
-    .fs-hero-row {
-        background-color: var(--color-blue-darker);
-        position: relative;
+   background: #fff8dc;
+   margin-bottom: 80px;
+   margin-bottom: 5rem
+}
 
-        &:after {
-            background-image: url(var(--path-static-images)chapter_02_after.png);
-        }
-    }*/
+.fs-chapter-discover:before, .fs-chapter-neutral:before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%23fff8dc'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%23fff8dc'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%23fff8dc'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%23fff8dc'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%23fff8dc'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%23fff8dc'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%23fff8dc'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%23fff8dc'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%23fff8dc'/%3E%3C/svg%3E") !important;
+}
 
-.fs-chapter-discover h2 {
+.fs-chapter-discover h2, .fs-chapter-neutral h2 {
       color: #E56A6A;
-      margin-top: 1em
-   }
+}
 
-.fs-chapter-discover h2:before {
+.fs-chapter-discover h2:before, .fs-chapter-neutral h2:before {
 	content: '';
 	display: block;
 	margin: 0 auto;
 	width: 50px;
 	height: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 1;
 	background: url(../img/chp02_icon.svg) no-repeat scroll center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.fs-chapter-discover .fs-box.fs-box-default {
-      background: #6BA6AD;
-      border-color: #468F98;
-      color: #fff;
-   }
-
 /**
 chapter 03 - Tun
 */
 
-/*.fs-hero-row {
-        background-color: var(--color-orange);
+.fs-chapter-do {
+   background: #f4ca98
 
-        &:after {
-            background-image: url(var(--path-static-images)chapter_03_after.png);
-        }
-    }*/
+}
+
+.fs-chapter-do:before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%23f4ca98'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%23f4ca98'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%23f4ca98'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%23f4ca98'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%23f4ca98'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%23f4ca98'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%23f4ca98'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%23f4ca98'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%23f4ca98'/%3E%3C/svg%3E")!important;
+}
 
 .fs-chapter-do h2 {
-        color: #E56A6A;
-    }
+        color: #CE5757;
+}
 
 .fs-chapter-do .fs-box {
         background: #D35B28;
         border-color: #DC982D;
         color: #fff;
-    }
+}
 
 .fs-chapter-do .fs-box.fs-question:after, .fs-chapter-do .fs-box.fs-biblebold:after {
        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23D35B28'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23D35B28'/%3E%3C/svg%3E");
-    }
+}
 
 .fs-chapter-do .fs-tilted-background {
 	   background: linear-gradient(-4deg, #DC982D 130px, transparent 131px);
-    }
+}
 
 .fs-chapter-do .fs-tilted-background-2 {
 	   background: linear-gradient(4deg, #DC982D 130px, transparent 131px);
-    }
+}
 
 .fs-chapter-pray {
-    /*.fs-hero-row {
-        background-color: var(--color-brown);
+   background: #69bec4;
+   margin-bottom: 64px;
+   margin-bottom: 4rem
+}
 
-        &:after {
-            background-image: url(var(--path-static-images)chapter_04_after.png);
-        }
-    }*/
+.fs-chapter-pray:before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%2369bec4'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%2369bec4'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%2369bec4'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%2369bec4'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%2369bec4'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%2369bec4'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%2369bec4'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%2369bec4'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%2369bec4'/%3E%3C/svg%3E")!important;
 }
 
 /**
@@ -2414,19 +2501,39 @@ topic 01 - wer ist gott
 }
 
 .fs-img-challenge-background {
-    background: url(../img/tp_02_47.png) no-repeat scroll 31% bottom;
-    background-size: contain;
+    background: url(../kapitel/allgemein/img/SVG/challenge_background_02.svg) no-repeat scroll center bottom;
+
+    background-size: auto;
+    margin-bottom: -86px;
+    position: relative;
+    z-index: 1;
+}
+
+#praying-dudes {
+   z-index: 1;
+   position: relative;
+   margin-bottom: -32px;
+   margin-bottom: -2rem;
+   margin-top: -16px;
+   margin-top: -1rem;
+   max-width: 120%;
+   width: 150%;
+   text-align: center;
+   margin-left: -10%;
 }
 
 #fs-result-icon {
     background: url(../kapitel/02/img/SVG/rechner.svg) no-repeat scroll left top;
-    padding-left: 290px;
+    padding-left: 266px;
+    padding-top: 66px;
     height: 170px;
-    line-height: 152px;
     font-size: 20px;
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 900;
+    margin-top: -16px;
+    margin-top: -1rem;
+    color: #f47f5b;
 }
 
 #selfcheck-result {

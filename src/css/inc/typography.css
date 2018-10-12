@@ -35,14 +35,13 @@
          url('../fonts/arvo/arvo-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /**
 stuff from typography.css
 **/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'latobold', serif;
+    font-family: 'arvobold', serif;
     line-height: 1.25;
     letter-spacing: -1px;
     word-spacing: 2px;
@@ -62,32 +61,17 @@ h1 {
 }
 
 h2 {
-	font-size: 3.75rem;
-	text-transform: uppercase;
+	font-size: 6.5rem;
 	text-align: center;
 	margin: 0.2em 0 0.5em;
-    font-weight: 900;
-    letter-spacing: 0.14em;
-
-   small {
-      display: block;
-       font-size: 1.25rem;
-       margin-top: 0.5em;
-       font-family: 'latoregular', serif;
-       font-weight: normal;
-       text-transform: initial;
-       color: #797979;
-       font-weight: normal;
-       margin-top: -0.1rem;
-       max-width: 500px;
-       margin: 0 auto;
-   }
-
+   font-family: 'arvobold';
+    letter-spacing: 0.03em;
+    color: white;
 
 }
 h3, h4 {
     font-size: 2rem;
-    color: #575756;
+    color: var(--color-red-alternate);
     letter-spacing: 0.08em;
     font-weight: 900;
     /* text-transform: uppercase; */
@@ -95,7 +79,6 @@ h3, h4 {
     &.fs-hero {
         text-transform: uppercase;
         font-size: 2.25rem;
-        color: var(--color-red);
         margin-bottom: 0.2em;
     }
 }

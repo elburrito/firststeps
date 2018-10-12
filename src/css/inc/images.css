@@ -91,18 +91,34 @@ topic 01 - wer ist gott
 }
 
 .fs-img-challenge-background {
-    background: url(var(--path-static-images)tp_02_47.png) no-repeat scroll 31% bottom;
-    background-size: contain;
+    background: url(../kapitel/allgemein/img/SVG/challenge_background_02.svg) no-repeat scroll center bottom;
+
+    background-size: auto;
+    margin-bottom: -86px;
+    position: relative;
+    z-index: 1;
+}
+#praying-dudes {
+   z-index: 1;
+   position: relative;
+   margin-bottom: -2rem;
+   margin-top: -1rem;
+   max-width: 120%;
+   width: 150%;
+   text-align: center;
+   margin-left: -10%;
 }
 
 #fs-result-icon {
     background: url(../kapitel/02/img/SVG/rechner.svg) no-repeat scroll left top;
-    padding-left: 290px;
+    padding-left: 266px;
+    padding-top: 66px;
     height: 170px;
-    line-height: 152px;
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 900;
+    margin-top: -1rem;
+    color: #f47f5b;
 }
 
 #selfcheck-result {

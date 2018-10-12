@@ -3,9 +3,10 @@ $(document).ready(function () {
 	toggles everything
 	*/
 	$('.fs-toggler').click(function () {
-		$(this).closest('.fs-toggle-group').toggleClass('active');
+		$(this).closest('.fs-toggle-group').toggleClass('active').toggleClass('collapsed');
 		return false;
 	});
+
 
 
 	$('.fs-videobox .fs-play').click(function() {
