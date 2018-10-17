@@ -15,6 +15,73 @@ chapter 01 - austauschen
    padding-bottom: 6rem;
 }
 
+
+
+
+.fs-chapter-intro {
+	background: var(--color-red);
+	color: #ffffff;
+	padding-top: 2rem;
+	margin-bottom: 0px;
+	position: relative;
+   border-top: .5rem solid var(--color-red-darker);
+
+	.fs-chapter-title {
+		font-size: 2.6875rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 3.6875rem;
+	}
+	p {
+		font-size: 1.3125rem;
+		line-height: 1.33333;
+	}
+
+	hr {
+		color: #fff;
+		width: 100px;
+		border: 0.5px solid #fff;
+		margin: 1em 0;
+        height: auto;
+	}
+
+	h1 {
+			font-size: 5.5625rem;
+			font-weight: 900;
+			text-transform: uppercase;
+			line-height: 0.95;
+         font-family: 'latobold';
+	}
+   em {
+       font-family: 'latolight', serif;
+       font-size: 0.905em;
+       font-style:italic;
+       font-weight: lighter;
+   }
+
+	a {
+        margin: 10px 0;
+	}
+
+
+
+}
+
+/*.fs-hero-row:after, .*/
+.fs-chapter-intro:after, .fs-page-index #masthead:after {
+		display: block;
+		margin: 0 auto;
+		width: 330px;
+		height: 45px;
+		background: url(var(--path-static-images)chapter_01_after.png) no-repeat scroll center top;
+		content: '';
+		left:0;
+		right: 0;
+		bottom: -45px;
+		position: absolute;
+      z-index: 1;
+}
+
 .fs-chapter-exchange {
    background: var(--chapter-exchange-bg);
 
@@ -24,10 +91,10 @@ chapter 01 - austauschen
        &:before {
          content: '';
          display: block;
-         margin: 0 auto;
+         margin: 4rem auto -1rem;
          width: 60px;
          height: 60px;
-         background-image: url(../kapitel/allgemein/img/SVG/icon_sektion_01.svg);
+         background-image: url(var(--path-static-images)chp02_icon.svg);
          background-size: cover;
          background-repeat: no-repeat;
       }
@@ -41,7 +108,7 @@ chapter 01 - austauschen
 
    background: var(--chapter-discover-bg);
    margin-bottom: 5rem;
-   
+
    &:before {
        background-image: svg(kapitel_spacer param(--color var(--chapter-discover-bg))) !important;
    }

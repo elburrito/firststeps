@@ -56,19 +56,6 @@ body {
    padding-right: 0;
 }
 
-i {
-   padding-right: 5px;
-   font-size: 16px;
-   font-size: 1rem;
-   color: #6BA6AD;
-}
-
-img {
-   /*width: 100%;
-   height: auto;
-   */
-}
-
 /*--------------------------------------------------------------
 # Header / Navigation
 --------------------------------------------------------------*/
@@ -76,10 +63,9 @@ img {
 header#masthead {
    margin-bottom: 0;
    background-color: #fff !important;
-   min-height: 85px;
    padding: 0px 15px;
    border-bottom: 1px solid #9175bb;
-   position: fixed;
+   position: absolute;
    z-index: 1000;
    width: 100%
 }
@@ -92,6 +78,12 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
     color: #606060;
     font-weight: lighter;
     text-transform: uppercase;
+}
+
+header#masthead img {
+   margin: -5px 0 0;
+   max-height: 35px;
+
 }
 
 .menu-header-menu-container {
@@ -120,10 +112,6 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
       padding: 0;
       margin: 0;
    }
-
-.navbar .navbar-brand img {
-         margin: 0;
-      }
 
 .navbar > .container, .navbar > .container-fluid {
   display: -ms-flexbox;
@@ -170,7 +158,8 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
 	}
 
 .navbar-nav li a {
-
+         font-size: 14.4px;
+         font-size: 0.9rem;
 		}
 
 .navbar-nav .nav-link {
@@ -311,6 +300,10 @@ main {
 
 .fs-subsection i {
       color: #FFF;
+   }
+
+.fs-subsection h2, .fs-subsection h3, .fs-subsection h4 {
+      color: #FFEEB7;
    }
 
 /*
@@ -1140,71 +1133,6 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
     padding: 0px 15px;
 	}
 
-.fs-chapter-intro {
-	background: #E56A6A;
-	color: #ffffff;
-	padding-top: 32px;
-	padding-top: 2rem;
-	margin-bottom: 0px;
-	position: relative;
-   border-top: 8px solid #CE5757;
-   border-top: .5rem solid #CE5757;
-
-
-
-}
-
-.fs-chapter-intro .fs-chapter-title {
-		font-size: 43px;
-		font-size: 2.6875rem;
-		font-weight: 300;
-		text-transform: uppercase;
-		line-height: 59px;
-		line-height: 3.6875rem;
-	}
-
-.fs-chapter-intro p {
-		font-size: 21px;
-		font-size: 1.3125rem;
-		line-height: 1.33333;
-	}
-
-.fs-chapter-intro hr {
-		color: #fff;
-		width: 100px;
-		border: 0.5px solid #fff;
-		margin: 1em 0;
-        height: auto;
-	}
-
-.fs-chapter-intro h1 {
-			font-size: 89px;
-			font-size: 5.5625rem;
-			font-weight: 900;
-			text-transform: uppercase;
-			line-height: 0.95;
-	}
-
-.fs-chapter-intro a {
-        margin: 10px 0;
-	}
-
-/*.fs-hero-row:after, .*/
-
-.fs-chapter-intro:after, .fs-page-index #masthead:after {
-		display: block;
-		margin: 0 auto;
-		width: 330px;
-		height: 45px;
-		background: url(../img/chapter_01_after.png) no-repeat scroll center top;
-		content: '';
-		left:0;
-		right: 0;
-		bottom: -45px;
-		position: absolute;
-      z-index: 1;
-}
-
 .fs-topleft {
 	position: absolute !important;
 	left: -30px;
@@ -1329,6 +1257,10 @@ blockquote :not(p) > i, blockquote .fs-quote-writer  {
       margin: 0.5em 0 -1em;
       padding-right: 0.5em;
       color: #D35B28;
+}
+
+blockquote i {
+      color: #6BA6AD;
 }
 
 blockquote.col-sm-6 { /*  make it smaller */
@@ -2075,9 +2007,9 @@ h2 {
 	text-align: center;
 	margin: 0.2em 0 0.5em;
    font-family: 'arvobold';
-    letter-spacing: 0.03em;
-    color: white;
-
+   letter-spacing: 0.03em;
+   color: white;
+   word-break: break-word;
 }
 
 h3, h4 {
@@ -2100,13 +2032,6 @@ strong {
    font-family: 'latobold', sans-serif;
 }
 
-em {
-    font-family: 'latoregular', serif;
-    font-size: 0.905em;
-    font-style:italic;
-    font-weight: lighter;
-}
-
 body {
     font-family: 'latolight', sans-serif;
     line-height: 1.7;
@@ -2121,6 +2046,11 @@ body a:hover {
     text-decoration: none;
 }
 
+i {
+   padding-right: 5px;
+   font-size: 0.9em;
+}
+
 /*p, blockquote, p.caption,.fs-biblequote-inline, label */
 
 body {
@@ -2132,6 +2062,15 @@ body {
 .navbar-brand a {
     font-family: 'roboto_slabbold', serif;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+   html {
+      font-size: 14px;
+   }
+   h2 {
+      font-size: 4rem;
+   }
 }
 
 /**
@@ -2316,6 +2255,79 @@ chapter 01 - austauschen
    padding-bottom: 6rem;
 }
 
+.fs-chapter-intro {
+	background: #E56A6A;
+	color: #ffffff;
+	padding-top: 32px;
+	padding-top: 2rem;
+	margin-bottom: 0px;
+	position: relative;
+   border-top: 8px solid #CE5757;
+   border-top: .5rem solid #CE5757;
+
+
+
+}
+
+.fs-chapter-intro .fs-chapter-title {
+		font-size: 43px;
+		font-size: 2.6875rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 59px;
+		line-height: 3.6875rem;
+	}
+
+.fs-chapter-intro p {
+		font-size: 21px;
+		font-size: 1.3125rem;
+		line-height: 1.33333;
+	}
+
+.fs-chapter-intro hr {
+		color: #fff;
+		width: 100px;
+		border: 0.5px solid #fff;
+		margin: 1em 0;
+        height: auto;
+	}
+
+.fs-chapter-intro h1 {
+			font-size: 89px;
+			font-size: 5.5625rem;
+			font-weight: 900;
+			text-transform: uppercase;
+			line-height: 0.95;
+         font-family: 'latobold';
+	}
+
+.fs-chapter-intro em {
+       font-family: 'latolight', serif;
+       font-size: 0.905em;
+       font-style:italic;
+       font-weight: lighter;
+   }
+
+.fs-chapter-intro a {
+        margin: 10px 0;
+	}
+
+/*.fs-hero-row:after, .*/
+
+.fs-chapter-intro:after, .fs-page-index #masthead:after {
+		display: block;
+		margin: 0 auto;
+		width: 330px;
+		height: 45px;
+		background: url(../img/chapter_01_after.png) no-repeat scroll center top;
+		content: '';
+		left:0;
+		right: 0;
+		bottom: -45px;
+		position: absolute;
+      z-index: 1;
+}
+
 .fs-chapter-exchange {
    background: #52bec4;
 
@@ -2328,10 +2340,11 @@ chapter 01 - austauschen
 .fs-chapter-exchange h2:before {
 	content: '';
 	display: block;
-	margin: 0 auto;
+	margin: 64px auto -16px;
+	margin: 4rem auto -1rem;
 	width: 60px;
 	height: 60px;
-	background-image: url(../kapitel/allgemein/img/SVG/icon_sektion_01.svg);
+	background-image: url(../img/chp02_icon.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }

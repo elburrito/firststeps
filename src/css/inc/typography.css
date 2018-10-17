@@ -65,9 +65,9 @@ h2 {
 	text-align: center;
 	margin: 0.2em 0 0.5em;
    font-family: 'arvobold';
-    letter-spacing: 0.03em;
-    color: white;
-
+   letter-spacing: 0.03em;
+   color: white;
+   word-break: break-word;
 }
 h3, h4 {
     font-size: 2rem;
@@ -88,12 +88,7 @@ strong {
    font-family: 'latobold', sans-serif;
 }
 
-em {
-    font-family: 'latoregular', serif;
-    font-size: 0.905em;
-    font-style:italic;
-    font-weight: lighter;
-}
+
 
 body {
     font-family: 'latolight', sans-serif;
@@ -107,6 +102,10 @@ body a:hover {
     text-decoration: none;
 }
 
+i {
+   padding-right: 5px;
+   font-size: 0.9em;
+}
 
 /*p, blockquote, p.caption,.fs-biblequote-inline, label */
 body {
@@ -117,6 +116,15 @@ body {
 .navbar-brand a {
     font-family: 'roboto_slabbold', serif;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+   html {
+      font-size: 14px;
+   }
+   h2 {
+      font-size: 4rem;
+   }
 }
 
 /**

@@ -4,7 +4,8 @@
     padding: 2em;
     margin: 2em;
     border-radius: 33px;
-    -webkit-transform:  rotate(1deg);
-            transform:  rotate(1deg);
+    -webkit-transform:  rotate(0.5deg);
+            transform:  rotate(0.5deg);
+    background: #a29587;
 
 }
