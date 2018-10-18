@@ -362,6 +362,7 @@ end of stuff from layout.CSS
 
    .container-small {
       width: auto;
+      overflow: hidden;
    }
 
 }
@@ -1151,7 +1152,7 @@ quotes / text mark
 
 blockquote {
    color: #d38c5b;
-   font-family: 'arvo';
+   font-family: 'arvobold';
    font-style: italic;
    font-size: 18px;
    font-size: 1.125rem;

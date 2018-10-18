@@ -337,6 +337,7 @@ end of stuff from layout.CSS
 
    .container-small {
       width: auto;
+      overflow: hidden;
    }
 
 }
