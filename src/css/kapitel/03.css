@@ -8,3 +8,17 @@
     background: #a29587;
 
 }
+
+@media screen and (max-width: 768px) {
+
+   #cp03-pater-story {
+       border-width: 2px;
+       padding: 1rem;
+       margin: 0;
+       border-radius: 5px;
+       transform:  rotate(0deg);
+       background: #a29587;
+
+   }
+
+}

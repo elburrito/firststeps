@@ -217,7 +217,7 @@ header#masthead img {
 }
 
 main {
-   padding-top: 100px;
+   padding-top: 30px;
 }
 
 .divider {
@@ -1150,7 +1150,7 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 quotes / text mark
 */
 
-blockquote {
+blockquote, .fs-quote {
    color: #d38c5b;
    font-family: 'arvobold';
    font-style: italic;
@@ -1158,7 +1158,7 @@ blockquote {
    font-size: 1.125rem;
    position: relative;
 
-   padding-left: 85px;
+   padding-left: auto;
    overflow: hidden;
    -webkit-transition: all 2s ease-in-out;
    transition: all 2s ease-in-out;
@@ -1168,11 +1168,11 @@ blockquote {
    /* due to hidden overflow, this seems to be needed */
 }
 
-blockquote.fs-quote-narrow {
-	padding-left: 0px;
+blockquote.fs-quote-indent, .fs-quote.fs-quote-indent {
+	padding-left: 85px;
 }
 
-blockquote .fs-toggler {
+blockquote .fs-toggler, .fs-quote .fs-toggler {
        position: absolute;
        bottom: 11px;
        left: 45%;
@@ -1184,7 +1184,7 @@ blockquote .fs-toggler {
        display: none;
 }
 
-blockquote .fs-toggler:before {
+blockquote .fs-toggler:before, .fs-quote .fs-toggler:before {
 	color: #d38c5b;
 	font-size: 24px;
 	font-family: "Font Awesome 5 Free";
@@ -1197,16 +1197,16 @@ blockquote .fs-toggler:before {
 	font-style: normal;
 }
 
-blockquote.collapsed {
+blockquote.collapsed, .fs-quote.collapsed {
 	max-height: 120px;/*3 rows approx*/
 	display: block;
 }
 
-blockquote.collapsed .fs-toggler {
+blockquote.collapsed .fs-toggler, .fs-quote.collapsed .fs-toggler {
          display: block;
 }
 
-blockquote.collapsed:before {
+blockquote.collapsed:before, .fs-quote.collapsed:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -1216,20 +1216,21 @@ blockquote.collapsed:before {
 	width: 100%;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 248, 220, 0)),color-stop(45%, rgba(255, 248, 220, 1)),to(rgba(255, 248, 220, 1)));
 	background: linear-gradient(to bottom, rgba(255, 248, 220, 0) 0%,rgba(255, 248, 220, 1) 45%,rgba(255, 248, 220, 1) 100%);
+	z-index: 1;
 }
 
-blockquote .fs-topleft {
+blockquote .fs-topleft, .fs-quote .fs-topleft {
       left: 5px;
       top: 5px;
 }
 
-blockquote .fs-quote-begin, blockquote .fs-quote-end {
+blockquote .fs-quote-begin, blockquote .fs-quote-end, .fs-quote .fs-quote-begin, .fs-quote .fs-quote-end {
       position: relative;
       width: 25px;
       display: inline-block;
 }
 
-blockquote .fs-quote-begin:before, blockquote .fs-quote-end:before {
+blockquote .fs-quote-begin:before, blockquote .fs-quote-end:before, .fs-quote .fs-quote-begin:before, .fs-quote .fs-quote-end:before {
       font-family: "Font Awesome 5 Free";
       display: inline-block;
       font-weight: 900;
@@ -1240,16 +1241,16 @@ blockquote .fs-quote-begin:before, blockquote .fs-quote-end:before {
       left: 0;
 }
 
-blockquote .fs-quote-begin:before {
+blockquote .fs-quote-begin:before, .fs-quote .fs-quote-begin:before {
       content: "\f10d";
 }
 
-blockquote .fs-quote-end:before {
+blockquote .fs-quote-end:before, .fs-quote .fs-quote-end:before {
       content: "\f10e";
       right: 0;
 }
 
-blockquote :not(p) > i, blockquote .fs-quote-writer  {
+blockquote .fs-quote-writer, .fs-quote .fs-quote-writer  {
       font-family: 'latolight', serif;
       font-size: 14.4px;
       font-size: 0.9rem;
@@ -1260,7 +1261,7 @@ blockquote :not(p) > i, blockquote .fs-quote-writer  {
       color: #D35B28;
 }
 
-blockquote i {
+blockquote i, .fs-quote i {
       color: #6BA6AD;
 }
 
@@ -2318,8 +2319,8 @@ chapter 01 - austauschen
 .fs-chapter-intro:after, .fs-page-index #masthead:after {
 		display: block;
 		margin: 0 auto;
-		width: 330px;
-		height: 45px;
+		max-width: 330px;
+      height: 45px;
 		background: url(../img/chapter_01_after.png) no-repeat scroll center top;
 		content: '';
 		left:0;

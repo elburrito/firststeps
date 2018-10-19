@@ -761,21 +761,21 @@ simple Grid - dont want to use the flexibility from bootstrap as it uses too muc
 /**
 quotes / text mark
 */
-blockquote {
+blockquote,.fs-quote {
    color: #d38c5b;
    font-family: 'arvobold';
    font-style: italic;
    font-size: 1.125rem;
    position: relative;
 
-   padding-left: 85px;
+   padding-left: auto;
    overflow: hidden;
    transition: all 2s ease-in-out;
    max-height: 100%;
    padding-bottom: 1.5rem;
    /* due to hidden overflow, this seems to be needed */
-   &.fs-quote-narrow {
-      padding-left: 0px;
+   &.fs-quote-indent {
+      padding-left: 85px;
    }
 
 
@@ -818,6 +818,7 @@ blockquote {
        height: 6rem;
        width: 100%;
        background: linear-gradient(to bottom, rgba(255,248,220,0) 0%,rgba(255,248,220,1) 45%,rgba(255,248,220,1) 100%);
+       z-index: 1;
       }
    }
 
@@ -847,7 +848,7 @@ blockquote {
       content: "\f10e";
       right: 0;
    }
-   :not(p) > i, .fs-quote-writer  {
+   .fs-quote-writer  {
       font-family: 'latolight', serif;
       font-size: 0.9rem;
       display: block;

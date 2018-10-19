@@ -71,8 +71,8 @@ chapter 01 - austauschen
 .fs-chapter-intro:after, .fs-page-index #masthead:after {
 		display: block;
 		margin: 0 auto;
-		width: 330px;
-		height: 45px;
+		max-width: 330px;
+      height: 45px;
 		background: url(var(--path-static-images)chapter_01_after.png) no-repeat scroll center top;
 		content: '';
 		left:0;
