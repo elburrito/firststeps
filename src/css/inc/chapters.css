@@ -169,4 +169,8 @@ chapter 03 - Tun
      &:before {
         background-image: svg(kapitel_spacer param(--color var(--chapter-pray-bg)))!important;
      }
+     .fs-hero-row {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+     }
 }

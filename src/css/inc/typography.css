@@ -95,13 +95,13 @@ body {
     line-height: 1.7;
 }
 body a {
-    color: #8967bd;
+    color: var(--color-red-darker);
 }
 body a:hover {
-    color: #8967bd;
+    color:  var(--color-red-darker);
     text-decoration: none;
 }
- 
+
 i {
    padding-right: 5px;
    font-size: 0.9em;
