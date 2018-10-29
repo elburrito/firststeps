@@ -5,7 +5,7 @@ stuff from layout.CSS
 */
 
 * {
-   transition: all 0.5s ease;
+   /*transition: all 0.5s ease; causes a horrible lag - ohshmygooseness*/
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 header#masthead {
    margin-bottom: 0;
    background-color: #fff !important;
-   padding: 0px 15px;
+   padding: 0px;
    border-bottom: 1px solid #9175bb;
    position: relative;
    z-index: 1000;
