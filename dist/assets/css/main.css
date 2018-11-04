@@ -2033,6 +2033,68 @@ ol.fs-fancy-list ol {
     text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
 }
 
+.fs-yesno-item {
+   display: inline-block;
+   margin: 0 6.4px 6.4px 0;
+   margin: 0 0.4rem 0.4rem 0;
+}
+
+.fs-yesno-item .yes, .fs-yesno-item .no {
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      padding: 6.4px 16px;
+      padding: 0.4rem 1rem;
+      display: inline-block;
+   }
+
+.fs-yesno-item .yes {
+      background: #f47f5b;
+      border: 8px solid #CE5757;
+      color: #fff;
+      border-radius: 15px 0px 0px 15px;
+   }
+
+.fs-yesno-item .no {
+      background: #FFEEB7;
+      border: 8px solid #E5AA3B;
+      color: #E5AA3B;
+      border-radius: 0 15px 15px 0;
+      margin-left: -12px;
+   }
+
+.fs-contradition-overview .fs-contradiction-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 6.4px 6.4px 0;
+      margin: 0 0.4rem 0.4rem 0;
+   }
+
+.fs-contradition-overview .fs-contradiction-item .good, .fs-contradition-overview .fs-contradiction-item .bad {
+         -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+         padding: 6.4px 16px;
+         padding: 0.4rem 1rem;
+         display: inline-block;
+         width: 50%;
+      }
+
+.fs-contradition-overview .fs-contradiction-item .bad {
+         background: #f47f5b;
+         border: 8px solid #CE5757;
+         color: #fff;
+         border-radius: 15px 0px 0px 15px;
+         text-align: right;
+      }
+
+.fs-contradition-overview .fs-contradiction-item .good {
+         background: #FFEEB7;
+         border: 8px solid #E5AA3B;
+         color: #E5AA3B;
+         border-radius: 0 15px 15px 0;
+         margin-left: -12px;
+      }
+
 /*
 end of stuff from contentelements.css
 */
