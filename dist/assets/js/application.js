@@ -40,10 +40,4 @@ $(document).ready(function () {
 		offset: '80%'
 	})
 
-	$('h2').waypoint(function (direction) {
-		$(this.element).addClass('animate-onviewport');
-	}, {
-		offset: '80%'
-	})
-
 });
