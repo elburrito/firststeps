@@ -132,6 +132,7 @@ topic 01 - wer ist gott
     margin-bottom: 1em;
 }
 
-div#carouselGodImages img {
+div.carousel img {
     max-height: 250px;
+    margin-bottom: 75px;
 }

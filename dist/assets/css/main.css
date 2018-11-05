@@ -8,7 +8,7 @@ check MAINDIRECTORY/package.json for the list of modules..
 :root {
 	/**
 		colors
-	**/
+	**/ /* #f4ca98;*/
 
     /**
         path
@@ -2088,9 +2088,9 @@ ol.fs-fancy-list ol {
       }
 
 .fs-contradition-overview .fs-contradiction-item .good {
-         background: #FFEEB7;
-         border: 8px solid #E5AA3B;
-         color: #E5AA3B;
+         background: #6BA6AD;
+         border: 8px solid #468F98;
+         color: #fff;
          border-radius: 0 15px 15px 0;
          margin-left: -12px;
       }
@@ -2417,6 +2417,33 @@ chapter 01 - austauschen
    padding-bottom: 6rem;
 }
 
+.fs-chapter h2:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 65px;
+      height: 65px;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      border: 7px solid;
+      border-radius: 8px;
+      left: 0px;
+      margin-bottom: -6px;
+
+      -webkit-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+      transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+   }
+
+.fs-chapter h2.animate-onviewport:before {
+      -webkit-transform: rotate(370deg);
+              transform: rotate(370deg);
+   }
+
 .fs-chapter-intro {
 	background: #E56A6A;
 	color: #ffffff;
@@ -2496,19 +2523,21 @@ chapter 01 - austauschen
 }
 
 .fs-chapter-exchange h2 {
-       color: #ffffff
+       color: #ffffff;
+       padding-top: 32px;
+       padding-top: 2rem
     }
 
 .fs-chapter-exchange h2:before {
-	content: '';
-	display: block;
-	margin: 64px auto -16px;
-	margin: 4rem auto -1rem;
-	width: 60px;
-	height: 60px;
-	background-image: url(../img/chp02_icon.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(../kapitel/allgemein/img/SVG/icon_sektion_01.svg) no-repeat scroll center;
+	left: -150px;
+	-webkit-transform: rotate(-10deg);
+	        transform: rotate(-10deg);
+	width: 50px;
+	height: 50px;
+	border-width: 4px;
+	color: rgba(255, 255, 255, 0.53333);
+	display: none;
 }
 
 .fs-chapter-discover, .fs-chapter-neutral {
@@ -2523,21 +2552,13 @@ chapter 01 - austauschen
 }
 
 .fs-chapter-discover h2, .fs-chapter-neutral h2 {
-      color: #E56A6A;
+      color: #f47f5b;
 }
 
 .fs-chapter-discover h2:before, .fs-chapter-neutral h2:before {
-	content: '';
-	display: block;
-	margin: 0 auto;
-	width: 50px;
-	height: 50px;
-	margin-bottom: 0;
-	position: relative;
-	z-index: 1;
-	background: url(../img/chp02_icon.svg) no-repeat scroll center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(../kapitel/allgemein/img/SVG/icon_sektion_02.svg) no-repeat scroll center;
+	-webkit-transform: rotate(10deg);
+	        transform: rotate(10deg);
 }
 
 /**
@@ -2545,26 +2566,33 @@ chapter 03 - Tun
 */
 
 .fs-chapter-do {
-   background: #f4ca98
+   background: #ffa939
 
 }
 
 .fs-chapter-do:before {
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%23f4ca98'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%23f4ca98'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%23f4ca98'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%23f4ca98'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%23f4ca98'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%23f4ca98'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%23f4ca98'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%23f4ca98'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%23f4ca98'/%3E%3C/svg%3E")!important;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%23ffa939'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%23ffa939'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%23ffa939'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%23ffa939'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%23ffa939'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%23ffa939'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%23ffa939'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%23ffa939'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%23ffa939'/%3E%3C/svg%3E")!important;
 }
 
 .fs-chapter-do h2 {
-        color: #CE5757;
+        color: #FFF;
+}
+
+.fs-chapter-do h2:before {
+	background: url(../kapitel/allgemein/img/SVG/icon_sektion_03.svg) no-repeat scroll center;
+	-webkit-transform: rotate(-30deg);
+	        transform: rotate(-30deg);
+	color: rgba(255, 255, 255, 0.53333);
 }
 
 .fs-chapter-do .fs-box {
-        background: #D35B28;
-        border-color: #DC982D;
+        background: #6BA6AD;
+        border-color: #468F98;
         color: #fff;
 }
 
 .fs-chapter-do .fs-box.fs-question:after, .fs-chapter-do .fs-box.fs-biblebold:after {
-       background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23D35B28'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23D35B28'/%3E%3C/svg%3E");
+       background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50%2C0 50%2C50 20%2C0' fill='%23468F98'/%3E%3Cellipse rx='20' ry='2' cx='50' cy='55' fill='%23468F98'/%3E%3C/svg%3E");
 }
 
 .fs-chapter-do .fs-tilted-background {
@@ -2583,6 +2611,13 @@ chapter 03 - Tun
 
 .fs-chapter-pray:before {
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2687.44 233.67'%3E%3Cpath d='M1212.77%2C66.07c.41%2C2.63-21.54%2C5.31-49.33%2C9.58s-50.92%2C8.52-51.32%2C5.89%2C22.06-11.13%2C49.86-15.41S1212.37%2C63.44%2C1212.77%2C66.07Z' fill='%2369bec4'/%3E%3Cpath d='M1998%2C65c0%2C2-17.42%2C1.54-39.59%2C1.65s-40.69.71-40.7-1.24%2C18.49-5.71%2C40.67-5.82S1998%2C63.05%2C1998%2C65Z' fill='%2369bec4'/%3E%3Cpath d='M904.38%2C127.34c.07-2%2C17.47-.83%2C39.63%2C0s40.7%2C1%2C40.63%2C2.9-18.72%2C5-40.88%2C4.17S904.31%2C129.29%2C904.38%2C127.34Z' fill='%2369bec4'/%3E%3Cpath d='M693.43%2C72c-.23%2C1.94-8.94.37-20.1-1S652.79%2C69%2C653%2C67.1s10-4.45%2C21.16-3.09S693.67%2C70.07%2C693.43%2C72Z' fill='%2369bec4'/%3E%3Cpath d='M1347.15%2C77.37c-.07%2C1.57-13.74.52-31.16-.31s-32-1.11-31.92-2.68%2C14.77-3.83%2C32.19-3S1347.23%2C75.8%2C1347.15%2C77.37Z' fill='%2369bec4'/%3E%3Cpath d='M25.77%2C230.83c1.92%2C0%2C3.82%2C0%2C5.71-.06C-5.17%2C230.81-13.29%2C230.83%2C25.77%2C230.83Z' fill='%2369bec4'/%3E%3Cpath d='M2577.77%2C109.1c-10-45.73-30-169-220-74.13s-302.82%2C39.59-376%2C39.59c-184%2C0-276.74%2C36.78-366.1%2C36.78s-181.43-30.63-351.55-30.63-218.62%2C58.61-314.69%2C58.61S837%2C97.52%2C667.45%2C79.08c-385.53-26.38-460.11%2C148-636%2C151.69%2C132.23-.15%2C636-.5%2C636-.5h1200s560.16%2C1.81%2C754.52%2C2.79C2519.85%2C225.66%2C2587.26%2C152.48%2C2577.77%2C109.1Zm-1124.16-2.17c-13.57-1.72-23.83-6.25-23.61-7.94s10.82.1%2C24.38%2C1.81%2C24.95%2C2.72%2C24.74%2C4.42S1467.17%2C108.64%2C1453.61%2C106.93Zm99%2C14.06c-26.21-2.43-46.51-7.53-46.36-9.23s20.72.65%2C46.93%2C3.09%2C48.16%2C4%2C48%2C5.72S1578.83%2C123.42%2C1552.61%2C121Zm66.83%2C4.07c-2.69%2C0-4.87-1-4.87-2.34s2.18-2.34%2C4.87-2.34%2C4.88%2C1.05%2C4.88%2C2.34S1622.13%2C125.06%2C1619.44%2C125.06Z' fill='%2369bec4'/%3E%3Cpath d='M2622%2C233.06c5.52.4%2C11.54.61%2C18.1.61C2715.81%2C233.67%2C2694%2C233.43%2C2622%2C233.06Z' fill='%2369bec4'/%3E%3Ccircle cx='891.19' cy='123.78' r='2.47' fill='%2369bec4'/%3E%3C/svg%3E")!important;
+}
+
+.fs-chapter-pray h2:before {
+        background: url(../kapitel/allgemein/img/SVG/icon_sektion_04.svg) no-repeat scroll center;
+        -webkit-transform: rotate(10deg);
+                transform: rotate(10deg);
+        color: rgba(255, 255, 255, 0.53333);
 }
 
 .fs-chapter-pray .fs-hero-row {
@@ -2730,7 +2765,8 @@ topic 01 - wer ist gott
     margin-bottom: 1em;
 }
 
-div#carouselGodImages img {
+div.carousel img {
     max-height: 250px;
+    margin-bottom: 75px;
 }  
    
