@@ -238,6 +238,7 @@ header#masthead img {
 
 .fs-subsection {
    background: var(--color-red-alternate);
+   position: relative;
    padding: 3rem 0;
    color: #fff;
    i {
@@ -246,6 +247,43 @@ header#masthead img {
    h2,h3,h4 {
       color: var(--color-yellow);
    }
+
+   > * {
+      position: relative;
+      z-index: 3;
+   }
+
+   &:before {
+      content: '';
+      display: block;
+      position: absolute;
+
+      background: no-repeat scroll center bottom;
+      background-image: svg(kapitel_spacer param(--color var(--color-red-alternate)));
+      background-size: cover;
+
+      width: 100%;
+      top: -58px;
+      height: 60px;
+      background-position: left top;
+   }
+
+   &:after {
+      content: '';
+      display: block;
+      position: absolute;
+
+      background: no-repeat scroll center bottom;
+      background-image: svg(kapitel_subspacer_after param(--color var(--color-red-alternate)));
+      background-size: cover;
+
+      width: 100%;
+      bottom: -58px;
+      height: 60px;
+      background-position: center bottom;
+      z-index: 1;
+   }
+
 }
 
 /*
@@ -286,6 +324,15 @@ kapitel spacers
    }
 
 }
+
+@svg kapitel_subspacer_after {
+   viewBox: 0 0 791.22 46.03;
+   @path {
+      d: M0,0H791.22V14.28c0,28.42-48.4-12.72-395.61-12.72-234.29,0-323.09,13.25-362.2,37C14.56,50,0,47.75,0,35.68Z;
+		fill: var(--color);
+   }
+}
+
 
 #toplink {
     background: #5D5D5D;
@@ -338,7 +385,8 @@ end of stuff from layout.CSS
 
    .container-small {
       width: auto;
-      overflow: hidden;
+      /* overflow: hidden; where would that be needed? this breaks some stuff*/
+      overflow-x: hidden;
    }
 
 }

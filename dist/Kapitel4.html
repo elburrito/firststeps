@@ -398,29 +398,115 @@
 						<div class="container-small">
 							<div class="row align-items-end">
 								<div class="col-sm-4" style="text-align: right;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.49 167.77">
+									<button class="run">run</button>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.49 167.77" id="checkbox-animated" class="animate-onviewport onviewport">
 	<defs>
 		<style>
-			.cls-1 {
+
+			#checkbox-animated {
+				max-width: 300px;
+				overflow: visible;
+
+			}
+			#checkbox-animated .shadow {
 				fill: #dd992e;
 			}
-			.cls-2 {
+			#checkbox-animated .box {
 				fill: #f0d3a5;
 				stroke: #dd992e;
 				stroke-miterlimit: 10;
 				stroke-width: 11px;
+				stroke-linecap: round;
+				stroke-linejoin: round;
 			}
-			.cls-4 {
+			#checkbox-animated .check {
 				fill: #c24a4a;
+			}
+
+			#checkbox-animated .circle {
+				fill: none;
+				stroke: #CE5757;
+				stroke-width: 10;
+				opacity: 0;
+				stroke-width: 10px;
+			}
+
+			#checkbox-animated.animate-onviewport.animate .shadow {
+				stransform: translate(10px, 20px) scale(1);
+				animation: jump 0.5s 0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+				transform-origin: center;
+			}
+
+			#checkbox-animated.animate-onviewport.animate .check {
+				transform: scale(0);
+				animation: jump 0.7s 1.9s cubic-bezier(0.68, -0.95, 0.565, 2.55) forwards 1;
+				transform-origin: center;
+			}
+
+			#checkbox-animated.animate-onviewport.animate .box {
+				stroke-dasharray: 500;
+				stroke-dashoffset: 0;
+				transform-origin: center;
+
+				animation: dash 1.5s 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards 1,jump 0.5s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards 1;
+
+			}
+
+			#checkbox-animated.animate-onviewport.animate .circle {
+				animation: explosion 0.5s 2.55s forwards 1;
+			}
+
+			@keyframes dash {
+				from {
+					stroke-dashoffset: 500;
+				}
+				to {
+					stroke-dashoffset: 0;
+				}
+			}
+			@keyframes jump {
+				0% {
+					transform: scale(0);
+					opacity: 0;
+
+				}
+				100% {
+					transform: scale(1);
+					opacity: 1;
+				}
+			}
+
+			@keyframes explosion {
+				0% {
+					r: 0;
+					stroke-width: 3;
+					opacity: 1;
+
+				}
+				100% {
+					r: 80;
+					stroke-width: 40;
+					opacity: 0;
+				}
 			}
 		</style>
 	</defs>
-	<title>checkbox_2</title>
-	<g id="asdsa">
-		<path class="cls-1" d="M139.55,145.26c0,2.07-25.22,3.75-56.34,3.75s-56.33-1.68-56.33-3.75,25.22-3.75,56.33-3.75S139.55,143.19,139.55,145.26Z"/>
-		<rect class="cls-2" x="30.76" y="30.98" width="99.32" height="99.32" rx="7.56" ry="7.56"/>
-		<path class="cls-4" d="M153.31,45a6.71,6.71,0,0,1-2,4.94l-52.61,52.6-9.88,9.88a7,7,0,0,1-9.88,0L69,102.56l-26.3-26.3a7,7,0,0,1,0-9.88l9.88-9.88a7,7,0,0,1,9.88,0L83.85,77.93,131.52,30.2a7,7,0,0,1,9.88,0l9.88,9.88A6.69,6.69,0,0,1,153.31,45Z"/>
+	<title>Checkbox</title>
+
+	<g>
+		<ellipse class="shadow" cx="46%" cy="85%" rx="60" ry="4"/>
+		<rect class="box" x="30.76" y="30.98" width="99.32" height="99.32" rx="7.56" ry="7.56"/>
+
 	</g>
+	<g>
+		<circle class="circle" cx="46%" cy="48%" r="40" stroke-width="0"/>
+	</g>
+	<g>
+
+		<path class="check" d="M153.31,45a6.71,6.71,0,0,1-2,4.94l-52.61,52.6-9.88,9.88a7,7,0,0,1-9.88,0L69,102.56l-26.3-26.3a7,7,0,0,1,0-9.88l9.88-9.88a7,7,0,0,1,9.88,0L83.85,77.93,131.52,30.2a7,7,0,0,1,9.88,0l9.88,9.88A6.69,6.69,0,0,1,153.31,45Z"/>
+	</g>
+
 </svg>
 
 								</div>

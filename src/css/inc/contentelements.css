@@ -1437,6 +1437,90 @@ infoicons
 /************
 verschiedene listen (ul,ol)
 */
+/** lists */
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+ol li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: var(--color-yellow);
+  border-radius: 10%;
+  color: var(--color-red-alternate);
+  border: 3px solid  var(--color-red-alternate);
+
+  line-height: 1.1;
+    font-size: 1em;
+    font-family: 'latobold';
+    font-weight: bold;
+    width: 1.4em;
+    height: 1.4em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(-2deg);
+}
+
+
+ol.fs-fancy-list {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    padding: 0 0 0 15px;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol.fs-fancy-list ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+
+.fs-fancy-list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2.5em;
+    *padding: .4em;
+    margin: .5em 0 0.5em;
+    /*border: 1px solid var(--color-red-alternate);*/
+    background: var(--color-yellow);
+    text-decoration: none;
+    border-radius: .3em;
+}
+
+.fs-fancy-list li:hover{
+}
+
+.fs-fancy-list li:hover:before{
+    transform: rotate(360deg);
+}
+
+.fs-fancy-list li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: var(--color-red-alternate);
+    color: #fff;
+    height: 3em;
+    width: 3em;
+    line-height: 2.2em;
+    border: 8px solid var(--color-red-darker);
+    text-align: center;
+    border-radius: 2em;
+    font-family: 'arvobold';
+    font-size: 1.2rem;
+    transition: all .3s ease-out;
+    text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+
 .fs-question-list {
    list-style: none;
    counter-reset: li;
@@ -1447,6 +1531,7 @@ verschiedene listen (ul,ol)
    	margin-bottom: 1em;
    	margin-left: 60px;
       counter-increment: li;
+      line-height: 1.2;
    }
 
    li::before {
@@ -1463,8 +1548,7 @@ verschiedene listen (ul,ol)
       height: 40px;
       font-weight: bold;
       text-align: center;
-      font-size: 1.625;
-      line-height: 1.2;
+      line-height: 1.5;
       vertical-align: top;
 
       font-style: normal;
@@ -1575,60 +1659,8 @@ verschiedene listen (ul,ol)
     display: block;
 }
 
-/** lists */
-ol.fs-fancy-list {
-    counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    *list-style: decimal; /* Keep using default numbering for IE6/7 */
-    padding: 0 0 0 15px;
-    margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
 
-ol.fs-fancy-list ol {
-    margin: 0 0 0 2em; /* Add some left margin for inner lists */
-}
-
-.fs-fancy-list li{
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em 2.5em;
-    *padding: .4em;
-    margin: .5em 0 0.5em;
-    /*border: 1px solid var(--color-red-alternate);*/
-    background: var(--color-yellow);
-    text-decoration: none;
-    border-radius: .3em;
-}
-
-.fs-fancy-list li:hover{
-}
-
-.fs-fancy-list li:hover:before{
-    transform: rotate(360deg);
-}
-
-.fs-fancy-list li:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: var(--color-red-alternate);
-    color: #fff;
-    height: 3em;
-    width: 3em;
-    line-height: 2.2em;
-    border: 8px solid var(--color-red-darker);
-    text-align: center;
-    border-radius: 2em;
-    font-family: 'arvobold';
-    font-size: 1.2rem;
-    transition: all .3s ease-out;
-    text-shadow: 0 1px 0 rgba(0,0,0,.3);
-}
-
+/* special items */
 .fs-yesno-item {
    display: inline-block;
    margin: 0 0.4rem 0.4rem 0;

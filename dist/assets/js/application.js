@@ -40,4 +40,24 @@ $(document).ready(function () {
 		offset: '80%'
 	})
 
+
+	$('section:not(.fs-chapter-exchange) h2').waypoint(function (direction) {
+		$(this.element).addClass('animate-onviewport');
+	}, {
+		offset: '70%'
+	});
+
+	$('section.fs-chapter-exchange h2').waypoint(function (direction) {
+		$(this.element).addClass('animate-onviewport');
+	}, {
+		offset: '30%'
+	})
+
+
+	$('.animate-onviewport').waypoint(function (direction) {
+		$(this.element).addClass('animate');
+	}, {
+		offset: '80%'
+	})
+
 });
