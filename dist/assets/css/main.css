@@ -36,6 +36,8 @@ stuff from layout.CSS
 
 html {
   font-size: 16px;
+  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -46,7 +48,15 @@ body {
   line-height: 1.5;
   color: #606060;
   text-align: left;
-  background-color: #fff8dc;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-small {
@@ -58,6 +68,16 @@ body {
 .container-fluid {
    padding-left: 0;
    padding-right: 0;
+}
+
+#page {
+   -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+           flex-grow: 1;
+}
+
+main {
+   background: #fff8dc;
 }
 
 /*--------------------------------------------------------------
@@ -397,8 +417,8 @@ end of stuff from layout.CSS
 
    .container-small {
       width: auto;
-      /* overflow: hidden; where would that be needed? this breaks some stuff*/
-      overflow-x: hidden;
+      /* overflow: hidden; where would that be needed? this breaks some stuff
+      overflow-x: hidden;*/
    }
 
 }
@@ -1702,24 +1722,24 @@ infoicons
 
 .fs-infothing.fs-question {
 	background-color:#FFEEB7;
-	border-color:#E5AA3B;
+	border-color:#F99A03;
 }
 
 .fs-infothing.fs-question:before {
 	content: "\f128";
-	color: #E5AA3B;
+	color: #F99A03;
 	-webkit-transform: rotate(-10deg);
 	        transform: rotate(-10deg);
 }
 
 .fs-infothing.fs-bible {
 	background-color:#FFEEB7;
-	border-color:#E5AA3B;
+	border-color:#F99A03;
 }
 
 .fs-infothing.fs-bible:before {
 	content: '\f02d';
-	color: #E5AA3B;
+	color: #F99A03;
 	-webkit-transform: rotate(-10deg);
 	        transform: rotate(-10deg);
 	font-size: 24px;
@@ -1860,38 +1880,40 @@ verschiedene listen (ul,ol)
 
 /** lists */
 
-ol {
+main ol:not(.carousel-indicators) {
   list-style: none;
   counter-reset: item;
 }
 
-ol li {
-  counter-increment: item;
-  margin-bottom: 5px;
-}
+main ol:not(.carousel-indicators) li {
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
 
-ol li:before {
-  margin-right: 10px;
-  content: counter(item);
-  background: #FFEEB7;
-  border-radius: 10%;
-  color: #f47f5b;
-  border: 3px solid  #f47f5b;
+main ol:not(.carousel-indicators) li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #FFEEB7;
+    border-radius: 10%;
+    color: #f47f5b;
+    border: 3px solid  #f47f5b;
 
-  line-height: 1.1;
-    font-size: 1em;
-    font-family: 'latobold';
-    font-weight: bold;
-    width: 1.4em;
-    height: 1.4em;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-}
+    margin-left: -40px;
 
-ol.fs-fancy-list {
+    line-height: 1.1;
+      font-size: 1em;
+      font-family: 'latobold';
+      font-weight: bold;
+      width: 1.4em;
+      height: 1.4em;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+  }
+
+main ol.fs-fancy-list:not(.carousel-indicators) {
     counter-reset: li; /* Initiate a counter */
     list-style: none; /* Remove default numbering */
     *list-style: decimal; /* Keep using default numbering for IE6/7 */
@@ -1900,11 +1922,11 @@ ol.fs-fancy-list {
     text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-ol.fs-fancy-list ol {
+main ol.fs-fancy-list:not(.carousel-indicators) ol {
     margin: 0 0 0 2em; /* Add some left margin for inner lists */
 }
 
-.fs-fancy-list li{
+main .fs-fancy-list:not(.carousel-indicators) li{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2.5em;
@@ -1916,21 +1938,22 @@ ol.fs-fancy-list ol {
     border-radius: .3em;
 }
 
-.fs-fancy-list li:hover{
+main .fs-fancy-list li:hover{
 }
 
-.fs-fancy-list li:hover:before{
+main .fs-fancy-list li:hover:before{
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
 }
 
-.fs-fancy-list li:before{
+main .fs-fancy-list:not(.carousel-indicators) li:before{
     content: counter(li);
     counter-increment: li;
     position: absolute;
     left: -1.3em;
     top: 50%;
     margin-top: -1.3em;
+    margin-left: 0;
     background: #f47f5b;
     color: #fff;
     height: 3em;
@@ -1987,8 +2010,8 @@ ol.fs-fancy-list ol {
 
 .fs-question-list.fs-color-yellow li::before {
 	background-color: #FFEEB7;
-	border-color: #E5AA3B;
-	color: #E5AA3B;
+	border-color: #F99A03;
+	color: #F99A03;
 }
 
 /*! ========================================================================
@@ -2124,8 +2147,8 @@ ol.fs-fancy-list ol {
 
 .fs-yesno-item .no {
       background: #FFEEB7;
-      border: 8px solid #E5AA3B;
-      color: #E5AA3B;
+      border: 8px solid #F99A03;
+      color: #F99A03;
       border-radius: 0 15px 15px 0;
       margin-left: -12px;
    }
@@ -2301,6 +2324,7 @@ body {
    h2 {
       font-size: 4rem;
    }
+   
 }
 
 /**
@@ -2707,6 +2731,14 @@ chapter 03 - Tun
         padding-bottom: 8rem;
 }
 
+@media screen and (max-width: 768px) {
+
+   .fs-chapter-intro h1{
+      font-size: 3rem;
+   }
+
+}
+
 /**
 images.css
 **/
@@ -2724,7 +2756,7 @@ index page / overview
     padding-top: 4em;
 }
 
-.fs-chapter-overview p, .fs-chapter-overview p.bodytext   {
+.fs-chapter-overview p, .fs-chapter-overview p.bodytext, .fs-chapter-overview h3, .fs-chapter-overview a   {
         color: #fff;
     }
 
@@ -2813,7 +2845,7 @@ topic 01 - wer ist gott
    margin-bottom: -2rem;
    margin-top: -16px;
    margin-top: -1rem;
-   max-width: 120%;
+   max-width: 100%; /*120%; */
    width: 150%;
    text-align: center;
    margin-left: -10%;

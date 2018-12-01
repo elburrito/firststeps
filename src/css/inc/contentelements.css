@@ -1438,36 +1438,40 @@ infoicons
 verschiedene listen (ul,ol)
 */
 /** lists */
-ol {
+main ol:not(.carousel-indicators) {
   list-style: none;
   counter-reset: item;
-}
-ol li {
-  counter-increment: item;
-  margin-bottom: 5px;
-}
-ol li:before {
-  margin-right: 10px;
-  content: counter(item);
-  background: var(--color-yellow);
-  border-radius: 10%;
-  color: var(--color-red-alternate);
-  border: 3px solid  var(--color-red-alternate);
 
-  line-height: 1.1;
-    font-size: 1em;
-    font-family: 'latobold';
-    font-weight: bold;
-    width: 1.4em;
-    height: 1.4em;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(-2deg);
+  li {
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
+  li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: var(--color-yellow);
+    border-radius: 10%;
+    color: var(--color-red-alternate);
+    border: 3px solid  var(--color-red-alternate);
+
+    margin-left: -40px;
+
+    line-height: 1.1;
+      font-size: 1em;
+      font-family: 'latobold';
+      font-weight: bold;
+      width: 1.4em;
+      height: 1.4em;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(-2deg);
+  }
 }
 
 
-ol.fs-fancy-list {
+
+main ol.fs-fancy-list:not(.carousel-indicators) {
     counter-reset: li; /* Initiate a counter */
     list-style: none; /* Remove default numbering */
     *list-style: decimal; /* Keep using default numbering for IE6/7 */
@@ -1476,11 +1480,11 @@ ol.fs-fancy-list {
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
-ol.fs-fancy-list ol {
+main ol.fs-fancy-list:not(.carousel-indicators) ol {
     margin: 0 0 0 2em; /* Add some left margin for inner lists */
 }
 
-.fs-fancy-list li{
+main .fs-fancy-list:not(.carousel-indicators) li{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2.5em;
@@ -1492,20 +1496,21 @@ ol.fs-fancy-list ol {
     border-radius: .3em;
 }
 
-.fs-fancy-list li:hover{
+main .fs-fancy-list li:hover{
 }
 
-.fs-fancy-list li:hover:before{
+main .fs-fancy-list li:hover:before{
     transform: rotate(360deg);
 }
 
-.fs-fancy-list li:before{
+main .fs-fancy-list:not(.carousel-indicators) li:before{
     content: counter(li);
     counter-increment: li;
     position: absolute;
     left: -1.3em;
     top: 50%;
     margin-top: -1.3em;
+    margin-left: 0;
     background: var(--color-red-alternate);
     color: #fff;
     height: 3em;

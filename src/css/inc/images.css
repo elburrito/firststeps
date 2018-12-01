@@ -14,7 +14,8 @@ index page / overview
     background-color: var(--color-red);
     padding-top: 4em;
 
-    p, p.bodytext   {
+
+    p, p.bodytext, h3, a   {
         color: #fff;
     }
 }
@@ -103,7 +104,7 @@ topic 01 - wer ist gott
    position: relative;
    margin-bottom: -2rem;
    margin-top: -1rem;
-   max-width: 120%;
+   max-width: 100%; /*120%; */
    width: 150%;
    text-align: center;
    margin-left: -10%;

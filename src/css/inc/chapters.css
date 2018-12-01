@@ -213,3 +213,11 @@ chapter 03 - Tun
         padding-bottom: 8rem;
      }
 }
+
+@media screen and (max-width: 768px) {
+
+   .fs-chapter-intro h1{
+      font-size: 3rem;
+   }
+
+}

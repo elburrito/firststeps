@@ -10,6 +10,8 @@ stuff from layout.CSS
 
 html {
   font-size: 16px;
+  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -19,19 +21,29 @@ body {
   line-height: 1.5;
   color: var(--color-main-text);
   text-align: left;
-  background-color: #fff8dc;
+  background-color: #fff;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
 }
+
 .container-small {
    width: 768px;
    margin: 0 auto;
    padding: 0 15px;
 }
+
 .container-fluid {
    padding-left: 0;
    padding-right: 0;
 }
 
-
+#page {
+   flex-grow: 1;
+}
+main {
+   background: #fff8dc;
+}
 
 /*--------------------------------------------------------------
 # Header / Navigation
@@ -385,8 +397,8 @@ end of stuff from layout.CSS
 
    .container-small {
       width: auto;
-      /* overflow: hidden; where would that be needed? this breaks some stuff*/
-      overflow-x: hidden;
+      /* overflow: hidden; where would that be needed? this breaks some stuff
+      overflow-x: hidden;*/
    }
 
 }
