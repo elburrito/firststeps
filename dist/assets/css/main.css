@@ -91,7 +91,8 @@ header#masthead {
    border-bottom: 1px solid #9175bb;
    position: relative;
    z-index: 1000;
-   width: 100%
+   width: 100%;
+   min-height: 90px
 }
 
 header#masthead.navbar-static-top {
@@ -104,10 +105,9 @@ header#masthead a, header#masthead li a, footer a, footer a:visited, footer {
     text-transform: uppercase;
 }
 
-header#masthead img {
+header#masthead .navbar-brand img {
    margin: -5px 0 0;
-   max-height: 35px;
-
+   height: 75px;
 }
 
 .menu-header-menu-container {
@@ -115,18 +115,20 @@ header#masthead img {
 }
 
 .navbar {
-  position: relative;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-pack: justify;
-      -webkit-box-pack: justify;
-          justify-content: space-between;
+   position: relative;
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   -webkit-box-align: start;
+       -ms-flex-align: start;
+           align-items: flex-start;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+
+
   padding: 8px 16px;
   padding: 0.5rem 1rem;
 }
@@ -382,7 +384,7 @@ kapitel spacers
 	left: -112px;
 	width: 330px;
 	height: 45px;
-	background: url(../img/bottom_before.png) no-repeat scroll center bottom;
+	background: url(../kapitel/allgemein/img/PNG/bottom_before.png) no-repeat scroll center bottom;
 }
 
 #toplink .ready {
@@ -2600,7 +2602,7 @@ chapter 01 - austauschen
 		margin: 0 auto;
 		max-width: 330px;
       height: 45px;
-		background: url(../img/chapter_01_after.png) no-repeat scroll center top;
+		background: url(../kapitel/allgemein/img/PNG/chapter_01_after.png) no-repeat scroll center top;
 		content: '';
 		left:0;
 		right: 0;
@@ -2748,7 +2750,7 @@ index page / overview
 **/
 
 .fs-page-index #masthead:after {
-    background-image: url(../img/white_after.png);
+    background-image: url(../kapitel/allgemein/img/PNG/white_after.png);
 }
 
 .fs-chapter-overview {
@@ -2759,6 +2761,10 @@ index page / overview
 .fs-chapter-overview p, .fs-chapter-overview p.bodytext, .fs-chapter-overview h3, .fs-chapter-overview a   {
         color: #fff;
     }
+
+body.fs-page-index header p+p {
+      font-size: 75%;
+   }
 
 .fs-tp-overview .fs-tp-thumb {
         width: 150px;
@@ -2797,10 +2803,10 @@ index page / overview
         }
 
 .fs-tp-overview .fs-tp-thumb .fs-tp-caption .fs-nr {
-                color: #E8E8E8;
+                color: #6BA6AD;
                 display: table-cell;
                 padding: 0px 4px 0px 7px;
-                vertical-align: middle;
+                vertical-align: top;
             }
 
 .fs-tp-overview .fs-tp-thumb .fs-tp-caption .fs-tp-title {
@@ -2820,11 +2826,11 @@ topic 01 - wer ist gott
 .fs-img-questionmark-big {
     width: 194px;
     height: 290px;
-    background: url(../img/questionlamp.png) no-repeat scroll center bottom;
+    background: url(../kapitel/allgemein/img/PNG/questionlamp.png) no-repeat scroll center bottom;
 }
 
 .fs-img-do-background {
-    background: url(../img/running_dude.png) no-repeat scroll left bottom;
+    background: url(../kapitel/allgemein/img/PNG/running_dude.png) no-repeat scroll left bottom;
     background-size: auto auto;
     background-size: initial;
 }

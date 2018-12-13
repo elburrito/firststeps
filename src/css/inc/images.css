@@ -21,6 +21,12 @@ index page / overview
 }
 
 
+body.fs-page-index {
+   header p+p {
+      font-size: 75%;
+   }
+}
+
 
 .fs-tp-overview {
     .fs-tp-thumb {
@@ -57,10 +63,10 @@ index page / overview
             font-weight: bold;
 
             .fs-nr {
-                color: var(--color-lightgrey);
+                color: var(--color-blue);
                 display: table-cell;
                 padding: 0px 4px 0px 7px;
-                vertical-align: middle;
+                vertical-align: top;
             }
 
             .fs-tp-title {

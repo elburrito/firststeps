@@ -3,10 +3,7 @@
 	<head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<title>First Steps</title>
-
-      <meta name="theme-color" content="#7EB49C">
-      <meta name="generator" content="Simu u Stufi">
+		<title>Wer ist Gott?</title>
 
 
       <!-- Fonts -->
@@ -14,7 +11,7 @@
 
       <!-- Stylesheets -->
 
-		<link href="assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 		<link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all">
 
       <!-- Scripts -->
@@ -22,15 +19,19 @@
       <script src="assets/js/jquery-3.3.1.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/bootstrap-toggle.min.js"></script>
+      <script src="assets/js/jquery.waypoints.min.js"></script>
       <script src="assets/js/application.js"></script>
 
 	</head>
 
-   <body class="page-template-default page page-id-4 fs-page-index">
-      <div id="page" class="site">
+   <body class="page-template-default">
+	   <div id="page" class="site">
 
          <!-- HEADER -->
-         <%include src="partials/header_xl.html"%>
+         <%include src="partials/header.html"%>
+
+         <!-- MAIN -->
+         <main>
 
          <!-- CONTENT -->
          <div class="fs-chapter fs-chapter-overview">
@@ -45,7 +46,7 @@
 									Verein GPMC (Büro)<br>
 									Pestalozzistrasse 3 <br>
 									3600 Thun <br>
-									<a href="mailto:info@gpmc.ch?subject=First%20Steps Kontakt">info(at)gpmc.ch</a>
+									<a href="mailto:frststeps@gpmc.ch?subject=First%20Steps Kontakt">firststeps(at)gpmc.ch</a>
 								</p>
 								<img src="./assets/kapitel/allgemein/img/SVG/tasse_animated.svg"  border="0">
 
@@ -56,6 +57,8 @@
 					 </div>
 				 </div>
          </div>
+			</main>
       </div><!-- FOOTER -->
+      <%include src="partials/footer.html"%>
    </body>
 </html>
