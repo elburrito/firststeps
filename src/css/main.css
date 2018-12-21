@@ -1,8 +1,8 @@
 /**
 FirstSteps Project 2017
 
-uses postcss with some modules to compile it the right way. 
-check MAINDIRECTORY/package.json for the list of modules..  
+uses postcss with some modules to compile it the right way.
+check MAINDIRECTORY/package.json for the list of modules..
 **/
 
 @import "inc/variables.css";
@@ -10,6 +10,6 @@ check MAINDIRECTORY/package.json for the list of modules..
 @import "inc/contentelements.css";
 @import "inc/typography.css";
 @import "inc/helpers.css";
-@import "inc/chapters.css"; 
-@import "inc/images.css";  
-   
+@import "inc/sections.css";
+@import "inc/custom.css"; 
+@import "inc/images.css";

@@ -1,0 +1,154 @@
+/**
+ stuff that might be different for specific chapters (like the overview page, contact page, chapter 1, chapter 2, ...)
+*/
+
+/**
+index page / overview
+**/
+
+.fs-page-index #masthead:after {
+    background-image: url(var(--path-static-images)white_after.png);
+}
+.fs-chapter-overview {
+    background-color: var(--color-red);
+    padding-top: 4em;
+
+
+    p, p.bodytext, h3, a   {
+        color: #fff;
+    }
+}
+
+
+body.fs-page-index {
+   header p+p {
+      font-size: 75%;
+   }
+}
+
+
+.fs-tp-overview {
+    .fs-tp-thumb {
+        width: 150px;
+        height: 180px;
+        border-radius: 10px;
+        background: #CE5757;
+        border: 4px solid #CE5757;
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-block;
+        margin: 0px 12px 15px 0px;
+
+        transition: all 0.5s ease;
+
+        img {
+            max-width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .fs-tp-caption {
+            font-size: 14px;
+            font-size: 0.875rem;
+            line-height: 1.2;
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            padding: 4px 2px;
+            border-radius: 5px;
+            width: 100%;
+            display: block;
+            text-align: left;
+            font-weight: bold;
+
+            .fs-nr {
+                color: var(--color-blue);
+                display: table-cell;
+                padding: 0px 4px 0px 7px;
+                vertical-align: top;
+            }
+
+            .fs-tp-title {
+                color: var(--color-red);
+                display: table-cell;
+                margin-left: 50px;
+            }
+        }
+
+        &.inactive {
+            background: var(--color-darkgrey);
+            border: 4px solid var(--color-darkgrey);
+            opacity: 0.4;
+            .fs-tp-caption {
+                   background: var(--color-grey);
+            }
+        }
+
+        &:hover:not(.inactive) {
+            border-color: #fff;
+        }
+    }
+}
+
+/**
+topic 01 - wer ist gott
+*/
+
+.fs-img-questionmark-big {
+    width: 194px;
+    height: 290px;
+    background: url(var(--path-static-images)questionlamp.png) no-repeat scroll center bottom;
+}
+
+.fs-img-do-background {
+    background: url(var(--path-static-images)running_dude.png) no-repeat scroll left bottom;
+    background-size: initial;
+}
+
+.fs-img-challenge-background {
+    background: url(../kapitel/allgemein/img/SVG/challenge_background_02.svg) no-repeat scroll center bottom;
+
+    background-size: auto;
+    margin-bottom: -86px;
+    position: relative;
+    z-index: 1;
+}
+#praying-dudes {
+   z-index: 1;
+   position: relative;
+   margin-bottom: -2rem;
+   margin-top: -1rem;
+   max-width: 100%; /*120%; */
+   width: 150%;
+   text-align: center;
+   margin-left: -10%;
+}
+
+#fs-result-icon {
+    background: url(../kapitel/02/img/SVG/rechner.svg) no-repeat scroll left top;
+    padding-left: 266px;
+    padding-top: 66px;
+    height: 170px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: -1rem;
+    color: #f47f5b;
+}
+
+#selfcheck-result {
+    color: var(--color-blue);
+    &.conflict {
+        color: var(--color-red);
+    }
+}
+
+#tp02_selfcheck .checkbox {
+    margin-bottom: 1em;
+}
+
+div.carousel img {
+    max-height: 250px;
+    margin-bottom: 75px;
+}

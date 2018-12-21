@@ -23,11 +23,11 @@ gulp.task('css', function () {
           .pipe(postcss(config))
           .pipe(gulp.dest('../dist/assets/css/'));
 
-      rs = gulp.src('../src/css/kapitel/03.css') /** ** /*.* */
+      rs = gulp.src('../src/css/kapitel/03.css') /** should be removed - too lazy** /*.* */
            .pipe(postcss(config))
            .pipe(gulp.dest('../dist/assets/kapitel/03/css/'));
 
-           rs = gulp.src('../src/css/kapitel/04.css') /** ** /*.* */
+           rs = gulp.src('../src/css/kapitel/04.css') /** should be removed - too lazy i am ** /*.* */
                .pipe(postcss(config))
                .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
 /*
