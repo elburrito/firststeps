@@ -1687,7 +1687,8 @@ infoicons
 	overflow: hidden;
 	display: inline-block;
 	position: relative;
-	text-decoration: none
+	text-decoration: none;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
 
 
 }
@@ -1714,6 +1715,7 @@ infoicons
 	font-size: 31px;
 	line-height: 40px;
 	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
 }
 
 .fs-infothing.fs-close:before {
@@ -1746,6 +1748,7 @@ infoicons
 	        transform: rotate(-10deg);
 	font-size: 24px;
 	margin-left: -5px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
 }
 
 .fs-infothing.fs-play:before {
@@ -1811,8 +1814,8 @@ infoicons
     }
 
 		50% {
-     -webkit-transform: scale(1.1, 1.1);
-             transform: scale(1.1, 1.1);
+     -webkit-transform: scale(1.03, 1.03);
+             transform: scale(1.03, 1.03);
     }
 
 
@@ -1829,8 +1832,8 @@ infoicons
     }
 
 		50% {
-     -webkit-transform: scale(1.1, 1.1);
-             transform: scale(1.1, 1.1);
+     -webkit-transform: scale(1.03, 1.03);
+             transform: scale(1.03, 1.03);
     }
 
 
@@ -2242,6 +2245,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1px;
     word-spacing: 2px;
     font-weight: bold;
+    text-shadow: 0 1px 0 rgba(101, 68, 15, .64);
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -2250,6 +2254,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
       margin-top: 0.5em;
       font-family: 'latolight', serif;
       font-weight: normal;
+      text-shadow: 0 1px 0 rgba(101, 68, 15, .64);
    }
 
 h1 {
@@ -2326,7 +2331,7 @@ body {
    h2 {
       font-size: 4rem;
    }
-   
+
 }
 
 /**
