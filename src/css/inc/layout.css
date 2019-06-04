@@ -40,10 +40,9 @@ body {
 
 #page {
    flex-grow: 1;
-}
-main {
    background: #fff8dc;
 }
+
 
 /*--------------------------------------------------------------
 # Header / Navigation
