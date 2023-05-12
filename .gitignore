@@ -2,6 +2,7 @@
 npm-debug.log
 logs
 config/node_modules
+node_modules
 
 pids
 .npm

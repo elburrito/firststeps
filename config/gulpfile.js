@@ -14,22 +14,25 @@ gulp.task('css', function () {
           plugins: [
               require('postcss-import')({ root: '../src/css *' }),
               require('precss'),
-              require('postcss-cssnext'),
+              //require('postcss-cssnext'),
               require('postcss-write-svg')
           ]
       });
 
-      var rs = gulp.src('../src/css/main.css') /** ** /*.* */
+
+      var rs = gulp.src('../src/css/main.css') //
           .pipe(postcss(config))
           .pipe(gulp.dest('../dist/assets/css/'));
 
-      rs = gulp.src('../src/css/kapitel/03.css') /** should be removed - too lazy** /*.* */
+      rs = gulp.src('../src/css/kapitel/03.css') // should be removed - too lazy
            .pipe(postcss(config))
            .pipe(gulp.dest('../dist/assets/kapitel/03/css/'));
 
-           rs = gulp.src('../src/css/kapitel/04.css') /** should be removed - too lazy i am ** /*.* */
+           rs = gulp.src('../src/css/kapitel/04.css') // should be removed - too lazy i am
                .pipe(postcss(config))
                .pipe(gulp.dest('../dist/assets/kapitel/04/css/'));
+
+
 /*
 
                rs = gulp.src('../src/css/kapitel/05.css')
@@ -50,10 +53,13 @@ gulp.task('css', function () {
 /**
 do nothing - just copy them to the dist folder
 */
-gulp.task('js', function () {
-    return gulp.src('../src/js/**/*.*')
-        .pipe(gulp.dest('../dist/assets/js/'));
+
+gulp.task('js', () => {
+  return gulp.src('../src/js/**/*.*')
+    .pipe(gulp.dest('../dist/assets/js/'));
 });
+
+
 
 /**
 replace partials then copy to dist
@@ -68,10 +74,10 @@ gulp.task('html', function () {
 
 // Watch Files For Changes . if something happenes (a file is saved) gulp triggers an action
 gulp.task('watch', function() {
-    gulp.watch('../src/css/**/*.*', ['css']);
-    gulp.watch('../src/js/**/*.*', ['js']);
-    gulp.watch('../src/html/**/*.html', ['html']);
+    gulp.watch('../src/css/**/*.*', gulp.series('css'));
+    gulp.watch('../src/js/**/*.*', gulp.series('js'));
+    gulp.watch('../src/html/**/*.html', gulp.series('html'));
 });
 
 //the default task that is triggered when gulp is executed
-gulp.task('default', ['css','js','html']);
+gulp.task('default', gulp.series('css','js','html'));

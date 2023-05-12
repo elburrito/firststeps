@@ -38,7 +38,7 @@ $(document).ready(function () {
 		$(this.element).addClass('pulse-once');
 	}, {
 		offset: '80%'
-	})
+	});
 
 
 	$('section:not(.fs-chapter-exchange) h2').waypoint(function (direction) {
@@ -54,10 +54,11 @@ $(document).ready(function () {
 	})
 
 
+	//adds animation that is triggered when it sneaks into the viewport
 	$('.animate-onviewport').waypoint(function (direction) {
 		$(this.element).addClass('animate');
 	}, {
 		offset: '80%'
-	})
+	});
 
 });

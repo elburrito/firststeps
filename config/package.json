@@ -12,8 +12,8 @@
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-htmlrender": "^0.3.0",
+    "gulp": "^4.0.0",
+    "gulp-htmlrender": "0.3.0",
     "gulp-postcss": "^7.0.0",
     "postcss-calc": "^6.0.1",
     "postcss-color-function": "^4.0.1",
